@@ -1,0 +1,426 @@
+[
+  {
+    "path": "default.asp",
+    "title": "HTML HOME"
+  },
+  {
+    "path": "html_intro.asp",
+    "title": "HTML Introduction"
+  },
+  {
+    "path": "html_editors.asp",
+    "title": "HTML Editors"
+  },
+  {
+    "path": "html_basic.asp",
+    "title": "HTML Basic"
+  },
+  {
+    "path": "html_elements.asp",
+    "title": "HTML Elements"
+  },
+  {
+    "path": "html_attributes.asp",
+    "title": "HTML Attributes"
+  },
+  {
+    "path": "html_headings.asp",
+    "title": "HTML Headings"
+  },
+  {
+    "path": "html_paragraphs.asp",
+    "title": "HTML Paragraphs"
+  },
+  {
+    "path": "html_styles.asp",
+    "title": "HTML Styles"
+  },
+  {
+    "path": "html_formatting.asp",
+    "title": "HTML Formatting"
+  },
+  {
+    "path": "html_quotation_elements.asp",
+    "title": "HTML Quotations"
+  },
+  {
+    "path": "html_comments.asp",
+    "title": "HTML Comments"
+  },
+  {
+    "path": "html_colors.asp",
+    "title": "HTML Colors"
+  },
+  {
+    "path": "html_colors_rgb.asp",
+    "title": "RGB"
+  },
+  {
+    "path": "html_colors_hex.asp",
+    "title": "HEX"
+  },
+  {
+    "path": "html_colors_hsl.asp",
+    "title": "HSL"
+  },
+  {
+    "path": "html_css.asp",
+    "title": "HTML CSS"
+  },
+  {
+    "path": "html_links.asp",
+    "title": "HTML Links"
+  },
+  {
+    "path": "html_links_colors.asp",
+    "title": "Link Colors"
+  },
+  {
+    "path": "html_links_bookmarks.asp",
+    "title": "Link Bookmarks"
+  },
+  {
+    "path": "html_images.asp",
+    "title": "HTML Images"
+  },
+  {
+    "path": "html_images_imagemap.asp",
+    "title": "Image Map"
+  },
+  {
+    "path": "html_images_background.asp",
+    "title": "Background Images"
+  },
+  {
+    "path": "html_images_picture.asp",
+    "title": "The Picture Element"
+  },
+  {
+    "path": "html_project_bio.php",
+    "title": "HTML Project"
+  },
+  {
+    "path": "html_favicon.asp",
+    "title": "HTML Favicon"
+  },
+  {
+    "path": "html_page_title.asp",
+    "title": "HTML Page Title"
+  },
+  {
+    "path": "html_tables.asp",
+    "title": "HTML Tables"
+  },
+  {
+    "path": "html_table_borders.asp",
+    "title": "Table Borders"
+  },
+  {
+    "path": "html_table_sizes.asp",
+    "title": "Table Sizes"
+  },
+  {
+    "path": "html_table_headers.asp",
+    "title": "Table Headers"
+  },
+  {
+    "path": "html_table_padding_spacing.asp",
+    "title": "Padding & Spacing"
+  },
+  {
+    "path": "html_table_colspan_rowspan.asp",
+    "title": "Colspan & Rowspan"
+  },
+  {
+    "path": "html_table_styling.asp",
+    "title": "Table Styling"
+  },
+  {
+    "path": "html_table_colgroup.asp",
+    "title": "Table Colgroup"
+  },
+  {
+    "path": "html_lists.asp",
+    "title": "HTML Lists"
+  },
+  {
+    "path": "html_lists_unordered.asp",
+    "title": "Unordered Lists"
+  },
+  {
+    "path": "html_lists_ordered.asp",
+    "title": "Ordered Lists"
+  },
+  {
+    "path": "html_lists_other.asp",
+    "title": "Other Lists"
+  },
+  {
+    "path": "html_blocks.asp",
+    "title": "HTML Block & Inline"
+  },
+  {
+    "path": "html_div.asp",
+    "title": "HTML Div"
+  },
+  {
+    "path": "html_classes.asp",
+    "title": "HTML Classes"
+  },
+  {
+    "path": "html_id.asp",
+    "title": "HTML Id"
+  },
+  {
+    "path": "html_buttons.asp",
+    "title": "HTML Buttons"
+  },
+  {
+    "path": "html_iframe.asp",
+    "title": "HTML Iframes"
+  },
+  {
+    "path": "html_scripts.asp",
+    "title": "HTML JavaScript"
+  },
+  {
+    "path": "html_filepaths.asp",
+    "title": "HTML File Paths"
+  },
+  {
+    "path": "html_head.asp",
+    "title": "HTML Head"
+  },
+  {
+    "path": "html_layout.asp",
+    "title": "HTML Layout"
+  },
+  {
+    "path": "html_responsive.asp",
+    "title": "HTML Responsive"
+  },
+  {
+    "path": "html_computercode_elements.asp",
+    "title": "HTML Computercode"
+  },
+  {
+    "path": "html5_semantic_elements.asp",
+    "title": "HTML Semantics"
+  },
+  {
+    "path": "html5_syntax.asp",
+    "title": "HTML Style Guide"
+  },
+  {
+    "path": "html_entities.asp",
+    "title": "HTML Entities"
+  },
+  {
+    "path": "html_symbols.asp",
+    "title": "HTML Symbols"
+  },
+  {
+    "path": "html_emojis.asp",
+    "title": "HTML Emojis"
+  },
+  {
+    "path": "html_charset.asp",
+    "title": "HTML Charsets"
+  },
+  {
+    "path": "html_urlencode.asp",
+    "title": "HTML URL Encode"
+  },
+  {
+    "path": "html_xhtml.asp",
+    "title": "HTML vs. XHTML"
+  },
+  {
+    "path": "html_forms.asp",
+    "title": "HTML Forms"
+  },
+  {
+    "path": "html_forms_attributes.asp",
+    "title": "HTML Form Attributes"
+  },
+  {
+    "path": "html_form_elements.asp",
+    "title": "HTML Form Elements"
+  },
+  {
+    "path": "html_form_input_types.asp",
+    "title": "HTML Input Types"
+  },
+  {
+    "path": "html_form_attributes.asp",
+    "title": "HTML Input Attributes"
+  },
+  {
+    "path": "html_form_attributes_form.asp",
+    "title": "Input Form Attributes"
+  },
+  {
+    "path": "html5_canvas.asp",
+    "title": "HTML Canvas"
+  },
+  {
+    "path": "html5_svg.asp",
+    "title": "HTML SVG"
+  },
+  {
+    "path": "html_media.asp",
+    "title": "HTML Media"
+  },
+  {
+    "path": "html5_video.asp",
+    "title": "HTML Video"
+  },
+  {
+    "path": "html5_audio.asp",
+    "title": "HTML Audio"
+  },
+  {
+    "path": "html_object.asp",
+    "title": "HTML Plug-ins"
+  },
+  {
+    "path": "html_youtube.asp",
+    "title": "HTML YouTube"
+  },
+  {
+    "path": "html5_api_whatis.asp",
+    "title": "Web APIs"
+  },
+  {
+    "path": "html5_geolocation.asp",
+    "title": "Geolocation API"
+  },
+  {
+    "path": "html5_draganddrop.asp",
+    "title": "Drag and Drop API"
+  },
+  {
+    "path": "html5_popover.asp",
+    "title": "Popover API"
+  },
+  {
+    "path": "html5_webstorage.asp",
+    "title": "Web Storage API"
+  },
+  {
+    "path": "html5_webworkers.asp",
+    "title": "Web Workers API"
+  },
+  {
+    "path": "html5_serversentevents.asp",
+    "title": "Server-Sent Events API"
+  },
+  {
+    "path": "html_exam.asp",
+    "title": "HTML Certificate"
+  },
+  {
+    "path": "html_examples.asp",
+    "title": "HTML Examples"
+  },
+  {
+    "path": "html_editor.asp",
+    "title": "HTML Editor"
+  },
+  {
+    "path": "html_quiz.asp",
+    "title": "HTML Quiz"
+  },
+  {
+    "path": "html_exercises.asp",
+    "title": "HTML Exercises"
+  },
+  {
+    "path": "html_website.asp",
+    "title": "HTML Website"
+  },
+  {
+    "path": "html_syllabus.asp",
+    "title": "HTML Syllabus"
+  },
+  {
+    "path": "html_study_plan.asp",
+    "title": "HTML Study Plan"
+  },
+  {
+    "path": "html_interview_prep.asp",
+    "title": "HTML Interview Prep"
+  },
+  {
+    "path": "html_summary.asp",
+    "title": "HTML Summary"
+  },
+  {
+    "path": "html_accessibility.asp",
+    "title": "HTML Accessibility"
+  },
+  {
+    "path": "/tags/default.asp",
+    "title": "HTML Tag List"
+  },
+  {
+    "path": "/tags/ref_attributes.asp",
+    "title": "HTML Attributes"
+  },
+  {
+    "path": "/tags/ref_standardattributes.asp",
+    "title": "HTML Global Attributes"
+  },
+  {
+    "path": "/tags/ref_html_browsersupport.asp",
+    "title": "HTML Browser Support"
+  },
+  {
+    "path": "/tags/ref_eventattributes.asp",
+    "title": "HTML Events"
+  },
+  {
+    "path": "/tags/ref_colornames.asp",
+    "title": "HTML Colors"
+  },
+  {
+    "path": "/tags/ref_canvas.asp",
+    "title": "HTML Canvas"
+  },
+  {
+    "path": "/tags/ref_av_dom.asp",
+    "title": "HTML Audio/Video"
+  },
+  {
+    "path": "/tags/ref_html_dtd.asp",
+    "title": "HTML Doctypes"
+  },
+  {
+    "path": "/tags/ref_charactersets.asp",
+    "title": "HTML Character Sets"
+  },
+  {
+    "path": "/tags/ref_urlencode.asp",
+    "title": "HTML URL Encode"
+  },
+  {
+    "path": "/tags/ref_language_codes.asp",
+    "title": "HTML Lang Codes"
+  },
+  {
+    "path": "/tags/ref_httpmessages.asp",
+    "title": "HTTP Messages"
+  },
+  {
+    "path": "/tags/ref_httpmethods.asp",
+    "title": "HTTP Methods"
+  },
+  {
+    "path": "/tags/ref_pxtoemconversion.asp",
+    "title": "PX to EM Converter"
+  },
+  {
+    "path": "/tags/ref_keyboardshortcuts.asp",
+    "title": "Keyboard Shortcuts"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "name": "LearnWeb classroom",
+  "tokens": { "ink": "#282537", "muted": "#737080", "purple": "#7653be", "lavender": "#eee8fa", "peach": "#fbe6d6", "green": "#e0eee7", "canvas": "#f8f9fc" },
+  "typography": { "display": "Trebuchet MS, system-ui, sans-serif", "body": "system-ui, sans-serif", "code": "ui-monospace, monospace" },
+  "decisions": ["A welcoming workshop notebook with a persistent course path, one learn-build-check cycle at a time, and a hand-drawn browser illustration.", "All assets, typography fallbacks, and course content are local; the classroom has no runtime network dependency."],
+  "tooling": "21st CLI unavailable in this environment; no external components or generation used."
+}
