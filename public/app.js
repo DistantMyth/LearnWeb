@@ -158,7 +158,7 @@ function finishLesson() {
     else {
       render();
       const remaining = lessons.length - state.completed.length;
-      notify(remaining ? `${remaining} earlier lessons still to explore. Open Course map to find your next step.` : 'You did it — your HTML journey is complete. Download your project and show someone what you built.', true);
+      notify(remaining ? `${remaining} earlier lessons still to explore. Open Course map to find your next step.` : 'You did it — your web development journey is complete. Download your project and show someone what you built.', true);
     }
   } catch (error) { notify(error.message); }
 }

@@ -1,115 +1,85 @@
-# LearnWeb · The HTML workshop
+# LearnWeb · Build Campus Chat
 
-A colorful, local-first HTML course for first-time web developers. Students follow **Learn → Build → Check** and keep improving one website: **Campus Clubhouse**, a home for their club, events, and community.
+Build a **WhatsApp Web–style interface** with a navigation rail, collapsible conversation sidebar, room header, message bubbles, and composer. Add each static region as soon as its HTML/CSS is taught; activate its behavior later.
 
-## Start the classroom
+A local HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB classroom for first-time web developers. Follow **Learn → Build → Check** while growing one project into a working real-time chat application.
 
-### One-time preparation
+## Start
 
-1. Install **Node.js LTS, version 22 or newer**, from [nodejs.org](https://nodejs.org/). The installer includes npm. Reopen your terminal or VS Code afterward.
-2. Download this project folder and unzip it. Keep its files together.
-3. Open the unzipped **LearnWeb** folder in VS Code, then choose **Terminal → New Terminal**. The folder should contain `package.json`.
-
-### Every class: one command
+Install Node.js **22 or newer**, open this LearnWeb folder in VS Code, and run:
 
 ```sh
 npm start
 ```
 
-The same command works on Windows, Linux, and macOS. **No `npm install`, build step, account, or database is needed.** The browser opens automatically when the operating system supports it. Otherwise open:
+Open **http://127.0.0.1:4173** if the browser does not open automatically. No package installation, account, database, or build step is required. Keep the terminal open; Ctrl+C stops the classroom. On Windows, use `npm.cmd start` if PowerShell blocks `npm.ps1`.
 
-**http://127.0.0.1:4173**
+## One project, in order
 
-Keep the terminal open during class. Press **Ctrl+C** to stop the classroom.
+Keep your student project in a separate **campus-chat** folder. The classroom teaches each capability before asking you to use it:
 
-If Windows PowerShell blocks `npm.ps1`, run `npm.cmd start`, or switch the VS Code terminal to Command Prompt. Do not lower the system execution policy.
+1. **Setup and HTML:** inspect pages, save files, and use Live Server. Build a static chat prototype with sample messages, room information, profiles, forms, graphics, and media. The composer cannot send messages yet. Isolated styling examples explain the CSS they introduce.
+2. **CSS:** style that prototype through selectors, cascade, typography, spacing, layout, responsive design, Grid, Flexbox, animation, and advanced features. Topic experiments belong in a `labs` section or separate lab files within the same project rather than making every feature part of the chat interface.
+3. **JavaScript:** learn language fundamentals before data processing and functions; learn DOM and events before local message interactions; then learn deeper language features, async code, browser APIs, and error handling. Browser-local messages are explicitly distinguished from network chat.
+4. **Real-time baseline:** learn enough Node/HTTP/SSE to connect the existing composer to other browsers.
+5. **React:** migrate the same static layout, then activate state, forms, effects, routing, and advanced ecosystem labs; keep the baseline service until its replacement is taught.
+6. **Node and Express:** study the full runtime/package/core-module tracks, then migrate the API to Express with memory storage. A React-to-Express bridge teaches the dev proxy and record/endpoint contract.
+7. **MongoDB and integration:** learn documents, queries, updates, aggregation, indexes, schema validation and the driver before replacing memory with persistence. Database adapter comparison labs follow these prerequisites. The final bridge connects and tests the whole stack.
 
-## The student project is a separate folder
+The Course map allows teacher-led navigation. Follow the lesson sequence for prerequisites. The course has **257 lessons**. Every lesson has original explanations, an example, a concrete chat-project task, and a knowledge check. Completion requires the practical task confirmation and a correct answer. Existing progress IDs are preserved; adding the new lessons expands the completion denominator.
 
-The first three lessons cover these steps before the HTML curriculum:
+## Run the vanilla chat baseline
 
-1. **Browser inspection:** Elements/Inspector, temporary text and style edits, the box model, Console, Network, and responsive tools. Includes Windows/Linux/macOS shortcuts and Safari setup.
-2. **VS Code:** create `Documents/campus-clubhouse`, open the folder, create and save `index.html`, and understand file extensions.
-3. **Live Server:** install **Live Server by Ritwick Dey**, open `index.html`, and practice the edit → save → browser loop. Includes common setup problems.
+The first real-time module teaches the server/client implementation before the reference is used. **Course guide → Chat roadmap** offers downloads of all four reference files. Save them together in your student project:
 
-Keep two browser tabs open:
+```text
+campus-chat/
+  index.html
+  styles.css
+  chat.js
+  server.mjs
+```
 
-- **LearnWeb classroom**, usually port **4173**: instructions, examples, tasks, and progress.
-- **Your student website**, usually port **5500** through VS Code Live Server: the actual `campus-clubhouse/index.html` you are building.
+Run `node server.mjs` inside that folder and open **http://127.0.0.1:4180** in two tabs or browsers. Messages sent from either appear in both without reload. The complete reference can also be run from this repository:
 
-The course guides students to change their existing project rather than start a new website in every lesson. Later tasks add welcome content, member bios, colors, navigation, a gallery, an event timetable, responsive sections, a demonstration membership form, graphics, and media.
+```sh
+node public/chat-final/server.mjs
+```
 
-## What is included
+The app uses `fetch` POST requests to send messages and Server-Sent Events to receive live updates. It includes connection feedback, reconnect/history synchronization, server-side validation, safe text rendering, bounded history, sidebar collapse, and conversation search. It is a working local shared room: no accounts, private rooms, database, or public deployment. The last 100 messages are held in server memory and cleared on restart. The listener binds to loopback, so the finished exercise works between browsers on this computer. The later MongoDB and integration tracks add persistence. Public hosting and authenticated/private messaging require further implementation beyond this shared-room reference.
 
-- **56 guided lessons** across setup, essentials, appearance, structure, forms, graphics/media, and final review.
-- One focused lesson at a time, with explanations, an original example, exact project steps, and a knowledge check.
-- Completion requires confirming the practical task and answering the question correctly. Revisited lessons do not inflate progress.
-- Sidebar navigation and searchable **Course guide → Course map** for following the teacher’s pace without artificial lesson locks.
-- A local reference shelf, final project review, study guidance, and a visible W3Schools source-topic coverage map.
-- A browser-saved practice workspace with HTML editing, a sandboxed preview, additive snippets, and an `index.html` download.
-- Responsive layout, keyboard-operated tabs, native dialogs, visible focus, labeled controls, live feedback, and reduced-motion support.
+## Run the integrated React + Express + MongoDB chat
 
-### W3Schools coverage
+See [examples/fullstack-chat/README.md](examples/fullstack-chat/README.md) or **Course guide → Full stack**. This separate student reference requires Node **22.12+**, its own dependency installation, and a running local MongoDB server or Atlas deployment. The classroom itself still needs no dependency installation or database.
 
-The course uses the [W3Schools HTML tutorial](https://www.w3schools.com/html/) as a **topic checklist**, not copied lesson text or styling. Explanations, examples, exercises, and the class project are independently written.
+In `examples/fullstack-chat`, run `npm ci`, copy `.env.example` to `.env` with server-only database settings, then run `npm run api` and `npm run dev` in separate terminals. Open **http://127.0.0.1:5173**. React uses a Vite proxy to Express on 4181. The working app preserves the WhatsApp-style interface and now retains history across server restarts. It remains one shared room with self-reported names.
 
-`public/content/source-topics.json` records **106 sidebar entries**, including nested color, link, image, table, and list chapters. The in-app coverage map identifies where each is addressed. Reference indexes, optional online practice tools, and paid certification are distinguished from locally taught lessons. The certificate link is an optional external service; LearnWeb does not issue a W3Schools certificate.
+## Source coverage and scraping
 
-**All seven Web API topics are explicitly scheduled after JavaScript:** Web API basics, Geolocation, Drag and Drop, Popover, Web Storage, Web Workers, and Server-Sent Events. They have explanations and project ideas in **Course guide → After JavaScript**, but are excluded from HTML completion. Canvas markup is taught now; canvas drawing and audio/video scripting are also left until JavaScript. The HTML script/noscript lesson explains embedding scripts without pretending to teach JavaScript programming.
+The [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/css/), [JavaScript](https://www.w3schools.com/js/), [React](https://www.w3schools.com/react/), [Node.js](https://www.w3schools.com/nodejs/) and [MongoDB](https://www.w3schools.com/mongodb/) tutorials supply the source-topic checklist. Express uses W3Schools’ Node framework chapters plus the official [Express 5 starter, guide, advanced topics and API documentation](https://expressjs.com/en/starter/installing/).
 
-### Offline use and honest boundaries
+`public/content/source-topics.json` records the earlier **801** HTML/CSS/JavaScript entries. `public/content/fullstack-source-topics.json` adds **290** entries with retrieval date, status, page title and chapter headings: **251 pages retrieved, 39 unavailable**. The combined **1,091-entry** coverage map identifies an included lesson for every entry. Some expanded React sidebar links are unavailable, as are a moved Express page and MongoDB quiz; their topics receive original supplementary lessons and remain visibly marked as unavailable sources. This is not a claim that those page bodies were fetched.
 
-After downloading the project and installing Node, all course content, UI assets, and fonts/fallbacks work locally without internet. External references, installation links, YouTube, and remote embeds require internet. Student images, audio, video, captions, and PDFs must be added to the student project with the paths given in each task; the course does not ship pretend media files.
+The new scraper retrieves chapter bodies as well as sidebars for author review, keeps raw HTML only in a temporary directory, and saves short structural metadata in the repository. Refresh it with `node scripts/scrape-curriculum.mjs` (requires curl and internet); review source/lesson coverage afterward. Explanations and examples are independently authored rather than republished tutorial text. Reference indexes, practice tools, and optional paid certification are identified separately. Unrelated W3Schools subjects are outside the checklist; SQL concepts appear where needed for the Node database comparison labs.
 
-The practice preview intentionally blocks scripts, form submissions, remote resources, and nested embeds. Use **VS Code + Live Server** for the full student project and media. Forms are teaching demonstrations: **no signup data is received or stored**. A real form needs a backend or form service and server-side validation.
+The source MongoDB Data API chapter is taught as historical: MongoDB retired that service in September 2025. The working app uses a server-side driver instead. Emerging APIs and hardware/cloud-specific chapters have explicit support/configuration boundaries and local alternatives where practical.
 
-## Progress and practice work
+## Workspace and saved progress
 
-Progress and the in-course practice HTML save to local storage in the **same browser at the same address**. No progress or source code is uploaded.
+The in-course workspace is an **HTML practice copy**, separate from your VS Code files. Its sandbox blocks scripts, remote resources, form submissions, and embeds. Download `index.html` to transfer it to disk. Use VS Code and Live Server for CSS/JavaScript labs and the Node server for final live chat. Save external CSS, JavaScript, assets, workers, and server files in VS Code; the workspace does not pretend to save multiple files.
 
-- The workspace is a practice copy, not a live editor for files on disk. Download `index.html` to transfer it to VS Code. Back up any external assets separately.
-- Clearing browser data removes saved progress and practice work. Switching browser, port, or between `127.0.0.1` and `localhost` uses a separate storage area.
-- A second stale tab cannot overwrite newer work saved by another tab. It keeps its in-memory edits downloadable and asks you to reload before saving again.
-- If storage is unavailable or full, a visible warning asks students to download their work. Corrupt/incompatible saved data is left untouched until an explicit reset.
-- **Course guide → Run locally → Reset this browser’s course** starts fresh after confirmation. Download your project first; resetting does not affect VS Code files.
+Course progress and the practice draft stay in local storage at the same browser address. Changing browser, host, or port uses different storage. Clearing browser data erases saved progress. Stale-tab changes cannot overwrite newer saved work; download edits before reloading. A visible warning reports unavailable/full storage. Reset through **Course guide → Run locally** after downloading your work; reset does not alter VS Code files.
 
-## Suggested classroom rhythm
+All course lesson text and the vanilla chat reference work locally after downloading. The full-stack reference needs its dependencies installed and a configured database; local MongoDB avoids a cloud account. External source links, installers, media embeds, and remote lab endpoints need internet. Add your own licensed images/media at the paths used in lessons. Browser permissions and feature support may affect optional API experiments.
 
-1. Demo the current lesson briefly. Use Inspect to connect the visible page to its HTML.
-2. Let students read **Learn** and then do only that lesson’s **Build** task in their existing project.
-3. Ask them to save and observe the result in Live Server before ticking the task confirmation.
-4. Use **Check** for discussion, not a race. Wrong answers can be retried without penalties.
-5. Pause at a milestone to compare projects and fix one issue together. Use Course map to jump to the lesson being taught.
-6. Finish with the final review, keyboard/narrow-screen checks, and a backup of the whole student folder.
-
-## Troubleshooting
-
-- **`npm` or `node` not found:** install Node.js LTS and reopen VS Code.
-- **Cannot find `package.json`:** your terminal is in the wrong folder. Open LearnWeb, not `campus-clubhouse` or its parent folder.
-- **Port already in use:** stop the earlier classroom terminal with Ctrl+C, then start again. For a different port, set `PORT` in your shell before running; that port has separate browser storage.
-- **Browser didn’t open:** enter the printed local URL manually.
-- **My page did not update:** edit the student file, save it, and inspect the Live Server tab—not the classroom or an old `file://` tab.
-- **My media isn’t visible in the practice preview:** this is an intentional safety limit. Add the files in the student project and use Live Server.
-- **My form doesn’t register people:** this is a static teaching site, not a working membership service.
-
-## Development and verification
-
-This is plain browser HTML/CSS/JavaScript with a built-in Node HTTP server. There are no runtime or development package dependencies.
+## Verification
 
 ```sh
 npm test
-npm run test:coverage
 ```
 
-The Node tests cover progress/restoration, build/check completion rules, preserving project edits, singleton head titles, form snippet targeting, quoted/commented closing-tag boundaries, traversal protection, read-only serving, and real launcher startup/error paths. Browser UI behavior is checked separately in a running browser; Node coverage numbers do not measure browser UI coverage.
+Tests cover saved state, completion rules, snippet preservation, static server boundaries, startup errors, curriculum structure/source coverage, and live chat delivery to independent connections, reconnect history, validation, bounded history, and restricted asset serving. Browser checks complement these tests.
 
-### Project layout
+The full-stack reference has separate `npm run lint`, `npm test`, and `npm run build` commands. Its opt-in real MongoDB test verifies persistence, schema validation and indexed bounded reads using a uniquely named scratch database.
 
-- `server.js`: loopback-only static server and cross-platform browser opener.
-- `public/index.html`, `styles.css`, `assets/`: accessible shell, visual system, and local illustrations.
-- `public/app.js`, `state.js`: lesson flow and immutable progress/project updates.
-- `public/lesson-view.js`, `guide.js`, `project.js`: lesson rendering, syllabus/reference guide, and practice workspace.
-- `public/content/`: original curriculum and source-topic manifest. Larger files are declarative lesson data, not large control-flow modules.
-- `tests/`: Node behavioral and launcher integration tests.
-
-To add or revise a lesson, preserve the content schema used by adjacent lessons, keep its stable `id`, include its source-topic paths, and write a real project task plus a concept check. A `patch` is optional: use it only for additive snippets. `target: "head"` replaces an existing HTML page title if the snippet supplies one; `target: "body"` adds new page content; `target: "form", formId: "club-form"` extends the same form without duplicating it. Lessons that ask students to edit existing attributes should usually omit automatic snippets.
+The classroom remains a read-only static server. The separate final chat server receives messages. Download links deliberately serve the final source files as attachments through the classroom.

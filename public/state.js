@@ -3,10 +3,10 @@ export const STARTER = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus Clubhouse</title>
+  <title>Campus Chat</title>
 </head>
 <body>
-  <!-- Club content -->
+  <!-- Chat content -->
 </body>
 </html>
 `;
@@ -58,7 +58,7 @@ function insertionBoundary(tokens, patch) {
     return id && (id[2] ?? id[3] ?? id[4]) === patch.formId;
   });
   const closing = opening && tokens.find(token => token.index > opening.index && /^<\/form\s*>$/i.test(token[0]));
-  if (!closing) throw new Error('Add the initial club form from the first Forms lesson, or give your existing signup form id="club-form", before adding these controls.');
+  if (!closing) throw new Error('Add the initial form from the first Forms lesson, with its matching form ID, before adding these controls.');
   return closing;
 }
 

@@ -37,7 +37,7 @@ test('corrupted or incompatible saved data is reported instead of silently accep
 });
 
 test('a project addition preserves existing work and is idempotent', () => {
-  const initial = { ...createState(lessons), draft: STARTER.replace('<!-- Club content -->', '<h1>My own club</h1>') };
+  const initial = { ...createState(lessons), draft: STARTER.replace('<!-- Chat content -->', '<h1>My own club</h1>') };
   const lesson = { id: 'inspect', patch: { target: 'body', html: '<p>Our mission</p>' } };
   const updated = applyPatch(initial, lesson);
   assert.match(updated.draft, /My own club/);
@@ -71,16 +71,16 @@ test('the page-title lesson replaces the existing title without losing other hea
 });
 
 test('new form controls join the same existing form and keep previous inputs', () => {
-  const draft = STARTER.replace('<!-- Club content -->', '<form data-id="club-form" id="other"><p>Other form</p></form><form id="club-form"><input name="member"></form>');
+  const draft = STARTER.replace('<!-- Chat content -->', '<form data-id="club-form" id="other"><p>Other form</p></form><form id="club-form"><input name="member"></form>');
   const lesson = { id: 'more-controls', patch: { target: 'form', formId: 'club-form', html: '<label>Interests <input name="interests"></label>' } };
   const updated = applyPatch({ ...createState(lessons), draft }, lesson);
   assert.match(updated.draft, /<form data-id="club-form" id="other"><p>Other form<\/p><\/form>/);
   assert.match(updated.draft, /<input name="member"><label>Interests <input name="interests"><\/label>\n<\/form>/);
-  assert.throws(() => applyPatch(createState(lessons), lesson), /initial club form/i);
+  assert.throws(() => applyPatch(createState(lessons), lesson), /initial form/i);
 });
 
 test('changing the page title preserves accessible SVG titles in the body', () => {
-  const initial = { ...createState(lessons), draft: STARTER.replace('<!-- Club content -->', '<svg><title>Club badge</title><circle r="5"></circle></svg>') };
+  const initial = { ...createState(lessons), draft: STARTER.replace('<!-- Chat content -->', '<svg><title>Club badge</title><circle r="5"></circle></svg>') };
   const lesson = { id: 'new-title', patch: { target: 'head', html: '<title>New browser tab title</title>' } };
   const updated = applyPatch(initial, lesson);
   assert.match(updated.draft, /<svg><title>Club badge<\/title>/);
