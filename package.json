@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "A local-first, project-based HTML classroom",
+  "description": "A local-first, project-based HTML, CSS, JavaScript, and real-time chat classroom",
   "engines": { "node": ">=22" },
   "scripts": {
     "start": "node server.js",

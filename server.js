@@ -1,3 +1,4 @@
+import { fullstackFiles } from './public/content/fullstack-downloads.js';
 import { createServer } from 'node:http';
 import { readFile, realpath } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
@@ -25,6 +26,16 @@ export function createAppServer() {
       response.writeHead(400).end('Invalid request path.');
       return;
     }
+    if (pathname.startsWith('/fullstack-files/')) {
+      const name = pathname.slice('/fullstack-files/'.length);
+      if (!fullstackFiles.includes(name)) { response.writeHead(404).end('Not found.'); return; }
+      try {
+        const content = await readFile(new URL(`./examples/fullstack-chat/${name}`, import.meta.url));
+        response.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': content.length, 'Content-Disposition': `attachment; filename="${name.split('/').at(-1)}"` });
+        response.end(request.method === 'HEAD' ? undefined : content);
+      } catch { response.writeHead(404).end('Reference source unavailable.'); }
+      return;
+    }
     try {
       const file = await realpath(resolve(publicRoot, `.${pathname === '/' ? '/index.html' : pathname}`));
       if (!file.startsWith(publicRoot.endsWith(sep) ? publicRoot : publicRoot + sep)) {
@@ -32,6 +43,9 @@ export function createAppServer() {
         return;
       }
       const content = await readFile(file);
+      if (pathname.startsWith('/chat-final/') && new URL(request.url, 'http://localhost').searchParams.get('download') === '1') {
+        response.setHeader('Content-Disposition', `attachment; filename="${file.split(sep).at(-1)}"`);
+      }
       response.writeHead(200, { 'Content-Type': types[extname(file)] || 'application/octet-stream', 'Content-Length': content.length });
       response.end(request.method === 'HEAD' ? undefined : content);
     } catch (error) {

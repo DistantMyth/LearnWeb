@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f4fb">
-  <meta name="description" content="Your first website, one small step at a time. A local, project-based HTML workshop.">
+  <meta name="description" content="Your first website, one small step at a time. A local, project-based HTML, CSS, and JavaScript workshop.">
   <title>LearnWeb — Your first website starts here</title>
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
@@ -14,7 +14,7 @@
   <a class="skip-link" href="#lesson-heading">Skip to lesson</a>
   <header class="topbar">
     <a class="brand" href="/" aria-label="LearnWeb home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>Learn<span>Web</span><span class="brand-dot" aria-hidden="true"></span></a>
-    <span class="workshop-label">THE HTML WORKSHOP</span>
+    <span class="workshop-label">THE WEB DEVELOPMENT WORKSHOP</span>
     <div class="top-actions">
       <span class="local-badge"><span aria-hidden="true"></span> Running locally</span>
       <button class="text-button" id="guide-button">Course guide <span aria-hidden="true">↗</span></button>
@@ -24,19 +24,19 @@
   <button class="mobile-menu" id="menu-button" aria-expanded="false" aria-controls="sidebar">☰ <span>Course journey</span></button>
   <div class="app-layout">
     <aside class="sidebar" id="sidebar">
-      <div class="sidebar-heading"><span class="eyebrow">YOUR LEARNING PATH</span><span class="tiny-label">HTML</span></div>
+      <div class="sidebar-heading"><span class="eyebrow">YOUR LEARNING PATH</span><span class="tiny-label">FULL STACK</span></div>
       <div class="course-intro"><h2>A little code.<br>A lot of possibility.</h2><p>From curious to “I built that.”</p></div>
       <nav aria-label="Course modules" id="course-nav"></nav>
       <div class="sidebar-bottom">
         <div class="progress-label"><strong>Your progress</strong><span id="progress-text">0%</span></div>
-        <progress id="course-progress" value="0" max="100" aria-label="HTML course completion"></progress>
+        <progress id="course-progress" value="0" max="100" aria-label="Web development course completion"></progress>
         <p id="progress-count">Getting your journey ready…</p>
         <div class="local-note"><span aria-hidden="true">↳</span><span>Your pace. Your laptop.<br>No accounts. Just creating.</span></div>
       </div>
     </aside>
     <main id="main-content">
       <div class="breadcrumb"><span>My classroom</span><span aria-hidden="true">/</span><strong id="breadcrumb-module">Getting ready</strong><span class="session-tag">BEGINNER FRIENDLY</span></div>
-      <section class="welcome-banner" aria-label="Welcome to the HTML workshop">
+      <section class="welcome-banner" aria-label="Welcome to the web development workshop">
         <div class="welcome-copy"><span class="banner-eyebrow"><span aria-hidden="true">✦</span> SMALL STEPS. REAL SKILLS.</span><h1>Your first website<br>starts <span>right here.</span></h1><p>No experience needed. Just a little curiosity.<br>Learn one thing. Build one thing. Make it yours.</p><div class="banner-tags"><span><span aria-hidden="true">◈</span> Learn by doing</span><span><span aria-hidden="true">⊞</span> One project, all the way</span></div></div>
         <img class="welcome-art" src="/assets/workshop.svg" alt="A playful browser window with colorful HTML building blocks" width="370" height="240">
       </section>
@@ -51,18 +51,18 @@
           <div class="lesson-navigation"><button id="previous-button" class="text-button">← Previous lesson</button><span>Little by little is still a lot.</span></div>
         </div>
         <aside class="project-column" aria-label="Project and classroom tips">
-          <div class="project-card"><div class="project-card-top"><span class="eyebrow">ONE COURSE. ONE CREATION.</span><span class="orange-dot" aria-hidden="true"></span></div><h2>Meet your project.</h2><p>A home on the web for your people, ideas, and next big thing.</p><div class="mini-browser" aria-hidden="true"><div class="mini-toolbar"><i></i><i></i><i></i><span>your-club / index.html</span></div><div class="mini-site"><div class="mini-nav"><strong>clubhouse<span>✳</span></strong><span>About &nbsp; Events</span></div><span class="mini-pill">GOOD PEOPLE. GREAT IDEAS.</span><h3>Find your people.<br>Make cool things.</h3><div class="mini-sun">✳</div><div class="mini-cta">Come hang out ↗</div><div class="mini-blocks"><span></span><span></span><span></span></div></div></div><div class="project-caption"><span class="project-file-icon" aria-hidden="true">&lt;/&gt;</span><div><strong>Campus Clubhouse</strong><span>Your idea. Your very own website.</span></div></div><button id="project-preview-button" class="outline-button">Open my workspace <span aria-hidden="true">↗</span></button></div>
+          <div class="project-card"><div class="project-card-top"><span class="eyebrow">ONE COURSE. ONE CREATION.</span><span class="orange-dot" aria-hidden="true"></span></div><h2>Meet your project.</h2><p>Build a WhatsApp-style chat interface: navigation, conversations, message bubbles, and a composer. Make it live as you learn.</p><div class="mini-browser" aria-hidden="true"><div class="mini-toolbar"><i></i><i></i><i></i><span>campus-chat / index.html</span></div><div class="mini-site"><div class="mini-nav"><strong>campus chat<span>✳</span></strong><span>Rooms &nbsp; Messages</span></div><span class="mini-pill">ONE ROOM. REAL CONVERSATIONS.</span><h3>Hello, room.<br>Let’s talk.</h3><div class="mini-sun">✳</div><div class="mini-cta">Send a message ↗</div><div class="mini-blocks"><span></span><span></span><span></span></div></div></div><div class="project-caption"><span class="project-file-icon" aria-hidden="true">&lt;/&gt;</span><div><strong>Campus Chat</strong><span>HTML → CSS → JavaScript → live chat.</span></div></div><button id="project-preview-button" class="outline-button">Open my workspace <span aria-hidden="true">↗</span></button></div>
           <div class="classroom-tip"><span class="tip-icon" aria-hidden="true">✺</span><div><h3>A small reminder</h3><p>You don’t have to remember everything. Try it, break it, try again. That’s how we learn.</p></div></div>
           <div class="teacher-note"><span aria-hidden="true">◎</span><p>Learning together?<br>Follow your teacher’s pace.<br>Your place is saved on this browser.</p></div>
         </aside>
       </div>
-      <footer class="page-footer"><span>Made for your very first <code>&lt;hello world&gt;</code></span><button class="text-button" id="source-button">Original lessons · W3Schools topic coverage ↗</button></footer>
+      <footer class="page-footer"><span>Made for your very first <code>&lt;hello world&gt;</code></span><button class="text-button" id="source-button">Original lessons · Source-topic coverage ↗</button></footer>
     </main>
   </div>
   <div class="toast" id="status" role="status" aria-live="polite" hidden></div>
-  <dialog id="guide-dialog" aria-labelledby="guide-heading"><div class="dialog-header"><div><span class="eyebrow">YOUR POCKET FIELD GUIDE</span><h2 id="guide-heading">The whole journey, at a glance.</h2></div><button class="icon-button" data-close="guide-dialog" aria-label="Close course guide">×</button></div><div class="guide-tabs" role="tablist" aria-label="Guide sections"><button role="tab" aria-selected="true" data-guide="map">Course map</button><button role="tab" aria-selected="false" data-guide="references" tabindex="-1">References</button><button role="tab" aria-selected="false" data-guide="apis" tabindex="-1">After JavaScript</button><button role="tab" aria-selected="false" data-guide="setup" tabindex="-1">Run locally</button></div><div class="guide-body" id="guide-body" role="tabpanel"></div></dialog>
+  <dialog id="guide-dialog" aria-labelledby="guide-heading"><div class="dialog-header"><div><span class="eyebrow">YOUR POCKET FIELD GUIDE</span><h2 id="guide-heading">The whole journey, at a glance.</h2></div><button class="icon-button" data-close="guide-dialog" aria-label="Close course guide">×</button></div><div class="guide-tabs" role="tablist" aria-label="Guide sections"><button role="tab" aria-selected="true" data-guide="map">Course map</button><button role="tab" aria-selected="false" data-guide="references" tabindex="-1">References</button><button role="tab" aria-selected="false" data-guide="apis" tabindex="-1">Chat roadmap</button><button role="tab" aria-selected="false" data-guide="fullstack" tabindex="-1">Full stack</button><button role="tab" aria-selected="false" data-guide="setup" tabindex="-1">Run locally</button></div><div class="guide-body" id="guide-body" role="tabpanel"></div></dialog>
   <dialog id="project-dialog" class="workspace-dialog" aria-labelledby="project-heading">
-    <div class="dialog-header"><div><span class="eyebrow">A LITTLE SPACE TO EXPERIMENT</span><h2 id="project-heading">Your Campus Clubhouse</h2></div><button class="icon-button" data-close="project-dialog" aria-label="Close project workspace">×</button></div>
+    <div class="dialog-header"><div><span class="eyebrow">A LITTLE SPACE TO EXPERIMENT</span><h2 id="project-heading">Your Campus Chat</h2></div><button class="icon-button" data-close="project-dialog" aria-label="Close project workspace">×</button></div>
     <p class="workspace-note">This practice copy saves in this browser. Your VS Code files are separate. Download the HTML to move your work there.</p>
     <p class="workspace-message" id="workspace-status" role="status" aria-live="polite" hidden></p>
     <div class="workspace-toolbar"><span id="save-status" role="status" aria-live="polite">Saved on this browser</span><div><button class="outline-button" id="download-project">↓ Download index.html</button><button class="primary-button" id="run-preview">Run preview <span aria-hidden="true">▶</span></button></div></div>
@@ -70,8 +70,8 @@
       <div class="editor-pane"><label for="project-editor">index.html <span>HTML</span></label><textarea id="project-editor" spellcheck="false" maxlength="200000" aria-describedby="preview-limit"></textarea></div>
       <div class="preview-pane"><div class="preview-label">Your browser preview <span aria-hidden="true">◉</span></div><iframe id="project-preview" sandbox="allow-forms" title="Your project preview" referrerpolicy="no-referrer"></iframe></div>
     </div>
-    <p id="preview-limit" class="preview-limit">Safe preview: scripts, submissions, remote embeds, and local media paths are blocked. Use VS Code + Live Server for the full project and assets. No form in this course stores real signups.</p>
+    <p id="preview-limit" class="preview-limit">Safe preview: scripts, submissions, remote embeds, and local media paths are blocked. Use VS Code + Live Server for CSS/JavaScript and assets, then the Node server in the real-time module. Save additional files in VS Code; this workspace edits only HTML.</p>
   </dialog>
-  <noscript><div class="noscript">Enable JavaScript in your browser to use this local classroom. The course teaches HTML, but its interactive lesson interface uses JavaScript.</div></noscript>
+  <noscript><div class="noscript">Enable JavaScript in your browser to use this local classroom. The course teaches HTML, CSS, JavaScript, and server-backed chat.</div></noscript>
 </body>
 </html>

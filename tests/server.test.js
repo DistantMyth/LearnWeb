@@ -38,3 +38,23 @@ test('encoded traversal and malformed paths do not escape the public directory',
     assert.equal(status, 400);
   }
 }));
+
+test('final chat source files download as attachments through the read-only classroom', () => withServer(async base => {
+  for (const file of ['index.html', 'styles.css', 'chat.js', 'server.mjs']) {
+    const response = await fetch(`${base}/chat-final/${file}?download=1`);
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get('content-disposition'), `attachment; filename="${file}"`);
+    assert.ok((await response.text()).length > 100);
+  }
+}));
+
+test('full-stack downloads expose only allowlisted source files, never secrets or dependencies', () => withServer(async base => {
+  const { fullstackFiles } = await import('../public/content/fullstack-downloads.js');
+  for (const file of fullstackFiles) {
+    const response = await fetch(`${base}/fullstack-files/${file}`);
+    assert.equal(response.status, 200, file);
+    assert.equal(response.headers.get('content-disposition'), `attachment; filename="${file.split('/').at(-1)}"`);
+    assert.ok((await response.text()).length, file);
+  }
+  for (const file of ['.env', 'node_modules/express/package.json', 'dist/index.html', 'missing.mjs']) assert.equal((await fetch(`${base}/fullstack-files/${file}`)).status, 404, file);
+}));

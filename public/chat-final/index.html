@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="chat.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <nav class="navigation-rail" aria-label="Main navigation">
+      <strong class="brand-mark" aria-label="Campus Chat">C</strong>
+      <button id="toggle-sidebar" type="button" aria-controls="conversation-sidebar" aria-expanded="true" aria-label="Hide conversations" title="Toggle conversations">☰</button>
+      <a href="#messages" aria-label="Jump to messages" title="Messages">✉</a>
+      <span class="rail-spacer"></span>
+      <span class="avatar" aria-label="Your profile">You</span>
+    </nav>
+    <aside id="conversation-sidebar" class="conversation-sidebar" aria-label="Conversations">
+      <header class="sidebar-header"><h1>Campus Chat</h1><span class="local-tag">LOCAL</span></header>
+      <label class="search-label" for="conversation-search">Find a conversation</label>
+      <input id="conversation-search" type="search" placeholder="Search conversations">
+      <h2 class="list-heading">Conversations</h2>
+      <ul class="conversation-list">
+        <li id="general-conversation"><a class="conversation active" href="#message" aria-current="true"><span class="avatar" aria-hidden="true">CC</span><span><strong>General room</strong><small>Everyone on this server</small></span><span class="live-dot" aria-label="Live room"></span></a></li>
+      </ul>
+      <p id="search-empty" hidden>No matching conversations.</p>
+      <div class="sidebar-note"><strong>Your project, one step at a time.</strong><p>One shared room. Open another browser to start a conversation.</p><p>Recent messages disappear when the server restarts.</p></div>
+    </aside>
+    <main class="chat-pane">
+      <header class="chat-header"><span class="avatar" aria-hidden="true">CC</span><div><h2>General room</h2><p id="status" role="status">Connecting…</p></div><a class="room-info" href="#room-info">Room info</a></header>
+      <section class="thread" aria-label="Conversation thread">
+        <p class="thread-notice" id="room-info">A shared local room. Messages are visible to everyone using this server.</p>
+        <ol id="messages" role="log" aria-label="Messages" aria-live="polite" aria-relevant="additions" tabindex="0"></ol>
+      </section>
+      <form id="composer" class="composer">
+        <div class="name-field"><label for="name">Your name</label><input id="name" name="name" maxlength="30" required autocomplete="nickname" placeholder="Name"></div>
+        <div class="message-field"><label for="message">Message</label><input id="message" name="message" maxlength="500" required autocomplete="off" placeholder="Type a message"></div>
+        <button id="send" disabled>Send ↗</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,5 +1,76 @@
-// Campus Clubhouse HTML Curriculum: Forms and Media Content
-// Complete lessons for modules 'forms' and 'media', plus deferred HTML5 APIs
+export const deferredApis = [
+  {
+    "id": "html5-api-overview",
+    "title": "HTML5 browser APIs overview",
+    "intro": "Browser APIs are built-in tools that let web pages tap into advanced device features and live data. While HTML creates the content structure, using these APIs requires JavaScript to run logic and react to actions. You will learn to use these tools when you begin your JavaScript studies.",
+    "sources": [
+      "html5_api_whatis.asp"
+    ],
+    "prerequisite": "Complete JavaScript first",
+    "projectIdea": "Build live messages only after completing JavaScript, DOM, events, asynchronous requests, and the server lessons. HTML alone renders the transcript."
+  },
+  {
+    "id": "html5-geolocation",
+    "title": "Geolocation: Finding device location",
+    "intro": "The Geolocation API allows a web page to ask for your device's geographical coordinates like latitude and longitude. Because location is private, the browser always asks the user for permission before sharing anything. Reading those coordinates and placing a marker on a map requires JavaScript code.",
+    "sources": [
+      "html5_geolocation.asp"
+    ],
+    "prerequisite": "Complete JavaScript first",
+    "projectIdea": "Add an optional, consent-based location label to a chat profile after learning the API."
+  },
+  {
+    "id": "html5-drag-and-drop",
+    "title": "Drag and drop: Moving items on screen",
+    "intro": "HTML lets you mark an element as draggable by adding a simple attribute to it. However, deciding what information gets moved, allowing an area to accept the drop, and updating the page requires JavaScript. With scripting, you can turn draggable elements into smooth interactive widgets.",
+    "sources": [
+      "html5_draganddrop.asp"
+    ],
+    "prerequisite": "Complete JavaScript first",
+    "projectIdea": "Reorder favorite chat rooms with drag and drop after learning events and DOM updates; provide buttons for keyboard users."
+  },
+  {
+    "id": "html5-popover-api",
+    "title": "Popover: Simple overlays and popups",
+    "intro": "The Popover API creates small overlays such as menus and information cards. Some popovers can be opened using only HTML attributes; JavaScript adds programmatic controls and events. We intentionally keep this whole API topic until after JavaScript, when you can learn both approaches together.",
+    "sources": [
+      "html5_popover.asp"
+    ],
+    "prerequisite": "Complete JavaScript first",
+    "projectIdea": "Show a chat member profile in a native popover."
+  },
+  {
+    "id": "html5-web-storage",
+    "title": "Web storage: Saving info in the browser",
+    "intro": "Web storage lets websites save small pieces of information directly inside your web browser so they stay saved between visits. Tools like localStorage keep your saved settings even after you close the tab. Saving, reading, and clearing this stored data requires JavaScript functions.",
+    "sources": [
+      "html5_webstorage.asp"
+    ],
+    "prerequisite": "Complete JavaScript first",
+    "projectIdea": "Remember a draft message and a theme preference on this device; never use localStorage as shared message transport."
+  },
+  {
+    "id": "html5-web-workers",
+    "title": "Web workers: Running tasks in the background",
+    "intro": "Normally, a web browser runs all page scripts and visual updates on a single main thread. Web workers let you run heavy background calculations in a separate thread so the page never freezes or lags. Starting workers and sending messages between them is handled entirely with JavaScript.",
+    "sources": [
+      "html5_webworkers.asp"
+    ],
+    "prerequisite": "Complete JavaScript first",
+    "projectIdea": "Calculate attendance stats and filter hundreds of Campus Chat activity records in the background without slowing down the page."
+  },
+  {
+    "id": "html5-server-sent-events",
+    "title": "Server-sent events: Live updates from a server",
+    "intro": "Server-sent events let a web server push fresh updates to a web page automatically without the page having to reload. This is great for live sports scores, election counts, or real-time news feeds. Listening for new incoming messages and displaying them on the screen requires JavaScript.",
+    "sources": [
+      "html5_serversentevents.asp",
+      "html5_serversentevents.asp"
+    ],
+    "prerequisite": "Complete JavaScript first",
+    "projectIdea": "Receive a live message stream from the chat server; send messages separately with a POST request."
+  }
+];
 
 export const formsMedia = [
   {
@@ -15,7 +86,7 @@ export const formsMedia = [
       },
       {
         "term": "action",
-        "description": "The address that receives the form data. If action is empty or missing, submission uses the current page URL with the form’s method (GET by default). Our static project has no signup handler, so a POST attempt may show an unsupported-method error."
+        "description": "The address that receives the form data. If action is empty or missing, submission uses the current page URL with the form’s method (GET by default). Our static project has no profile submission handler, so a POST attempt may show an unsupported-method error."
       },
       {
         "term": "method (GET vs POST)",
@@ -23,7 +94,7 @@ export const formsMedia = [
       },
       {
         "term": "No backend in this course",
-        "description": "Without a web server program, clicking submit only tests browser behavior and cannot store real member signups."
+        "description": "Without a web server program, clicking submit only tests browser behavior and cannot store real member profile submissions."
       },
       {
         "term": "autocomplete and novalidate",
@@ -36,15 +107,19 @@ export const formsMedia = [
       {
         "term": "enctype",
         "description": "Chooses how POST data is packaged. application/x-www-form-urlencoded is the default for text fields; multipart/form-data is needed for file uploads; text/plain is unstructured text, mostly useful for debugging."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<section id=\"club-form-section\">\n  <h2>Join the Campus Club</h2>\n  <p class=\"demo-notice\">Practice only: use made-up details. No signup handler saves this form.</p>\n  <form id=\"club-form\" action=\"#\" method=\"POST\" autocomplete=\"on\">\n    <p>Try how a local form works. An unsupported-method error is expected without a backend.</p>\n    <button type=\"submit\">Try form submission</button>\n  </form>\n</section>",
-    "task": "Add a club sign-up section to index.html with a <form> container and submit button.",
+    "example": "<section id=\"chat-form-section\">\n  <h2>Your Campus Chat profile</h2>\n  <p class=\"demo-notice\">Practice only: use made-up details. No profile submission handler saves this form.</p>\n  <form id=\"chat-form\" action=\"#\" method=\"POST\" autocomplete=\"on\">\n    <p>Try how a local form works. An unsupported-method error is expected without a backend.</p>\n    <button type=\"submit\">Try form submission</button>\n  </form>\n</section>",
+    "task": "Add a chat profile preferences section to index.html with a <form> container and submit button.",
     "steps": [
-      "Locate the main area of index.html and add a <section id=\"club-form-section\"> if it is not already present.",
+      "Locate the main area of index.html and add a <section id=\"chat-form-section\"> if it is not already present.",
       "Add a helpful heading and demo notice paragraph explaining that this is a practice demo.",
-      'Create a <form id="club-form"> with action="#", method="POST", and autocomplete="on". If a signup form already exists, give it this ID instead of adding another form.',
-      "Add a description and <button type=\"submit\"> inside the form. Use made-up details only. This static site cannot handle POST requests, so an unsupported-method error is expected on submission; no real signup is created."
+      "Create a <form id=\"chat-form\"> with action=\"#\", method=\"POST\", and autocomplete=\"on\". If a profile submission form already exists, give it this ID instead of adding another form.",
+      "Add a description and <button type=\"submit\"> inside the form. Use made-up details only. This static site cannot handle POST requests, so an unsupported-method error is expected on submission; no real profile submission is created."
     ],
     "check": {
       "question": "What does setting method=\"POST\" do on a form?",
@@ -58,11 +133,14 @@ export const formsMedia = [
     },
     "sources": [
       "html_forms.asp",
-      "html_forms_attributes.asp"
+      "html_forms_attributes.asp",
+      "/html/html_exercise_embed.asp?topic=forms",
+      "/html/html_challenges_forms.asp",
+      "/html/html_exercise_embed.asp?topic=forms_attributes"
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"club-form-section\">\n  <h2>Join the Campus Club</h2>\n  <p class=\"demo-notice\">Note: This form is a student practice demo. It does not send real data or create live accounts.</p>\n  <form id=\"club-form\" action=\"#\" method=\"POST\" autocomplete=\"on\">\n    <p>Sign up to test form submission behavior in the browser.</p>\n    <button type=\"submit\" id=\"club-submit-btn\">Join Club</button>\n  </form>\n</section>"
+      "html": "<section id=\"chat-form-section\">\n  <h2>Your Campus Chat profile</h2>\n  <p class=\"demo-notice\">Note: This form is a student practice demo. It does not send real data or create live accounts.</p>\n  <form id=\"chat-form\" action=\"#\" method=\"POST\" autocomplete=\"on\">\n    <p>Sign up to test form submission behavior in the browser.</p>\n    <button type=\"submit\" id=\"chat-submit-btn\">Save demo profile</button>\n  </form>\n</section>"
     }
   },
   {
@@ -98,11 +176,11 @@ export const formsMedia = [
       }
     ],
     "example": "<p class=\"demo-notice\">Note: This form is a student practice demo. It does not send real data or create live accounts.</p>\n<div class=\"form-row\">\n  <label for=\"student-name\">Full Name:</label>\n  <input type=\"text\" id=\"student-name\" name=\"student_name\" placeholder=\"Alex Morgan\" required>\n</div>\n\n<div class=\"form-row\">\n  <label for=\"student-email\">Email Address:</label>\n  <input type=\"email\" id=\"student-email\" name=\"student_email\" placeholder=\"alex@campus.edu\" required>\n</div>\n\n<div class=\"form-row\">\n  <label for=\"student-pass\">Password:</label>\n  <input type=\"password\" id=\"student-pass\" name=\"student_pass\" required>\n</div>",
-    "task": "Add accessible text, email, password, phone, link, and search fields to the club form.",
+    "task": "Add accessible text, email, password, phone, link, and search fields to the chat community form.",
     "steps": [
-      "Inside <section id=\"club-form-section\">, locate the <form id=\"club-form\"> above the submit button.",
+      "Inside <section id=\"chat-form-section\">, locate the <form id=\"chat-form\"> above the submit button.",
       "Add input fields for Full Name (type=\"text\"), Email (type=\"email\"), and Password (type=\"password\").",
-      "Add inputs for Phone Number (type=\"tel\"), Personal Website (type=\"url\"), and Club Search (type=\"search\").",
+      "Add inputs for Phone Number (type=\"tel\"), Personal Website (type=\"url\"), and Chat Search (type=\"search\").",
       "Pair each input with a matching <label> using the for attribute and the input's unique id."
     ],
     "check": {
@@ -121,8 +199,8 @@ export const formsMedia = [
     ],
     "patch": {
       "target": "form",
-      "formId": "club-form",
-      "html": "<div class=\"form-row\">\n  <label for=\"member-name\">Full Name:</label>\n  <input type=\"text\" id=\"member-name\" name=\"member_name\" placeholder=\"Jordan Lee\" required>\n</div>\n<div class=\"form-row\">\n  <label for=\"member-email\">Campus Email:</label>\n  <input type=\"email\" id=\"member-email\" name=\"member_email\" placeholder=\"jordan@campus.edu\" required>\n</div>\n<div class=\"form-row\">\n  <label for=\"member-pass\">Club Password:</label>\n  <input type=\"password\" id=\"member-pass\" name=\"member_pass\" required>\n</div>\n<div class=\"form-row\">\n  <label for=\"member-phone\">Phone Number:</label>\n  <input type=\"tel\" id=\"member-phone\" name=\"member_phone\" placeholder=\"555-0199\">\n</div>\n<div class=\"form-row\">\n  <label for=\"member-website\">Personal Website:</label>\n  <input type=\"url\" id=\"member-website\" name=\"member_website\" placeholder=\"https://example.com\">\n</div>\n<div class=\"form-row\">\n  <label for=\"member-search\">Directory Search:</label>\n  <input type=\"search\" id=\"member-search\" name=\"member_search\" placeholder=\"Search activities...\">\n</div>"
+      "formId": "chat-form",
+      "html": "<div class=\"form-row\">\n  <label for=\"member-name\">Full Name:</label>\n  <input type=\"text\" id=\"member-name\" name=\"member_name\" placeholder=\"Jordan Lee\" required>\n</div>\n<div class=\"form-row\">\n  <label for=\"member-email\">Campus Email:</label>\n  <input type=\"email\" id=\"member-email\" name=\"member_email\" placeholder=\"jordan@campus.edu\" required>\n</div>\n<div class=\"form-row\">\n  <label for=\"member-pass\">Chat Password:</label>\n  <input type=\"password\" id=\"member-pass\" name=\"member_pass\" required>\n</div>\n<div class=\"form-row\">\n  <label for=\"member-phone\">Phone Number:</label>\n  <input type=\"tel\" id=\"member-phone\" name=\"member_phone\" placeholder=\"555-0199\">\n</div>\n<div class=\"form-row\">\n  <label for=\"member-website\">Personal Website:</label>\n  <input type=\"url\" id=\"member-website\" name=\"member_website\" placeholder=\"https://example.com\">\n</div>\n<div class=\"form-row\">\n  <label for=\"member-search\">Directory Search:</label>\n  <input type=\"search\" id=\"member-search\" name=\"member_search\" placeholder=\"Search activities...\">\n</div>"
     }
   },
   {
@@ -157,14 +235,14 @@ export const formsMedia = [
         "description": "Gives helpful typing suggestions while still letting visitors type their own answer."
       }
     ],
-    "example": "<p class=\"demo-notice\">Note: This form is a student practice demo. It does not send real data or create live accounts.</p>\n<div>\n  <p>Membership Tier (pick one):</p>\n  <input type=\"radio\" id=\"tier-basic\" name=\"tier\" value=\"basic\" checked>\n  <label for=\"tier-basic\">Standard Member</label>\n  <input type=\"radio\" id=\"tier-officer\" name=\"tier\" value=\"officer\">\n  <label for=\"tier-officer\">Club Officer</label>\n</div>\n\n<div>\n  <p>Interests (pick any):</p>\n  <input type=\"checkbox\" id=\"int-tech\" name=\"interests\" value=\"tech\">\n  <label for=\"int-tech\">Technology</label>\n  <input type=\"checkbox\" id=\"int-art\" name=\"interests\" value=\"art\">\n  <label for=\"int-art\">Creative Arts</label>\n</div>\n\n<div>\n  <label for=\"dept-select\">Department:</label>\n  <select id=\"dept-select\" name=\"department\">\n    <optgroup label=\"STEM\">\n      <option value=\"cs\">Computer Science</option>\n      <option value=\"math\">Mathematics</option>\n    </optgroup>\n    <optgroup label=\"Arts & Humanities\">\n      <option value=\"history\">History</option>\n      <option value=\"lit\">Literature</option>\n    </optgroup>\n  </select>\n</div>\n\n<div>\n  <label for=\"hall-choice\">Preferred Meeting Hall:</label>\n  <input type=\"text\" id=\"hall-choice\" name=\"meeting_hall\" list=\"hall-list\" placeholder=\"Type or pick a hall\">\n  <datalist id=\"hall-list\">\n    <option value=\"North Auditorium\">\n    <option value=\"Science Center Room 101\">\n    <option value=\"Library Study Room B\">\n  </datalist>\n</div>",
-    "task": "Add membership radio options, interest checkboxes, a categorized department dropdown, and meeting hall suggestions to the club form.",
+    "example": "<p class=\"demo-notice\">Note: This form is a student practice demo. It does not send real data or create live accounts.</p>\n<div>\n  <p>Notification Mode (pick one):</p>\n  <input type=\"radio\" id=\"tier-basic\" name=\"tier\" value=\"basic\" checked>\n  <label for=\"tier-basic\">All messages</label>\n  <input type=\"radio\" id=\"tier-moderator\" name=\"tier\" value=\"moderator\">\n  <label for=\"tier-moderator\">Mentions only</label>\n</div>\n\n<div>\n  <p>Interests (pick any):</p>\n  <input type=\"checkbox\" id=\"int-tech\" name=\"interests\" value=\"tech\">\n  <label for=\"int-tech\">Technology</label>\n  <input type=\"checkbox\" id=\"int-art\" name=\"interests\" value=\"art\">\n  <label for=\"int-art\">Creative Arts</label>\n</div>\n\n<div>\n  <label for=\"dept-select\">Department:</label>\n  <select id=\"dept-select\" name=\"department\">\n    <optgroup label=\"STEM\">\n      <option value=\"cs\">Computer Science</option>\n      <option value=\"math\">Mathematics</option>\n    </optgroup>\n    <optgroup label=\"Arts & Humanities\">\n      <option value=\"history\">History</option>\n      <option value=\"lit\">Literature</option>\n    </optgroup>\n  </select>\n</div>\n\n<div>\n  <label for=\"hall-choice\">Preferred Chat Room:</label>\n  <input type=\"text\" id=\"hall-choice\" name=\"meeting_hall\" list=\"hall-list\" placeholder=\"Type or pick a hall\">\n  <datalist id=\"hall-list\">\n    <option value=\"North Auditorium\">\n    <option value=\"Science Center Room 101\">\n    <option value=\"Library Study Room B\">\n  </datalist>\n</div>",
+    "task": "Add membership radio options, interest checkboxes, a categorized department dropdown, and chat room suggestions to the chat community form.",
     "steps": [
-      "Open <form id=\"club-form\"> in <section id=\"club-form-section\">.",
-      "Add radio buttons sharing name=\"tier\" so visitors can pick either General Member or Officer.",
-      "Add checkboxes for Club Activities (such as Coding or Workshops) with unique IDs and matching labels.",
+      "Open <form id=\"chat-form\"> in <section id=\"chat-form-section\">.",
+      "Add radio buttons sharing name=\"tier\" so visitors can pick either General Member or Moderator.",
+      "Add checkboxes for Room Interests (such as Coding or Chat rooms) with unique IDs and matching labels.",
       "Add a <select> element with <optgroup> headings separating STEM and Arts departments.",
-      "Add a text input connected with a list attribute to a <datalist> offering meeting hall suggestions."
+      "Add a text input connected with a list attribute to a <datalist> offering chat room suggestions."
     ],
     "check": {
       "question": "How do you make sure selecting one radio button unchecks the other radio buttons in the same group?",
@@ -182,8 +260,8 @@ export const formsMedia = [
     ],
     "patch": {
       "target": "form",
-      "formId": "club-form",
-      "html": "<div class=\"form-group\">\n  <p>Membership Tier:</p>\n  <input type=\"radio\" id=\"tier-general\" name=\"tier\" value=\"general\" checked>\n  <label for=\"tier-general\">General Member</label>\n  <input type=\"radio\" id=\"tier-lead\" name=\"tier\" value=\"lead\">\n  <label for=\"tier-lead\">Team Leader</label>\n</div>\n<div class=\"form-group\">\n  <p>Activities of Interest:</p>\n  <input type=\"checkbox\" id=\"act-workshops\" name=\"activities\" value=\"workshops\">\n  <label for=\"act-workshops\">Hands-on Workshops</label>\n  <input type=\"checkbox\" id=\"act-projects\" name=\"activities\" value=\"projects\">\n  <label for=\"act-projects\">Team Projects</label>\n</div>\n<div class=\"form-group\">\n  <label for=\"member-dept\">Department:</label>\n  <select id=\"member-dept\" name=\"department\">\n    <optgroup label=\"STEM\">\n      <option value=\"cs\">Computer Science</option>\n      <option value=\"eng\">Engineering</option>\n    </optgroup>\n    <optgroup label=\"Arts &amp; Humanities\">\n      <option value=\"design\">Digital Design</option>\n      <option value=\"writing\">Creative Writing</option>\n    </optgroup>\n  </select>\n</div>\n<div class=\"form-group\">\n  <label for=\"hall-suggest\">Preferred Meeting Hall:</label>\n  <input list=\"hall-list\" id=\"hall-suggest\" name=\"preferred_hall\" placeholder=\"Type or pick a venue...\">\n  <datalist id=\"hall-list\">\n    <option value=\"East Campus Commons\">\n    <option value=\"Pioneer Library Hall\">\n    <option value=\"Student Union Room 101\">\n  </datalist>\n</div>"
+      "formId": "chat-form",
+      "html": "<div class=\"form-group\">\n  <p>Notification Mode:</p>\n  <input type=\"radio\" id=\"tier-general\" name=\"tier\" value=\"general\" checked>\n  <label for=\"tier-general\">General Member</label>\n  <input type=\"radio\" id=\"tier-lead\" name=\"tier\" value=\"lead\">\n  <label for=\"tier-lead\">Team Leader</label>\n</div>\n<div class=\"form-group\">\n  <p>Activities of Interest:</p>\n  <input type=\"checkbox\" id=\"act-chat-rooms\" name=\"activities\" value=\"chat rooms\">\n  <label for=\"act-chat-rooms\">Hands-on Chat rooms</label>\n  <input type=\"checkbox\" id=\"act-projects\" name=\"activities\" value=\"projects\">\n  <label for=\"act-projects\">Team Projects</label>\n</div>\n<div class=\"form-group\">\n  <label for=\"member-dept\">Department:</label>\n  <select id=\"member-dept\" name=\"department\">\n    <optgroup label=\"STEM\">\n      <option value=\"cs\">Computer Science</option>\n      <option value=\"eng\">Engineering</option>\n    </optgroup>\n    <optgroup label=\"Arts &amp; Humanities\">\n      <option value=\"design\">Digital Design</option>\n      <option value=\"writing\">Creative Writing</option>\n    </optgroup>\n  </select>\n</div>\n<div class=\"form-group\">\n  <label for=\"hall-suggest\">Preferred Chat Room:</label>\n  <input list=\"hall-list\" id=\"hall-suggest\" name=\"preferred_hall\" placeholder=\"Type or pick a venue...\">\n  <datalist id=\"hall-list\">\n    <option value=\"East Campus Commons\">\n    <option value=\"Pioneer Library Hall\">\n    <option value=\"Student Union Room 101\">\n  </datalist>\n</div>"
     }
   },
   {
@@ -215,18 +293,22 @@ export const formsMedia = [
       },
       {
         "term": "<input type=\"hidden\">",
-        "description": "Holds secret or tracking data (like a club branch ID) that visitors do not need to see."
+        "description": "Holds non-visible metadata (like a chat branch ID) that visitors do not need to see."
       },
       {
         "term": "<output>",
         "description": "A spot reserved to display the result of a calculation."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<p class=\"demo-notice\">Note: This form is a student practice demo. It does not send real data or create live accounts.</p>\n<fieldset>\n  <legend>Club Member Feedback</legend>\n  <input type=\"hidden\" name=\"club_id\" value=\"CLUB-101\">\n\n  <label for=\"member-feedback\">Your Goals & Ideas:</label>\n  <textarea id=\"member-feedback\" name=\"feedback\" rows=\"4\" cols=\"40\" placeholder=\"Tell us what you want to learn...\"></textarea>\n\n  <div class=\"form-actions\">\n    <button type=\"submit\">Save Profile</button>\n    <button type=\"reset\">Reset Form</button>\n    <button type=\"button\">Preview Details</button>\n  </div>\n</fieldset>",
-    "task": "Organize the club form into fieldsets, and add a comment textarea, action buttons, and a hidden club ID.",
+    "example": "<p class=\"demo-notice\">Note: This form is a student practice demo. It does not send real data or create live accounts.</p>\n<fieldset>\n  <legend>Chat Member Feedback</legend>\n  <input type=\"hidden\" name=\"room_id\" value=\"GENERAL-101\">\n\n  <label for=\"member-feedback\">Your Goals & Ideas:</label>\n  <textarea id=\"member-feedback\" name=\"feedback\" rows=\"4\" cols=\"40\" placeholder=\"Tell us what you want to learn...\"></textarea>\n\n  <div class=\"form-actions\">\n    <button type=\"submit\">Save Profile</button>\n    <button type=\"reset\">Reset Form</button>\n    <button type=\"button\">Preview Details</button>\n  </div>\n</fieldset>",
+    "task": "Organize the chat community form into fieldsets, and add a comment textarea, action buttons, and a hidden chat ID.",
     "steps": [
-      "In <section id=\"club-form-section\">, wrap related sections of <form id=\"club-form\"> inside <fieldset> elements with descriptive <legend> titles.",
-      "Add an <input type=\"hidden\" name=\"club_id\" value=\"CLUB-MAIN-2026\"> to store club tracking info.",
+      "In <section id=\"chat-form-section\">, wrap related sections of <form id=\"chat-form\"> inside <fieldset> elements with descriptive <legend> titles.",
+      "Add an <input type=\"hidden\" name=\"room_id\" value=\"GENERAL-2026\"> to store chat tracking info.",
       "Add a <textarea id=\"member-bio\" name=\"bio\" rows=\"4\" cols=\"40\"> with an associated <label> for member notes.",
       "Add buttons for <button type=\"submit\">, <button type=\"reset\">, and <button type=\"button\"> to handle form actions."
     ],
@@ -242,12 +324,14 @@ export const formsMedia = [
     },
     "sources": [
       "html_form_elements.asp",
-      "html_form_input_types.asp"
+      "html_form_input_types.asp",
+      "/html/html_exercise_embed.asp?topic=form_elements",
+      "/html/html_challenges_form_elements.asp"
     ],
     "patch": {
       "target": "form",
-      "formId": "club-form",
-      "html": "<fieldset>\n  <legend>Member Goals &amp; Feedback</legend>\n  <input type=\"hidden\" id=\"club-branch-id\" name=\"branch_id\" value=\"CLUB-101\">\n  <div>\n    <label for=\"member-goals\">Your Goals &amp; Suggestions:</label>\n    <textarea id=\"member-goals\" name=\"goals\" rows=\"4\" cols=\"40\" placeholder=\"Share what workshops you would like to see...\"></textarea>\n  </div>\n  <div class=\"form-actions\">\n    <button type=\"reset\" id=\"club-reset-btn\">Reset Form</button>\n    <button type=\"button\" id=\"club-preview-btn\">Preview Info</button>\n  </div>\n</fieldset>"
+      "formId": "chat-form",
+      "html": "<fieldset>\n  <legend>Member Goals &amp; Feedback</legend>\n  <input type=\"hidden\" id=\"chat-branch-id\" name=\"branch_id\" value=\"GENERAL-101\">\n  <div>\n    <label for=\"member-goals\">Your Goals &amp; Suggestions:</label>\n    <textarea id=\"member-goals\" name=\"goals\" rows=\"4\" cols=\"40\" placeholder=\"Share what chat rooms you would like to see...\"></textarea>\n  </div>\n  <div class=\"form-actions\">\n    <button type=\"reset\" id=\"chat-reset-btn\">Reset Form</button>\n    <button type=\"button\" id=\"chat-preview-btn\">Preview Info</button>\n  </div>\n</fieldset>"
     }
   },
   {
@@ -280,28 +364,16 @@ export const formsMedia = [
       {
         "term": "type=\"image\"",
         "description": "Uses an image as a clickable submit button and sends the exact coordinates where the user clicked."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": `<!-- Keep your existing form. Add enctype="multipart/form-data" to its opening tag. -->
-<!-- Insert these NEW controls inside that same form. Use made-up details only. -->
-<fieldset>
-  <legend>Event options</legend>
-  <label for="event-guests">Guests (1 to 6):</label>
-  <input type="number" id="event-guests" name="guests" min="1" max="6" value="1">
-  <label for="event-enthusiasm">Excitement (1 to 10):</label>
-  <input type="range" id="event-enthusiasm" name="enthusiasm" min="1" max="10" value="8">
-  <label for="badge-color">Badge color:</label>
-  <input type="color" id="badge-color" name="badge_color" value="#059669">
-  <label for="session-date">Event date:</label>
-  <input type="date" id="session-date" name="session_date">
-  <label for="session-time">Event time:</label>
-  <input type="time" id="session-time" name="session_time">
-  <label for="member-avatar">A practice image file:</label>
-  <input type="file" id="member-avatar" name="avatar" accept="image/*">
-</fieldset>`,
-    "task": "Add an event options section to the club form with a guest count box, excitement slider, badge color picker, event date, and photo upload field.",
+    "example": "<!-- Keep your existing form. Add enctype=\"multipart/form-data\" to its opening tag. -->\n<!-- Insert these NEW controls inside that same form. Use made-up details only. -->\n<fieldset>\n  <legend>Event options</legend>\n  <label for=\"event-guests\">Guests (1 to 6):</label>\n  <input type=\"number\" id=\"event-guests\" name=\"guests\" min=\"1\" max=\"6\" value=\"1\">\n  <label for=\"event-enthusiasm\">Excitement (1 to 10):</label>\n  <input type=\"range\" id=\"event-enthusiasm\" name=\"enthusiasm\" min=\"1\" max=\"10\" value=\"8\">\n  <label for=\"badge-color\">Badge color:</label>\n  <input type=\"color\" id=\"badge-color\" name=\"badge_color\" value=\"#059669\">\n  <label for=\"session-date\">Event date:</label>\n  <input type=\"date\" id=\"session-date\" name=\"session_date\">\n  <label for=\"session-time\">Event time:</label>\n  <input type=\"time\" id=\"session-time\" name=\"session_time\">\n  <label for=\"member-avatar\">A practice image file:</label>\n  <input type=\"file\" id=\"member-avatar\" name=\"avatar\" accept=\"image/*\">\n</fieldset>",
+    "task": "Add an event options section to the chat community form with a guest count box, excitement slider, badge color picker, event date, and photo upload field.",
     "steps": [
-      "Find the club form inside <section id=\"club-form-section\"> in index.html (or create this section in <body> if not present yet).",
+      "Find the chat community form inside <section id=\"chat-form-section\"> in index.html (or create this section in <body> if not present yet).",
       "Make sure the form tag includes enctype=\"multipart/form-data\" so attached files can be sent.",
       "Add a number input with id=\"guest-count\" (min=\"1\" and max=\"6\") and a range slider with id=\"excitement-level\".",
       "Add a color picker with id=\"badge-color\" and a date picker with id=\"event-date\".",
@@ -318,11 +390,13 @@ export const formsMedia = [
       "explanation": "An input with type=\"image\" acts as a graphical submit button. When clicked, it submits the form and sends the x and y pixel position of the click."
     },
     "sources": [
-      "html_form_input_types.asp"
+      "html_form_input_types.asp",
+      "/html/html_exercise_embed.asp?topic=form_input_types",
+      "/html/html_challenges_input_types.asp"
     ],
     "patch": {
       "target": "form",
-      "formId": "club-form",
+      "formId": "chat-form",
       "html": "<fieldset>\n  <legend>Event Options &amp; Preferences</legend>\n  <div>\n    <label for=\"event-guests\">Expected Guests (1 to 6):</label>\n    <input type=\"number\" id=\"event-guests\" name=\"guests\" min=\"1\" max=\"6\" value=\"1\">\n  </div>\n  <div>\n    <label for=\"event-enthusiasm\">Excitement Level (1 to 10):</label>\n    <input type=\"range\" id=\"event-enthusiasm\" name=\"enthusiasm\" min=\"1\" max=\"10\" value=\"8\">\n  </div>\n  <div>\n    <label for=\"badge-color\">Custom Badge Color:</label>\n    <input type=\"color\" id=\"badge-color\" name=\"badge_color\" value=\"#059669\">\n  </div>\n  <div>\n    <label for=\"session-date\">Preferred Session Date:</label>\n    <input type=\"date\" id=\"session-date\" name=\"session_date\">\n  </div>\n  <div>\n    <label for=\"session-time\">Preferred Session Time:</label>\n    <input type=\"time\" id=\"session-time\" name=\"session_time\">\n  </div>\n  <div>\n    <label for=\"member-avatar\">Profile Photo (PNG or JPEG):</label>\n    <input type=\"file\" id=\"member-avatar\" name=\"avatar\" accept=\"image/png, image/jpeg\">\n  </div>\n</fieldset>"
     }
   },
@@ -356,26 +430,16 @@ export const formsMedia = [
       {
         "term": "autofocus and multiple",
         "description": "The autofocus attribute places the cursor in a field as soon as the page opens. The multiple attribute lets visitors select more than one email address or file at once."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": `<!-- EDIT your existing name input; do not add a second one. -->
-<label for="member-name">Full name:</label>
-<input type="text" id="member-name" name="member_name" required
-       placeholder="Use a made-up name" maxlength="60">
-
-<!-- NEW controls to insert inside your existing club-form. -->
-<label for="student-card-id">Practice student ID (8 digits):</label>
-<input type="text" id="student-card-id" name="student_id" required
-       pattern="[0-9]{8}" title="Enter exactly 8 digits" placeholder="12345678">
-<label for="school-term">Membership term:</label>
-<input type="text" id="school-term" name="term" value="Fall 2026" readonly>
-
-<!-- Add maxlength="140" to the existing member-goals textarea.
-     A placeholder is a hint, not a replacement for a visible label.
-     Try disabled, then readonly, and compare their submission behavior. -->`,
-    "task": "Add helpful validation rules to your club signup form, including required fields, an 8-digit student ID pattern, a readonly term box, and character limits.",
+    "example": "<!-- EDIT your existing name input; do not add a second one. -->\n<label for=\"member-name\">Full name:</label>\n<input type=\"text\" id=\"member-name\" name=\"member_name\" required\n       placeholder=\"Use a made-up name\" maxlength=\"60\">\n\n<!-- NEW controls to insert inside your existing chat-form. -->\n<label for=\"student-card-id\">Practice student ID (8 digits):</label>\n<input type=\"text\" id=\"student-card-id\" name=\"student_id\" required\n       pattern=\"[0-9]{8}\" title=\"Enter exactly 8 digits\" placeholder=\"12345678\">\n<label for=\"school-term\">Membership term:</label>\n<input type=\"text\" id=\"school-term\" name=\"term\" value=\"Fall 2026\" readonly>\n\n<!-- Add maxlength=\"140\" to the existing member-goals textarea.\n     A placeholder is a hint, not a replacement for a visible label.\n     Try disabled, then readonly, and compare their submission behavior. -->",
+    "task": "Add helpful validation rules to your chat community profile submission form, including required fields, an 8-digit student ID pattern, a readonly term box, and character limits.",
     "steps": [
-      "Locate your club form inside <section id=\"club-form-section\"> in index.html (or create this section in <body> if not present yet).",
+      "Locate your chat community form inside <section id=\"chat-form-section\"> in index.html (or create this section in <body> if not present yet).",
       "Add the required attribute to the student name field so it cannot be left blank.",
       "Add a student ID input with pattern=\"[0-9]{8}\" and title=\"Please enter your 8-digit student ID number\" to guide correct entry.",
       "Add a readonly input with name=\"term\" and value=\"Fall 2026\" so the term information is submitted without being changed.",
@@ -392,7 +456,8 @@ export const formsMedia = [
       "explanation": "Readonly inputs let visitors see and copy text, and their name and value are included when the form is submitted. Disabled inputs are grayed out and their values are not submitted at all."
     },
     "sources": [
-      "html_form_attributes.asp"
+      "html_form_attributes.asp",
+      "/html/html_exercise_embed.asp?topic=form_attributes"
     ]
   },
   {
@@ -421,26 +486,20 @@ export const formsMedia = [
       {
         "term": "The form attribute",
         "description": "Links an input or button anywhere on the page to a form by matching the form id, even if the element is placed outside the form tag."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": `<!-- INSIDE your existing form id="club-form": add a second action. -->
-<!-- A real draft-saving address would need a backend; ours is a demo. -->
-<button type="submit" formaction="#save-draft" formnovalidate
-        formmethod="post" formenctype="application/x-www-form-urlencoded"
-        formtarget="_blank">
-  Try draft submission
-</button>
-
-<!-- OUTSIDE the form, inside your EXISTING footer: -->
-<button type="submit" form="club-form">Submit from the footer</button>
-<!-- No new section, form, or footer wrapper is needed. -->`,
-    "task": "Add a draft button that skips required validation, and connect an external submit button located in the page footer to the club form using the form attribute.",
+    "example": "<!-- INSIDE your existing form id=\"chat-form\": add a second action. -->\n<!-- A real draft-saving address would need a backend; ours is a demo. -->\n<button type=\"submit\" formaction=\"#save-draft\" formnovalidate\n        formmethod=\"post\" formenctype=\"application/x-www-form-urlencoded\"\n        formtarget=\"_blank\">\n  Try draft submission\n</button>\n\n<!-- OUTSIDE the form, inside your EXISTING footer: -->\n<button type=\"submit\" form=\"chat-form\">Submit from the footer</button>\n<!-- No new section, form, or footer wrapper is needed. -->",
+    "task": "Add a draft button that skips required validation, and connect an external submit button located in the page footer to the chat community form using the form attribute.",
     "steps": [
-      "Locate the form in <section id=\"club-form-section\"> in index.html (or create this section in <body> if not present yet) and ensure it has id=\"club-form\".",
+      "Locate the form in <section id=\"chat-form-section\"> in index.html (or create this section in <body> if not present yet) and ensure it has id=\"chat-form\".",
       "Make sure at least one field inside the form has the required attribute so validation is active.",
       "Add a second submit button labeled \"Save Draft for Later\" with formaction=\"#save-draft\" and formnovalidate.",
       "Add formtarget=\"_blank\" to the draft button so draft results open in a fresh tab.",
-      "Place a button outside the form in the page footer with form=\"club-form\" to confirm it submits the form from anywhere."
+      "Place a button outside the form in the page footer with form=\"chat-form\" to confirm it submits the form from anywhere."
     ],
     "check": {
       "question": "Why would a developer add the formnovalidate attribute to a submit button?",
@@ -453,11 +512,12 @@ export const formsMedia = [
       "explanation": "The formnovalidate attribute tells the browser to skip client-side validation for that button click. This is great for \"Save Draft\" buttons so users can save partial work without filling out every required field first."
     },
     "sources": [
-      "html_form_attributes_form.asp"
+      "html_form_attributes_form.asp",
+      "/html/html_exercise_embed.asp?topic=form_attributes_form"
     ],
     "patch": {
       "target": "form",
-      "formId": "club-form",
+      "formId": "chat-form",
       "html": "<div class=\"draft-actions\">\n  <button type=\"submit\" id=\"btn-save-draft\" formaction=\"#save-draft\" formnovalidate formtarget=\"_blank\">Save Draft for Later</button>\n</div>"
     }
   },
@@ -491,12 +551,16 @@ export const formsMedia = [
       {
         "term": "Fallback text",
         "description": "A friendly download link inside the audio tag for older devices that cannot play web audio."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<section id=\"club-podcast-section\">\n  <h3>Club Weekly Podcast</h3>\n  <audio controls preload=\"metadata\">\n    <source src=\"media/podcast.mp3\" type=\"audio/mpeg\">\n    <source src=\"media/podcast.ogg\" type=\"audio/ogg\">\n    <p>Your browser does not support audio playback. <a href=\"media/podcast.mp3\">Download the episode</a>.</p>\n  </audio>\n</section>",
-    "task": "Add an audio player to your club page so visitors can listen to a club podcast with playback controls and a download backup.",
+    "example": "<section id=\"chat-podcast-section\">\n  <h3>Chat Weekly Podcast</h3>\n  <audio controls preload=\"metadata\">\n    <source src=\"media/podcast.mp3\" type=\"audio/mpeg\">\n    <source src=\"media/podcast.ogg\" type=\"audio/ogg\">\n    <p>Your browser does not support audio playback. <a href=\"media/podcast.mp3\">Download the episode</a>.</p>\n  </audio>\n</section>",
+    "task": "Add an audio player to your chat community page so visitors can listen to a chat podcast with playback controls and a download backup.",
     "steps": [
-      "Find the main area in index.html where you want to add club audio.",
+      "Find the main area in index.html where you want to add chat audio.",
       "Add an <audio> element with the controls and preload=\"metadata\" attributes.",
       "Add two <source> tags inside the audio player for MP3 and OGG audio files.",
       "Include a fallback paragraph with a direct link to download the audio file."
@@ -513,11 +577,12 @@ export const formsMedia = [
     },
     "sources": [
       "html_media.asp",
-      "html5_audio.asp"
+      "html5_audio.asp",
+      "/html/html_challenges_audio.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"clubhouse-podcast\" aria-labelledby=\"podcast-title\">\n  <h3 id=\"podcast-title\">Clubhouse Audio Dispatch</h3>\n  <audio id=\"clubhouse-audio-player\" controls preload=\"metadata\">\n    <source src=\"audio/clubhouse-weekly.mp3\" type=\"audio/mpeg\">\n    <source src=\"audio/clubhouse-weekly.ogg\" type=\"audio/ogg\">\n    <p>Your browser does not support the audio element. <a href=\"audio/clubhouse-weekly.mp3\">Download the clubhouse audio broadcast</a>.</p>\n  </audio>\n</section>"
+      "html": "<section id=\"chat-podcast\" aria-labelledby=\"podcast-title\">\n  <h3 id=\"podcast-title\">Chat Audio Dispatch</h3>\n  <audio id=\"chat-audio-player\" controls preload=\"metadata\">\n    <source src=\"audio/chat-weekly.mp3\" type=\"audio/mpeg\">\n    <source src=\"audio/chat-weekly.ogg\" type=\"audio/ogg\">\n    <p>Your browser does not support the audio element. <a href=\"audio/chat-weekly.mp3\">Download the chat audio broadcast</a>.</p>\n  </audio>\n</section>"
     }
   },
   {
@@ -550,9 +615,13 @@ export const formsMedia = [
       {
         "term": "Autoplay rules",
         "description": "Videos can only play automatically if they are muted, saving mobile data and avoiding loud surprises."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<section id=\"club-video-section\">\n  <h3>Welcome Tour</h3>\n  <video controls width=\"640\" height=\"360\" poster=\"images/tour-preview.jpg\" preload=\"metadata\">\n    <source src=\"videos/tour.webm\" type=\"video/webm\">\n    <source src=\"videos/tour.mp4\" type=\"video/mp4\">\n    <track kind=\"captions\" src=\"captions/tour-en.vtt\" srclang=\"en\" label=\"English\" default>\n    <p>Your browser cannot play this video. <a href=\"videos/tour.mp4\">Download the tour video</a>.</p>\n  </video>\n</section>",
+    "example": "<section id=\"chat-video-section\">\n  <h3>Welcome Tour</h3>\n  <video controls width=\"640\" height=\"360\" poster=\"images/tour-preview.jpg\" preload=\"metadata\">\n    <source src=\"videos/tour.webm\" type=\"video/webm\">\n    <source src=\"videos/tour.mp4\" type=\"video/mp4\">\n    <track kind=\"captions\" src=\"captions/tour-en.vtt\" srclang=\"en\" label=\"English\" default>\n    <p>Your browser cannot play this video. <a href=\"videos/tour.mp4\">Download the tour video</a>.</p>\n  </video>\n</section>",
     "task": "Add a video clip with controls, width and height dimensions, a poster photo, and an English captions track to your page.",
     "steps": [
       "Find the media section in your index.html page.",
@@ -573,11 +642,12 @@ export const formsMedia = [
     },
     "sources": [
       "html_media.asp",
-      "html5_video.asp"
+      "html5_video.asp",
+      "/html/html_challenges_video.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"clubhouse-tour\" aria-labelledby=\"tour-heading\">\n  <h3 id=\"tour-heading\">Campus Clubhouse Virtual Tour</h3>\n  <video id=\"clubhouse-video-player\" controls width=\"640\" height=\"360\" poster=\"images/clubhouse-poster.jpg\" preload=\"metadata\">\n    <source src=\"media/clubhouse-tour.webm\" type=\"video/webm\">\n    <source src=\"media/clubhouse-tour.mp4\" type=\"video/mp4\">\n    <track kind=\"captions\" src=\"captions/tour-en.vtt\" srclang=\"en\" label=\"English\" default>\n    <p>Your browser does not support native video. <a href=\"media/clubhouse-tour.mp4\">Download the tour video</a>.</p>\n  </video>\n</section>"
+      "html": "<section id=\"chat-tour\" aria-labelledby=\"tour-heading\">\n  <h3 id=\"tour-heading\">Campus Chat Virtual Tour</h3>\n  <video id=\"chat-video-player\" controls width=\"640\" height=\"360\" poster=\"images/chat-poster.jpg\" preload=\"metadata\">\n    <source src=\"media/chat-tour.webm\" type=\"video/webm\">\n    <source src=\"media/chat-tour.mp4\" type=\"video/mp4\">\n    <track kind=\"captions\" src=\"captions/tour-en.vtt\" srclang=\"en\" label=\"English\" default>\n    <p>Your browser does not support native video. <a href=\"media/chat-tour.mp4\">Download the tour video</a>.</p>\n  </video>\n</section>"
     }
   },
   {
@@ -606,16 +676,20 @@ export const formsMedia = [
       {
         "term": "Accessibility with <title> and <desc>",
         "description": "Gives screen readers a clear spoken description of what the graphic shows."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<svg viewBox=\"0 0 100 100\" width=\"120\" height=\"120\" role=\"img\" aria-labelledby=\"crest-title crest-desc\">\n  <title id=\"crest-title\">Club Logo</title>\n  <desc id=\"crest-desc\">A gold circular badge with a dark blue star in the center.</desc>\n  <circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#facc15\" stroke=\"#1e3a8a\" stroke-width=\"4\" />\n  <polygon points=\"50,15 61,38 86,38 66,54 73,78 50,62 27,78 34,54 14,38 39,38\" fill=\"#1e3a8a\" />\n</svg>",
-    "task": "Draw a sharp vector club badge directly in HTML using SVG shapes, custom colors, and accessible text descriptions.",
+    "example": "<svg viewBox=\"0 0 100 100\" width=\"120\" height=\"120\" role=\"img\" aria-labelledby=\"crest-title crest-desc\">\n  <title id=\"crest-title\">Chat Logo</title>\n  <desc id=\"crest-desc\">A gold circular badge with a dark blue star in the center.</desc>\n  <circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#facc15\" stroke=\"#1e3a8a\" stroke-width=\"4\" />\n  <polygon points=\"50,15 61,38 86,38 66,54 73,78 50,62 27,78 34,54 14,38 39,38\" fill=\"#1e3a8a\" />\n</svg>",
+    "task": "Draw a sharp vector chat badge directly in HTML using SVG shapes, custom colors, and accessible text descriptions.",
     "steps": [
-      "Open index.html and locate your club branding or header area.",
+      "Open index.html and locate your chat community branding or header area.",
       "Add an <svg> tag with viewBox=\"0 0 100 100\", width=\"100\", and height=\"100\".",
       "Add <title> and <desc> elements inside the SVG so screen readers can explain the graphic.",
       "Draw a round background using the <circle> tag with cx, cy, r, fill, and stroke attributes.",
-      "Add a shape like a <rect> or <polygon> in the center to complete your club emblem."
+      "Add a shape like a <rect> or <polygon> in the center to complete your chat community emblem."
     ],
     "check": {
       "question": "Why do SVG images remain crisp and clear when zoomed in, unlike PNG or JPG images?",
@@ -628,11 +702,12 @@ export const formsMedia = [
       "explanation": "Because SVG drawings use mathematical coordinates and lines, the browser recalculates the picture at any size with perfect sharpness."
     },
     "sources": [
-      "html5_svg.asp"
+      "html5_svg.asp",
+      "/html/html_challenges_svg.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<div id=\"club-brand-badge\" class=\"clubhouse-brand-badge\">\n  <svg id=\"club-brand-svg\" viewBox=\"0 0 100 100\" width=\"80\" height=\"80\" role=\"img\" aria-labelledby=\"badge-title badge-desc\">\n    <title id=\"badge-title\">Clubhouse Official Badge</title>\n    <desc id=\"badge-desc\">Gold circular crest with navy club monogram</desc>\n    <circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"4\" />\n    <rect x=\"25\" y=\"25\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#0f172a\" />\n    <text x=\"50\" y=\"58\" font-size=\"24\" font-family=\"sans-serif\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">CC</text>\n  </svg>\n</div>"
+      "html": "<div id=\"chat-brand-badge\" class=\"chat-brand-badge\">\n  <svg id=\"chat-brand-svg\" viewBox=\"0 0 100 100\" width=\"80\" height=\"80\" role=\"img\" aria-labelledby=\"badge-title badge-desc\">\n    <title id=\"badge-title\">Chat Official Badge</title>\n    <desc id=\"badge-desc\">Gold circular crest with navy chat monogram</desc>\n    <circle cx=\"50\" cy=\"50\" r=\"46\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"4\" />\n    <rect x=\"25\" y=\"25\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#0f172a\" />\n    <text x=\"50\" y=\"58\" font-size=\"24\" font-family=\"sans-serif\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">CC</text>\n  </svg>\n</div>"
     }
   },
   {
@@ -640,7 +715,7 @@ export const formsMedia = [
     "module": "media",
     "title": "The canvas drawing surface",
     "minutes": 12,
-    "intro": "The canvas tag creates a blank rectangular space on your page for drawing graphics, charts, and animations. In HTML, canvas is just an empty container with a set width and height, plus fallback text for older devices. Drawing actual shapes and games on that canvas requires JavaScript, which you will learn in the next course.",
+    "intro": "The canvas tag creates a blank rectangular space on your page for drawing graphics, charts, and animations. In HTML, canvas is just an empty container with a set width and height, plus fallback text for older devices. Drawing actual shapes and games on that canvas requires JavaScript, which you will learn in the JavaScript track later in this course.",
     "concepts": [
       {
         "term": "<canvas> tag",
@@ -657,15 +732,13 @@ export const formsMedia = [
       {
         "term": "JavaScript handles the drawing",
         "description": "HTML sets up the canvas box; JavaScript commands actually draw the lines, colors, and game elements later."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": `<section id="club-scoreboard-section">
-  <h3>Club drawing board</h3>
-  <p>This surface stays blank until we add JavaScript drawing after the JavaScript course.</p>
-  <canvas id="game-scoreboard" width="500" height="250" role="img" aria-label="Blank practice drawing surface">
-    <p>Your browser cannot display canvas. This is an empty practice drawing surface.</p>
-  </canvas>
-</section>`,
+    "example": "<section id=\"chat-scoreboard-section\">\n  <h3>Chat drawing board</h3>\n  <p>This surface stays blank until we add JavaScript drawing after the JavaScript course.</p>\n  <canvas id=\"game-scoreboard\" width=\"500\" height=\"250\" role=\"img\" aria-label=\"Blank practice drawing surface\">\n    <p>Your browser cannot display canvas. This is an empty practice drawing surface.</p>\n  </canvas>\n</section>",
     "task": "Add a blank <canvas> surface to your page with explicit pixel dimensions and accessible fallback text describing the board.",
     "steps": [
       "Find the games or activities section in index.html.",
@@ -684,17 +757,12 @@ export const formsMedia = [
       "explanation": "HTML width and height define the actual pixel count of the drawing board. CSS only stretches the surface, making drawings look distorted."
     },
     "sources": [
-      "html5_canvas.asp"
+      "html5_canvas.asp",
+      "/html/html_challenges_canvas.asp"
     ],
     "patch": {
       "target": "body",
-      "html": `<section id="clubhouse-game-arena" aria-labelledby="arena-heading">
-  <h3 id="arena-heading">Club drawing board</h3>
-  <p>This canvas stays blank until we learn JavaScript drawing. Its HTML sets up only the surface.</p>
-  <canvas id="arena-stage" width="480" height="240" role="img" aria-label="Blank club practice drawing surface">
-    <p>Your browser cannot display canvas. This is an empty practice drawing surface.</p>
-  </canvas>
-</section>`
+      "html": "<section id=\"chat-game-arena\" aria-labelledby=\"arena-heading\">\n  <h3 id=\"arena-heading\">Chat drawing board</h3>\n  <p>This canvas stays blank until we learn JavaScript drawing. Its HTML sets up only the surface.</p>\n  <canvas id=\"arena-stage\" width=\"480\" height=\"240\" role=\"img\" aria-label=\"Blank chat practice drawing surface\">\n    <p>Your browser cannot display canvas. This is an empty practice drawing surface.</p>\n  </canvas>\n</section>"
     }
   },
   {
@@ -725,11 +793,11 @@ export const formsMedia = [
         "description": "Iframes are usually used for other web pages, while objects are great for media files and PDFs."
       }
     ],
-    "example": "<section id=\"club-docs-section\">\n  <h3>Club Constitution</h3>\n  <object data=\"docs/club-constitution.pdf\" type=\"application/pdf\" width=\"100%\" height=\"400\">\n    <p>Your device cannot display this PDF directly. <a href=\"docs/club-constitution.pdf\">Download the Club Constitution (PDF)</a>.</p>\n  </object>\n</section>",
-    "task": "Embed the club constitution PDF using an <object> element and provide a direct download link if a visitor's device cannot display PDFs.",
+    "example": "<section id=\"chat-docs-section\">\n  <h3>Chat Constitution</h3>\n  <object data=\"docs/chat-constitution.pdf\" type=\"application/pdf\" width=\"100%\" height=\"400\">\n    <p>Your device cannot display this PDF directly. <a href=\"docs/chat-constitution.pdf\">Download the Chat Constitution (PDF)</a>.</p>\n  </object>\n</section>",
+    "task": "Embed the chat community constitution PDF using an <object> element and provide a direct download link if a visitor's device cannot display PDFs.",
     "steps": [
       "Locate the documents or information section in index.html.",
-      "Add an <object> element with data=\"docs/club-rules.pdf\" and type=\"application/pdf\".",
+      "Add an <object> element with data=\"docs/chat-rules.pdf\" and type=\"application/pdf\".",
       "Set width=\"100%\" and height=\"400\" on the object tag.",
       "Add a fallback paragraph inside the object tag containing a download link."
     ],
@@ -748,7 +816,7 @@ export const formsMedia = [
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"clubhouse-governance\" aria-labelledby=\"bylaws-heading\">\n  <h3 id=\"bylaws-heading\">Clubhouse Charter &amp; Bylaws</h3>\n  <object id=\"clubhouse-rules-doc\" data=\"docs/campus-clubhouse-rules.pdf\" type=\"application/pdf\" width=\"100%\" height=\"450\">\n    <p>Inline PDF viewer unavailable on this device. <a href=\"docs/campus-clubhouse-rules.pdf\">Download the Clubhouse Charter PDF</a>.</p>\n  </object>\n</section>"
+      "html": "<section id=\"chat-governance\" aria-labelledby=\"bylaws-heading\">\n  <h3 id=\"bylaws-heading\">Chat Charter &amp; Bylaws</h3>\n  <object id=\"chat-rules-doc\" data=\"docs/campus-chat-rules.pdf\" type=\"application/pdf\" width=\"100%\" height=\"450\">\n    <p>Inline PDF viewer unavailable on this device. <a href=\"docs/campus-chat-rules.pdf\">Download the Chat Charter PDF</a>.</p>\n  </object>\n</section>"
     }
   },
   {
@@ -756,7 +824,7 @@ export const formsMedia = [
     "module": "media",
     "title": "Embedding YouTube videos safely",
     "minutes": 14,
-    "intro": "Hosting high-definition video files on your own server can use lots of storage and bandwidth. Many club websites embed videos hosted on YouTube using an iframe instead. Using YouTube's privacy-enhanced web address protects student privacy by blocking tracking cookies until they press play.",
+    "intro": "Hosting high-definition video files on your own server can use lots of storage and bandwidth. Many chat apps embed videos hosted on YouTube using an iframe instead. Using YouTube's privacy-enhanced web address protects student privacy by blocking tracking cookies until they press play.",
     "concepts": [
       {
         "term": "<iframe> embed code",
@@ -779,8 +847,8 @@ export const formsMedia = [
         "description": "Embedded videos need an active internet connection to load and will not work offline."
       }
     ],
-    "example": "<div class=\"video-container\">\n  <iframe\n    width=\"560\"\n    height=\"315\"\n    src=\"https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1\"\n    title=\"Club Semester Highlights Video\"\n    loading=\"lazy\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen>\n  </iframe>\n</div>",
-    "task": "Embed a club highlight video using YouTube's privacy-enhanced domain, lazy loading, and an accessible title.",
+    "example": "<div class=\"video-container\">\n  <iframe\n    width=\"560\"\n    height=\"315\"\n    src=\"https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1\"\n    title=\"Chat Semester Highlights Video\"\n    loading=\"lazy\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen>\n  </iframe>\n</div>",
+    "task": "Embed a chat highlight video using YouTube's privacy-enhanced domain, lazy loading, and an accessible title.",
     "steps": [
       "Find the video showcase section in index.html.",
       "Add a container <div> to hold the video embed.",
@@ -803,80 +871,7 @@ export const formsMedia = [
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"clubhouse-highlights-section\" aria-labelledby=\"highlights-heading\">\n  <h3 id=\"highlights-heading\">Semester Showcase Highlights</h3>\n  <div class=\"video-embed-frame\">\n    <iframe\n      id=\"clubhouse-highlights-iframe\"\n      width=\"560\"\n      height=\"315\"\n      src=\"https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?rel=0\"\n      title=\"Campus Clubhouse Semester Highlights and Student Projects\"\n      loading=\"lazy\"\n      allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n      allowfullscreen>\n    </iframe>\n  </div>\n</section>"
+      "html": "<section id=\"chat-highlights-section\" aria-labelledby=\"highlights-heading\">\n  <h3 id=\"highlights-heading\">Semester Showcase Highlights</h3>\n  <div class=\"video-embed-frame\">\n    <iframe\n      id=\"chat-highlights-iframe\"\n      width=\"560\"\n      height=\"315\"\n      src=\"https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?rel=0\"\n      title=\"Campus Chat Semester Highlights and Student Projects\"\n      loading=\"lazy\"\n      allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n      allowfullscreen>\n    </iframe>\n  </div>\n</section>"
     }
-  }
-];
-
-export const deferredApis = [
-  {
-    "id": "html5-api-overview",
-    "title": "HTML5 browser APIs overview",
-    "intro": "Browser APIs are built-in tools that let web pages tap into advanced device features and live data. While HTML creates the content structure, using these APIs requires JavaScript to run logic and react to actions. You will learn to use these tools when you begin your JavaScript studies.",
-    "sources": [
-      "html5_api_whatis.asp"
-    ],
-    "prerequisite": "Complete JavaScript first",
-    "projectIdea": "Add interactive features to the Campus Clubhouse portal, such as live member badges, dynamic club schedules, and quick device status alerts."
-  },
-  {
-    "id": "html5-geolocation",
-    "title": "Geolocation: Finding device location",
-    "intro": "The Geolocation API allows a web page to ask for your device's geographical coordinates like latitude and longitude. Because location is private, the browser always asks the user for permission before sharing anything. Reading those coordinates and placing a marker on a map requires JavaScript code.",
-    "sources": [
-      "html5_geolocation.asp"
-    ],
-    "prerequisite": "Complete JavaScript first",
-    "projectIdea": "Build a \"Find Nearest Club Meeting\" tool on the Campus Clubhouse page that calculates how close a student is to a study lounge or workshop room once they share their location."
-  },
-  {
-    "id": "html5-drag-and-drop",
-    "title": "Drag and drop: Moving items on screen",
-    "intro": "HTML lets you mark an element as draggable by adding a simple attribute to it. However, deciding what information gets moved, allowing an area to accept the drop, and updating the page requires JavaScript. With scripting, you can turn draggable elements into smooth interactive widgets.",
-    "sources": [
-      "html5_draganddrop.asp"
-    ],
-    "prerequisite": "Complete JavaScript first",
-    "projectIdea": "Create a visual task organizer for Campus Clubhouse leaders where officers can drag club project cards between \"Planning\", \"Approved\", and \"Completed\" columns."
-  },
-  {
-    "id": "html5-popover-api",
-    "title": "Popover: Simple overlays and popups",
-    "intro": "The Popover API creates small overlays such as menus and information cards. Some popovers can be opened using only HTML attributes; JavaScript adds programmatic controls and events. We intentionally keep this whole API topic until after JavaScript, when you can learn both approaches together.",
-    "sources": [
-      "html5_popover.asp"
-    ],
-    "prerequisite": "Complete JavaScript first",
-    "projectIdea": "Display quick club leader bios and upcoming workshop details inside clean popover cards on the Campus Clubhouse member directory."
-  },
-  {
-    "id": "html5-web-storage",
-    "title": "Web storage: Saving info in the browser",
-    "intro": "Web storage lets websites save small pieces of information directly inside your web browser so they stay saved between visits. Tools like localStorage keep your saved settings even after you close the tab. Saving, reading, and clearing this stored data requires JavaScript functions.",
-    "sources": [
-      "html5_webstorage.asp"
-    ],
-    "prerequisite": "Complete JavaScript first",
-    "projectIdea": "Save a student's dark mode preference and remember their unsubmitted Campus Clubhouse club interest form so their answers are not lost if they accidentally refresh the page."
-  },
-  {
-    "id": "html5-web-workers",
-    "title": "Web workers: Running tasks in the background",
-    "intro": "Normally, a web browser runs all page scripts and visual updates on a single main thread. Web workers let you run heavy background calculations in a separate thread so the page never freezes or lags. Starting workers and sending messages between them is handled entirely with JavaScript.",
-    "sources": [
-      "html5_webworkers.asp"
-    ],
-    "prerequisite": "Complete JavaScript first",
-    "projectIdea": "Calculate attendance stats and filter hundreds of Campus Clubhouse activity records in the background without slowing down the page."
-  },
-  {
-    "id": "html5-server-sent-events",
-    "title": "Server-sent events: Live updates from a server",
-    "intro": "Server-sent events let a web server push fresh updates to a web page automatically without the page having to reload. This is great for live sports scores, election counts, or real-time news feeds. Listening for new incoming messages and displaying them on the screen requires JavaScript.",
-    "sources": [
-      "html5_serversentevents.asp"
-    ],
-    "prerequisite": "Complete JavaScript first",
-    "projectIdea": "Stream live attendance numbers, sudden room changes, and real-time voting results for club elections onto the Campus Clubhouse dashboard."
   }
 ];

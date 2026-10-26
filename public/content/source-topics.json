@@ -1,426 +1,4007 @@
 [
   {
-    "path": "default.asp",
-    "title": "HTML HOME"
+    "path": "/html/default.asp",
+    "title": "HTML HOME",
+    "track": "html"
   },
   {
-    "path": "html_intro.asp",
-    "title": "HTML Introduction"
+    "path": "/html/html_intro.asp",
+    "title": "HTML Introduction",
+    "track": "html"
   },
   {
-    "path": "html_editors.asp",
-    "title": "HTML Editors"
+    "path": "/html/html_exercise_embed.asp?topic=intro",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_basic.asp",
-    "title": "HTML Basic"
+    "path": "/html/html_editors.asp",
+    "title": "HTML Editors",
+    "track": "html"
   },
   {
-    "path": "html_elements.asp",
-    "title": "HTML Elements"
+    "path": "/html/html_basic.asp",
+    "title": "HTML Basic",
+    "track": "html"
   },
   {
-    "path": "html_attributes.asp",
-    "title": "HTML Attributes"
+    "path": "/html/html_exercise_embed.asp?topic=basic",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_headings.asp",
-    "title": "HTML Headings"
+    "path": "/html/html_challenges_basic.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_paragraphs.asp",
-    "title": "HTML Paragraphs"
+    "path": "/html/html_elements.asp",
+    "title": "HTML Elements",
+    "track": "html"
   },
   {
-    "path": "html_styles.asp",
-    "title": "HTML Styles"
+    "path": "/html/html_exercise_embed.asp?topic=elements",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_formatting.asp",
-    "title": "HTML Formatting"
+    "path": "/html/html_challenges_elements.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_quotation_elements.asp",
-    "title": "HTML Quotations"
+    "path": "/html/html_attributes.asp",
+    "title": "HTML Attributes",
+    "track": "html"
   },
   {
-    "path": "html_comments.asp",
-    "title": "HTML Comments"
+    "path": "/html/html_exercise_embed.asp?topic=attributes",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_colors.asp",
-    "title": "HTML Colors"
+    "path": "/html/html_challenges_attributes.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_colors_rgb.asp",
-    "title": "RGB"
+    "path": "/html/html_headings.asp",
+    "title": "HTML Headings",
+    "track": "html"
   },
   {
-    "path": "html_colors_hex.asp",
-    "title": "HEX"
+    "path": "/html/html_exercise_embed.asp?topic=headings",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_colors_hsl.asp",
-    "title": "HSL"
+    "path": "/html/html_challenges_headings.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_css.asp",
-    "title": "HTML CSS"
+    "path": "/html/html_paragraphs.asp",
+    "title": "HTML Paragraphs",
+    "track": "html"
   },
   {
-    "path": "html_links.asp",
-    "title": "HTML Links"
+    "path": "/html/html_exercise_embed.asp?topic=paragraphs",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_links_colors.asp",
-    "title": "Link Colors"
+    "path": "/html/html_challenges_paragraphs.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_links_bookmarks.asp",
-    "title": "Link Bookmarks"
+    "path": "/html/html_styles.asp",
+    "title": "HTML Styles",
+    "track": "html"
   },
   {
-    "path": "html_images.asp",
-    "title": "HTML Images"
+    "path": "/html/html_exercise_embed.asp?topic=styles",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_images_imagemap.asp",
-    "title": "Image Map"
+    "path": "/html/html_challenges_styles.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_images_background.asp",
-    "title": "Background Images"
+    "path": "/html/html_formatting.asp",
+    "title": "HTML Formatting",
+    "track": "html"
   },
   {
-    "path": "html_images_picture.asp",
-    "title": "The Picture Element"
+    "path": "/html/html_exercise_embed.asp?topic=formatting",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_project_bio.php",
-    "title": "HTML Project"
+    "path": "/html/html_challenges_formatting.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_favicon.asp",
-    "title": "HTML Favicon"
+    "path": "/html/html_quotation_elements.asp",
+    "title": "HTML Quotations",
+    "track": "html"
   },
   {
-    "path": "html_page_title.asp",
-    "title": "HTML Page Title"
+    "path": "/html/html_exercise_embed.asp?topic=quotation_elements",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_tables.asp",
-    "title": "HTML Tables"
+    "path": "/html/html_challenges_quotations.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_table_borders.asp",
-    "title": "Table Borders"
+    "path": "/html/html_comments.asp",
+    "title": "HTML Comments",
+    "track": "html"
   },
   {
-    "path": "html_table_sizes.asp",
-    "title": "Table Sizes"
+    "path": "/html/html_exercise_embed.asp?topic=comments",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_table_headers.asp",
-    "title": "Table Headers"
+    "path": "/html/html_challenges_comments.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_table_padding_spacing.asp",
-    "title": "Padding & Spacing"
+    "path": "/html/html_colors.asp",
+    "title": "HTML Colors",
+    "track": "html"
   },
   {
-    "path": "html_table_colspan_rowspan.asp",
-    "title": "Colspan & Rowspan"
+    "path": "/html/html_colors_rgb.asp",
+    "title": "RGB",
+    "track": "html"
   },
   {
-    "path": "html_table_styling.asp",
-    "title": "Table Styling"
+    "path": "/html/html_colors_hex.asp",
+    "title": "HEX",
+    "track": "html"
   },
   {
-    "path": "html_table_colgroup.asp",
-    "title": "Table Colgroup"
+    "path": "/html/html_colors_hsl.asp",
+    "title": "HSL",
+    "track": "html"
   },
   {
-    "path": "html_lists.asp",
-    "title": "HTML Lists"
+    "path": "/html/html_exercise_embed.asp?topic=colors",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_lists_unordered.asp",
-    "title": "Unordered Lists"
+    "path": "/html/html_challenges_colors.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_lists_ordered.asp",
-    "title": "Ordered Lists"
+    "path": "/html/html_css.asp",
+    "title": "HTML CSS",
+    "track": "html"
   },
   {
-    "path": "html_lists_other.asp",
-    "title": "Other Lists"
+    "path": "/html/html_exercise_embed.asp?topic=css",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_blocks.asp",
-    "title": "HTML Block & Inline"
+    "path": "/html/html_challenges_css.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_div.asp",
-    "title": "HTML Div"
+    "path": "/html/html_links.asp",
+    "title": "HTML Links",
+    "track": "html"
   },
   {
-    "path": "html_classes.asp",
-    "title": "HTML Classes"
+    "path": "/html/html_links_colors.asp",
+    "title": "Link Colors",
+    "track": "html"
   },
   {
-    "path": "html_id.asp",
-    "title": "HTML Id"
+    "path": "/html/html_links_bookmarks.asp",
+    "title": "Link Bookmarks",
+    "track": "html"
   },
   {
-    "path": "html_buttons.asp",
-    "title": "HTML Buttons"
+    "path": "/html/html_exercise_embed.asp?topic=links",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_iframe.asp",
-    "title": "HTML Iframes"
+    "path": "/html/html_challenges_links.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_scripts.asp",
-    "title": "HTML JavaScript"
+    "path": "/html/html_images.asp",
+    "title": "HTML Images",
+    "track": "html"
   },
   {
-    "path": "html_filepaths.asp",
-    "title": "HTML File Paths"
+    "path": "/html/html_images_imagemap.asp",
+    "title": "Image Map",
+    "track": "html"
   },
   {
-    "path": "html_head.asp",
-    "title": "HTML Head"
+    "path": "/html/html_images_background.asp",
+    "title": "Background Images",
+    "track": "html"
   },
   {
-    "path": "html_layout.asp",
-    "title": "HTML Layout"
+    "path": "/html/html_images_picture.asp",
+    "title": "The Picture Element",
+    "track": "html"
   },
   {
-    "path": "html_responsive.asp",
-    "title": "HTML Responsive"
+    "path": "/html/html_exercise_embed.asp?topic=images",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_computercode_elements.asp",
-    "title": "HTML Computercode"
+    "path": "/html/html_challenges_images.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html5_semantic_elements.asp",
-    "title": "HTML Semantics"
+    "path": "/html/html_project_bio.php",
+    "title": "HTML Project",
+    "track": "html"
   },
   {
-    "path": "html5_syntax.asp",
-    "title": "HTML Style Guide"
+    "path": "/html/html_favicon.asp",
+    "title": "HTML Favicon",
+    "track": "html"
   },
   {
-    "path": "html_entities.asp",
-    "title": "HTML Entities"
+    "path": "/html/html_exercise_embed.asp?topic=favicon",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_symbols.asp",
-    "title": "HTML Symbols"
+    "path": "/html/html_page_title.asp",
+    "title": "HTML Page Title",
+    "track": "html"
   },
   {
-    "path": "html_emojis.asp",
-    "title": "HTML Emojis"
+    "path": "/html/html_exercise_embed.asp?topic=page_title",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_charset.asp",
-    "title": "HTML Charsets"
+    "path": "/html/html_tables.asp",
+    "title": "HTML Tables",
+    "track": "html"
   },
   {
-    "path": "html_urlencode.asp",
-    "title": "HTML URL Encode"
+    "path": "/html/html_table_borders.asp",
+    "title": "Table Borders",
+    "track": "html"
   },
   {
-    "path": "html_xhtml.asp",
-    "title": "HTML vs. XHTML"
+    "path": "/html/html_table_sizes.asp",
+    "title": "Table Sizes",
+    "track": "html"
   },
   {
-    "path": "html_forms.asp",
-    "title": "HTML Forms"
+    "path": "/html/html_table_headers.asp",
+    "title": "Table Headers",
+    "track": "html"
   },
   {
-    "path": "html_forms_attributes.asp",
-    "title": "HTML Form Attributes"
+    "path": "/html/html_table_padding_spacing.asp",
+    "title": "Padding & Spacing",
+    "track": "html"
   },
   {
-    "path": "html_form_elements.asp",
-    "title": "HTML Form Elements"
+    "path": "/html/html_table_colspan_rowspan.asp",
+    "title": "Colspan & Rowspan",
+    "track": "html"
   },
   {
-    "path": "html_form_input_types.asp",
-    "title": "HTML Input Types"
+    "path": "/html/html_table_styling.asp",
+    "title": "Table Styling",
+    "track": "html"
   },
   {
-    "path": "html_form_attributes.asp",
-    "title": "HTML Input Attributes"
+    "path": "/html/html_table_colgroup.asp",
+    "title": "Table Colgroup",
+    "track": "html"
   },
   {
-    "path": "html_form_attributes_form.asp",
-    "title": "Input Form Attributes"
+    "path": "/html/html_exercise_embed.asp?topic=tables",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html5_canvas.asp",
-    "title": "HTML Canvas"
+    "path": "/html/html_challenges_tables.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html5_svg.asp",
-    "title": "HTML SVG"
+    "path": "/html/html_lists.asp",
+    "title": "HTML Lists",
+    "track": "html"
   },
   {
-    "path": "html_media.asp",
-    "title": "HTML Media"
+    "path": "/html/html_lists_unordered.asp",
+    "title": "Unordered Lists",
+    "track": "html"
   },
   {
-    "path": "html5_video.asp",
-    "title": "HTML Video"
+    "path": "/html/html_lists_ordered.asp",
+    "title": "Ordered Lists",
+    "track": "html"
   },
   {
-    "path": "html5_audio.asp",
-    "title": "HTML Audio"
+    "path": "/html/html_lists_other.asp",
+    "title": "Other Lists",
+    "track": "html"
   },
   {
-    "path": "html_object.asp",
-    "title": "HTML Plug-ins"
+    "path": "/html/html_exercise_embed.asp?topic=lists",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_youtube.asp",
-    "title": "HTML YouTube"
+    "path": "/html/html_challenges_lists.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html5_api_whatis.asp",
-    "title": "Web APIs"
+    "path": "/html/html_blocks.asp",
+    "title": "HTML Block & Inline",
+    "track": "html"
   },
   {
-    "path": "html5_geolocation.asp",
-    "title": "Geolocation API"
+    "path": "/html/html_exercise_embed.asp?topic=blocks",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html5_draganddrop.asp",
-    "title": "Drag and Drop API"
+    "path": "/html/html_challenges_blocks.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html5_popover.asp",
-    "title": "Popover API"
+    "path": "/html/html_div.asp",
+    "title": "HTML Div",
+    "track": "html"
   },
   {
-    "path": "html5_webstorage.asp",
-    "title": "Web Storage API"
+    "path": "/html/html_exercise_embed.asp?topic=div",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html5_webworkers.asp",
-    "title": "Web Workers API"
+    "path": "/html/html_challenges_div.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html5_serversentevents.asp",
-    "title": "Server-Sent Events API"
+    "path": "/html/html_classes.asp",
+    "title": "HTML Classes",
+    "track": "html"
   },
   {
-    "path": "html_exam.asp",
-    "title": "HTML Certificate"
+    "path": "/html/html_exercise_embed.asp?topic=classes",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_examples.asp",
-    "title": "HTML Examples"
+    "path": "/html/html_challenges_classes.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_editor.asp",
-    "title": "HTML Editor"
+    "path": "/html/html_id.asp",
+    "title": "HTML Id",
+    "track": "html"
   },
   {
-    "path": "html_quiz.asp",
-    "title": "HTML Quiz"
+    "path": "/html/html_exercise_embed.asp?topic=id",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_exercises.asp",
-    "title": "HTML Exercises"
+    "path": "/html/html_challenges_id.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_website.asp",
-    "title": "HTML Website"
+    "path": "/html/html_buttons.asp",
+    "title": "HTML Buttons",
+    "track": "html"
   },
   {
-    "path": "html_syllabus.asp",
-    "title": "HTML Syllabus"
+    "path": "/html/html_challenges_buttons.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_study_plan.asp",
-    "title": "HTML Study Plan"
+    "path": "/html/html_iframe.asp",
+    "title": "HTML Iframes",
+    "track": "html"
   },
   {
-    "path": "html_interview_prep.asp",
-    "title": "HTML Interview Prep"
+    "path": "/html/html_exercise_embed.asp?topic=iframe",
+    "title": "Exercises",
+    "track": "html"
   },
   {
-    "path": "html_summary.asp",
-    "title": "HTML Summary"
+    "path": "/html/html_challenges_iframes.asp",
+    "title": "Code Challenge",
+    "track": "html"
   },
   {
-    "path": "html_accessibility.asp",
-    "title": "HTML Accessibility"
+    "path": "/html/html_scripts.asp",
+    "title": "HTML JavaScript",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=scripts",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_scripts.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_filepaths.asp",
+    "title": "HTML File Paths",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_filepaths.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_head.asp",
+    "title": "HTML Head",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=head",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_head.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_layout.asp",
+    "title": "HTML Layout",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_layout.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_responsive.asp",
+    "title": "HTML Responsive",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=responsive",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_responsive.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_computercode_elements.asp",
+    "title": "HTML Computercode",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=computercode_elements",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_computercode.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_semantic_elements.asp",
+    "title": "HTML Semantics",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=semantic_elements",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_semantics.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_syntax.asp",
+    "title": "HTML Style Guide",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_entities.asp",
+    "title": "HTML Entities",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=entities",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_entities.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_symbols.asp",
+    "title": "HTML Symbols",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_emojis.asp",
+    "title": "HTML Emojis",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_charset.asp",
+    "title": "HTML Charsets",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_urlencode.asp",
+    "title": "HTML URL Encode",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_xhtml.asp",
+    "title": "HTML vs. XHTML",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_forms.asp",
+    "title": "HTML Forms",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=forms",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_forms.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_forms_attributes.asp",
+    "title": "HTML Form Attributes",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=forms_attributes",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_form_elements.asp",
+    "title": "HTML Form Elements",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=form_elements",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_form_elements.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_form_input_types.asp",
+    "title": "HTML Input Types",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=form_input_types",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_input_types.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_form_attributes.asp",
+    "title": "HTML Input Attributes",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=form_attributes",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_form_attributes_form.asp",
+    "title": "Input Form Attributes",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercise_embed.asp?topic=form_attributes_form",
+    "title": "Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_canvas.asp",
+    "title": "HTML Canvas",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_canvas.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_svg.asp",
+    "title": "HTML SVG",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_svg.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_media.asp",
+    "title": "HTML Media",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_video.asp",
+    "title": "HTML Video",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_video.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_audio.asp",
+    "title": "HTML Audio",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges_audio.asp",
+    "title": "Code Challenge",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_object.asp",
+    "title": "HTML Plug-ins",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_youtube.asp",
+    "title": "HTML YouTube",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_api_whatis.asp",
+    "title": "Web APIs",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_geolocation.asp",
+    "title": "Geolocation API",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_draganddrop.asp",
+    "title": "Drag and Drop API",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_popover.asp",
+    "title": "Popover API",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_webstorage.asp",
+    "title": "Web Storage API",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_webworkers.asp",
+    "title": "Web Workers API",
+    "track": "html"
+  },
+  {
+    "path": "/html/html5_serversentevents.asp",
+    "title": "Server-Sent Events API",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exam.asp",
+    "title": "HTML Certificate",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_examples.asp",
+    "title": "HTML Examples",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_editor.asp",
+    "title": "HTML Editor",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_quiz.asp",
+    "title": "HTML Quiz",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_exercises.asp",
+    "title": "HTML Exercises",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_challenges.asp",
+    "title": "HTML Challenges",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_website.asp",
+    "title": "HTML Website",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_syllabus.asp",
+    "title": "HTML Syllabus",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_study_plan.asp",
+    "title": "HTML Study Plan",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_interview_prep.asp",
+    "title": "HTML Interview Prep",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_summary.asp",
+    "title": "HTML Summary",
+    "track": "html"
+  },
+  {
+    "path": "/html/html_accessibility.asp",
+    "title": "HTML Accessibility",
+    "track": "html"
   },
   {
     "path": "/tags/default.asp",
-    "title": "HTML Tag List"
+    "title": "HTML Tag List",
+    "track": "html"
   },
   {
     "path": "/tags/ref_attributes.asp",
-    "title": "HTML Attributes"
+    "title": "HTML Attributes",
+    "track": "html"
   },
   {
     "path": "/tags/ref_standardattributes.asp",
-    "title": "HTML Global Attributes"
+    "title": "HTML Global Attributes",
+    "track": "html"
   },
   {
     "path": "/tags/ref_html_browsersupport.asp",
-    "title": "HTML Browser Support"
+    "title": "HTML Browser Support",
+    "track": "html"
   },
   {
     "path": "/tags/ref_eventattributes.asp",
-    "title": "HTML Events"
+    "title": "HTML Event Attributes",
+    "track": "html"
   },
   {
     "path": "/tags/ref_colornames.asp",
-    "title": "HTML Colors"
+    "title": "HTML Colors",
+    "track": "html"
   },
   {
     "path": "/tags/ref_canvas.asp",
-    "title": "HTML Canvas"
+    "title": "HTML Canvas",
+    "track": "html"
   },
   {
     "path": "/tags/ref_av_dom.asp",
-    "title": "HTML Audio/Video"
+    "title": "HTML Audio/Video",
+    "track": "html"
   },
   {
     "path": "/tags/ref_html_dtd.asp",
-    "title": "HTML Doctypes"
+    "title": "HTML Doctypes",
+    "track": "html"
   },
   {
     "path": "/tags/ref_charactersets.asp",
-    "title": "HTML Character Sets"
+    "title": "HTML Character Sets",
+    "track": "html"
   },
   {
     "path": "/tags/ref_urlencode.asp",
-    "title": "HTML URL Encode"
+    "title": "HTML URL Encode",
+    "track": "html"
   },
   {
     "path": "/tags/ref_language_codes.asp",
-    "title": "HTML Lang Codes"
+    "title": "HTML Language Codes",
+    "track": "html"
+  },
+  {
+    "path": "/tags/ref_country_codes.asp",
+    "title": "HTML Country Codes",
+    "track": "html"
   },
   {
     "path": "/tags/ref_httpmessages.asp",
-    "title": "HTTP Messages"
+    "title": "HTTP Status Codes",
+    "track": "html"
   },
   {
     "path": "/tags/ref_httpmethods.asp",
-    "title": "HTTP Methods"
+    "title": "HTTP Request Methods",
+    "track": "html"
   },
   {
     "path": "/tags/ref_pxtoemconversion.asp",
-    "title": "PX to EM Converter"
+    "title": "PX to EM Converter",
+    "track": "html"
   },
   {
     "path": "/tags/ref_keyboardshortcuts.asp",
-    "title": "Keyboard Shortcuts"
+    "title": "Keyboard Shortcuts",
+    "track": "html"
+  },
+  {
+    "path": "/css/default.asp",
+    "title": "CSS HOME",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_intro.asp",
+    "title": "CSS Introduction",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_syntax.asp",
+    "title": "CSS Syntax",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_selectors.asp",
+    "title": "CSS Selectors",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_selectors_grouping.asp",
+    "title": "Grouping Selectors",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_selectors.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_howto.asp",
+    "title": "CSS How To",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_howto_internal.asp",
+    "title": "Add Internal CSS",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_howto_inline.asp",
+    "title": "Add Inline Style",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_howto_multiple_cascade.asp",
+    "title": "Multiple Style Sheets",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_howto.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_comments.asp",
+    "title": "CSS Comments",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_errors.asp",
+    "title": "CSS Errors",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_colors.asp",
+    "title": "CSS Colors",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_colors_rgb.asp",
+    "title": "RGB / RGBA",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_colors_hex.asp",
+    "title": "HEX / HEXA",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_colors_hsl.asp",
+    "title": "HSL / HSLA",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_colors.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_background.asp",
+    "title": "CSS Backgrounds",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_background_image.asp",
+    "title": "Background Image",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_background_repeat.asp",
+    "title": "Background Repeat",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_background_attachment.asp",
+    "title": "Background Attachment",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_background_shorthand.asp",
+    "title": "Background Shorthand",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_background.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_border.asp",
+    "title": "CSS Borders",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_border_width.asp",
+    "title": "Border Width",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_border_color.asp",
+    "title": "Border Color",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_border_sides.asp",
+    "title": "Border Sides",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_border_shorthand.asp",
+    "title": "Border Shorthand",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_border_rounded.asp",
+    "title": "Rounded Borders",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_border.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_margin.asp",
+    "title": "CSS Margins",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_margin_collapse.asp",
+    "title": "Margin Collapse",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_margin.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_padding.asp",
+    "title": "CSS Padding",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_padding_box-sizing.asp",
+    "title": "Padding box-sizing",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_padding.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_height_width.asp",
+    "title": "CSS Height / Width",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_height_width_min_max.asp",
+    "title": "Min / Max",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_height_width.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_boxmodel.asp",
+    "title": "CSS Box Model",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_boxmodel.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_outline.asp",
+    "title": "CSS Outline",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_outline_width.asp",
+    "title": "Outline Width",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_outline_color.asp",
+    "title": "Outline Color",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_outline_shorthand.asp",
+    "title": "Outline Shorthand",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_outline_offset.asp",
+    "title": "Outline Offset",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_outline.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_text.asp",
+    "title": "CSS Text",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_text_align.asp",
+    "title": "Text Alignment",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_text_decoration.asp",
+    "title": "Text Decoration",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_text_decoration_styles.asp",
+    "title": "Text Decoration Styles",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_text_transformation.asp",
+    "title": "Text Transformation",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_text_spacing.asp",
+    "title": "Text Spacing",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_text_shadow.asp",
+    "title": "Text Shadow",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_text.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font.asp",
+    "title": "CSS Fonts",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font_websafe.asp",
+    "title": "Font Web Safe",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font_fallbacks.asp",
+    "title": "Font Fallbacks",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font_style.asp",
+    "title": "Font Style",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font_size.asp",
+    "title": "Font Size",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font_google.asp",
+    "title": "Font Google",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font_pairings.asp",
+    "title": "Font Pairings",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_font_shorthand.asp",
+    "title": "Font Shorthand",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_font.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_icons.asp",
+    "title": "CSS Icons",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_icons_bootstrap.asp",
+    "title": "Icons: Bootstrap",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_icons_google.asp",
+    "title": "Icons: Google",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_icons.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_link.asp",
+    "title": "CSS Links",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_link_buttons.asp",
+    "title": "Link Buttons",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_link.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_list.asp",
+    "title": "CSS Lists",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_list.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_table.asp",
+    "title": "CSS Tables",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_table_size.asp",
+    "title": "Table Size",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_table_align.asp",
+    "title": "Table Alignment",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_table_style.asp",
+    "title": "Table Styling",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_table_responsive.asp",
+    "title": "Table Responsive",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_table.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_display.asp",
+    "title": "CSS Display",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_display_hide.asp",
+    "title": "Visibility / Hide",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_display.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_max-width.asp",
+    "title": "CSS Max-width",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_max-width.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_position.asp",
+    "title": "CSS Position",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_positioning_fixed_absolute.asp",
+    "title": "Fixed/Absolute Position",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_positioning_sticky.asp",
+    "title": "Sticky Position",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_position.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_position_offset.asp",
+    "title": "CSS Position Offsets",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_position_offset.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_z-index.asp",
+    "title": "CSS Z-index",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_z-index.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_overflow.asp",
+    "title": "CSS Overflow",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_overflow_xy.asp",
+    "title": "Overflow X and Y",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_overflow.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_float.asp",
+    "title": "CSS Float",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_float_clear.asp",
+    "title": "Clear / Clearfix",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_float_examples.asp",
+    "title": "Float Examples",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_float.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_inline-block.asp",
+    "title": "CSS Inline-block",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_inline-block.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_align.asp",
+    "title": "CSS Align",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_align_horizontal.asp",
+    "title": "Horizontal Align",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_align_vertical.asp",
+    "title": "Vertical Align",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_align.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_combinators.asp",
+    "title": "CSS Combinators",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_combinators.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_pseudo_classes.asp",
+    "title": "CSS Pseudo-classes",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_pseudo_classes_interactive.asp",
+    "title": "Interactive",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_pseudo_classes_structural.asp",
+    "title": "Structural",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_pseudo_classes.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_pseudo_elements.asp",
+    "title": "CSS Pseudo-elements",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_pseudo_elements_text.asp",
+    "title": "Text",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_pseudo_elements_content.asp",
+    "title": "Content",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_pseudo_elements.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_image_transparency.asp",
+    "title": "CSS Opacity",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_image_transparency.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_navbar.asp",
+    "title": "CSS Navigation Bars",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_navbar_vertical.asp",
+    "title": "Vertical Navbar",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_navbar_horizontal.asp",
+    "title": "Horizontal Navbar",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_navbar.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_dropdowns.asp",
+    "title": "CSS Dropdowns",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_dropdowns_advanced.asp",
+    "title": "Advanced Dropdowns",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_dropdowns.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_image_gallery.asp",
+    "title": "CSS Image Gallery",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_image_gallery.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_image_sprites.asp",
+    "title": "CSS Image Sprites",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_image_sprites.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_attribute_selectors.asp",
+    "title": "CSS Attribute Selectors",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_attribute_selectors_advanced.asp",
+    "title": "Advanced Attr Selectors",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_attribute_selectors.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_forms.asp",
+    "title": "CSS Forms",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_form_inputs.asp",
+    "title": "Style Inputs",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_form_focus.asp",
+    "title": "Input Focus / Icons",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_form_elements.asp",
+    "title": "Other Form Elements",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_form_styling.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_counters.asp",
+    "title": "CSS Counters",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_counters_nested.asp",
+    "title": "Nested Counters",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_counters.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_units.asp",
+    "title": "CSS Units",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_units_absolute.asp",
+    "title": "Absolute Units",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_units_relative.asp",
+    "title": "Relative Units",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_units.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_inheritance.asp",
+    "title": "CSS Inheritance",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_inheritance.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_specificity.asp",
+    "title": "CSS Specificity",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_specificity_hierarchy.asp",
+    "title": "Specificity Hierarchy",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_specificity.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_important.asp",
+    "title": "CSS !important",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_important.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_math_functions.asp",
+    "title": "CSS Math Functions",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_math_functions.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_performance.asp",
+    "title": "CSS Optimization",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_performance.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_accessibility.asp",
+    "title": "CSS Accessibility",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_accessibility.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_website_layout.asp",
+    "title": "CSS Website Layout",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_website_layout.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_borders.asp",
+    "title": "CSS Rounded Corners",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_rounded_corners.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_border_images.asp",
+    "title": "CSS Border Images",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_border_images.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_backgrounds.asp",
+    "title": "CSS Backgrounds",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_background_size.asp",
+    "title": "Background Size",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_background_origin.asp",
+    "title": "Background Origin",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_background_clip.asp",
+    "title": "Background Clip",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_backgrounds.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_colors.asp",
+    "title": "CSS Colors",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_colors_keywords.asp",
+    "title": "Color Keywords",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_colors.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_gradients.asp",
+    "title": "CSS Gradients",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_gradients_radial.asp",
+    "title": "Radial Gradients",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_gradients_conic.asp",
+    "title": "Conic Gradients",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_gradients.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_shadows.asp",
+    "title": "CSS Shadows",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_shadows_box.asp",
+    "title": "Box Shadow",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_shadows.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_text_effects.asp",
+    "title": "CSS Text Effects",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_text_effects.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_fonts.asp",
+    "title": "CSS Custom Fonts",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_fonts.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_2dtransforms.asp",
+    "title": "CSS 2D Transforms",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_2dtransforms_scale.asp",
+    "title": "Scale",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_2dtransforms_skew.asp",
+    "title": "Skew / Matrix",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_transforms.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_3dtransforms.asp",
+    "title": "CSS 3D Transforms",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_3dtransforms_perspective.asp",
+    "title": "3D Perspective",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_3dtransforms_cardflip.asp",
+    "title": "3D Card Flip",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_3dtransforms_cube.asp",
+    "title": "3D Cube",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_3dtransforms_carousel.asp",
+    "title": "3D Carousel",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_3dtransforms.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_transitions.asp",
+    "title": "CSS Transitions",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_transitions_timing.asp",
+    "title": "Transition Timing",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_transitions.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_animations.asp",
+    "title": "CSS Animations",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_animations_timing.asp",
+    "title": "Animation Timing",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_animations_properties.asp",
+    "title": "Animation Properties",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_animations.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_tooltip.asp",
+    "title": "CSS Tooltips",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_tooltip_arrows.asp",
+    "title": "Tooltip Arrows",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css_tooltip.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_images.asp",
+    "title": "CSS Image Styling",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_images_effects.asp",
+    "title": "Image Effects",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_images_hover.asp",
+    "title": "Hover Overlays",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_images.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_images_modal.asp",
+    "title": "CSS Image Modal",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_imagemodal.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_image_center.asp",
+    "title": "CSS Image Centering",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_imagecenter.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_image_filters.asp",
+    "title": "CSS Image Filters",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_imagefilters.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_image_shapes.asp",
+    "title": "CSS Image Shapes",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_imageshapes.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_object-fit.asp",
+    "title": "CSS object-fit",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_objectfit.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_object-position.asp",
+    "title": "CSS object-position",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_objectposition.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_masking.asp",
+    "title": "CSS Masking",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_masking_gradients.asp",
+    "title": "Masking - Gradients",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_masking_svg.asp",
+    "title": "Masking - SVG",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_masking.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_buttons.asp",
+    "title": "CSS Buttons",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_buttons_hover.asp",
+    "title": "Hover Effects",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_buttons_groups.asp",
+    "title": "Button Groups",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_buttons.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_pagination.asp",
+    "title": "CSS Pagination",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_pagination_styles.asp",
+    "title": "Pagination Styles",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_pagination.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_multiple_columns.asp",
+    "title": "CSS Multiple Columns",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_multiple_columns_rules.asp",
+    "title": "Multiple Column Rules",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_columns.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_user_interface.asp",
+    "title": "CSS User Interface",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_user_interface.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_variables.asp",
+    "title": "CSS Variables",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_variables_overriding.asp",
+    "title": "Overriding Variables",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_variables_javascript.asp",
+    "title": "Variables and JavaScript",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_variables_mediaqueries.asp",
+    "title": "Variables in MQ",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_variables.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_property.asp",
+    "title": "CSS @property",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_property.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_box-sizing.asp",
+    "title": "CSS Box Sizing",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_box-sizing.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_functions.asp",
+    "title": "CSS Functions",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_mediaqueries.asp",
+    "title": "CSS Media Queries",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_mediaqueries_ex.asp",
+    "title": "MQ Examples",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_css3_mediaqueries.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_flexbox.asp",
+    "title": "Flexbox Intro",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_flexbox_intro.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_flexbox_container.asp",
+    "title": "Flex Container",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_flexbox_container_justify.asp",
+    "title": "Flexbox Justify Content",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_flexbox_container_align.asp",
+    "title": "Flexbox Align Items",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_flexbox_container.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_flexbox_items.asp",
+    "title": "Flex Items",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_flexbox_items.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css3_flexbox_responsive.asp",
+    "title": "Flex Responsive",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_flexbox_responsive.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid.asp",
+    "title": "Grid Intro",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_grid_intro.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_container.asp",
+    "title": "Grid Container",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_tracks.asp",
+    "title": "Grid Tracks",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_gap.asp",
+    "title": "Grid Gaps",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_align.asp",
+    "title": "Grid Align",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_grid_container.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_item.asp",
+    "title": "Grid Items",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_item_name.asp",
+    "title": "Grid Item Named",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_item_align.asp",
+    "title": "Grid Item Align",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_item_order.asp",
+    "title": "Grid Item Order",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_grid_item.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_grid_12column.asp",
+    "title": "Grid 12-column Layout",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_grid_12column.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_supports_rule.asp",
+    "title": "CSS @supports",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_supports_rule.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_intro.asp",
+    "title": "RWD Intro",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_rwd_intro.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_viewport.asp",
+    "title": "RWD Viewport",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_rwd_viewport.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_grid.asp",
+    "title": "RWD Grid View",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_rwd_grid.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_mediaqueries.asp",
+    "title": "RWD Media Queries",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_rwd_mediaqueries.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_images.asp",
+    "title": "RWD Images",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_rwd_images.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_videos.asp",
+    "title": "RWD Videos",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges_rwd_videos.asp",
+    "title": "Code Challenge",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_frameworks.asp",
+    "title": "RWD Frameworks",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_rwd_templates.asp",
+    "title": "RWD Templates",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_exam.asp",
+    "title": "CSS Certificate",
+    "track": "css"
+  },
+  {
+    "path": "/sass/default.asp",
+    "title": "SASS Tutorial",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_templates.asp",
+    "title": "CSS Templates",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_examples.asp",
+    "title": "CSS Examples",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_editor.asp",
+    "title": "CSS Editor",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_snippets.asp",
+    "title": "CSS Snippets",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_quiz.asp",
+    "title": "CSS Quiz",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_exercises.asp",
+    "title": "CSS Exercises",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_challenges.asp",
+    "title": "CSS Code Challenges",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_website.asp",
+    "title": "CSS Website",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_syllabus.asp",
+    "title": "CSS Syllabus",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_study_plan.asp",
+    "title": "CSS Study Plan",
+    "track": "css"
+  },
+  {
+    "path": "/css/css_interview_prep.asp",
+    "title": "CSS Interview Prep",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/index.php",
+    "title": "CSS Reference",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_selectors.php",
+    "title": "CSS Selectors",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_ref_combinators.php",
+    "title": "CSS Combinators",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_ref_pseudo_classes.php",
+    "title": "CSS Pseudo-classes",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_ref_pseudo_elements.php",
+    "title": "CSS Pseudo-elements",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_ref_atrules.php",
+    "title": "CSS At-rules",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_functions.php",
+    "title": "CSS Functions",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_ref_aural.php",
+    "title": "CSS Reference Aural",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_websafe_fonts.php",
+    "title": "CSS Web Safe Fonts",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_animatable.php",
+    "title": "CSS Animatable",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_units.php",
+    "title": "CSS Units",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_pxtoemconversion.php",
+    "title": "CSS PX-EM Converter",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_colors.php",
+    "title": "CSS Colors",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_colors_legal.php",
+    "title": "CSS Color Values",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css_default_values.php",
+    "title": "CSS Default Values",
+    "track": "css"
+  },
+  {
+    "path": "/cssref/css3_browsersupport.php",
+    "title": "CSS Browser Support",
+    "track": "css"
+  },
+  {
+    "path": "/js/default.asp",
+    "title": "JS Home",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_intro.asp",
+    "title": "JS Introduction",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_whereto.asp",
+    "title": "JS Where To",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_output.asp",
+    "title": "JS Output",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_syntax.asp",
+    "title": "JS Syntax",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_statements.asp",
+    "title": "JS Statements",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_comments.asp",
+    "title": "JS Comments",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_variables.asp",
+    "title": "JS Variables",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_let.asp",
+    "title": "JS Let",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_const.asp",
+    "title": "JS Const",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_types.asp",
+    "title": "JS Types",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_operators.asp",
+    "title": "JS Operators",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_arithmetic.asp",
+    "title": "JS Arithmetic",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_assignment.asp",
+    "title": "JS Assignment",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_comparisons.asp",
+    "title": "JS Comparisons",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_conditionals.asp",
+    "title": "JS Conditional",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_if.asp",
+    "title": "JS If Conditions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_if_else.asp",
+    "title": "JS If Else",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_if_ternary.asp",
+    "title": "JS Ternary",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_switch.asp",
+    "title": "JS Switch",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_booleans.asp",
+    "title": "JS Booleans",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_logical.asp",
+    "title": "JS Logical",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_loops.asp",
+    "title": "JS Loops",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_loop_for.asp",
+    "title": "JS Loop for",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_loop_while.asp",
+    "title": "JS Loop while",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_break.asp",
+    "title": "JS Break",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_continue.asp",
+    "title": "JS Continue",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_control_flow.asp",
+    "title": "JS Control Flow",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_strings.asp",
+    "title": "JS Strings",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_string_templates.asp",
+    "title": "JS String Templates",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_string_methods.asp",
+    "title": "JS String Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_string_search.asp",
+    "title": "JS String Search",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_string_reference.asp",
+    "title": "JS String Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_numbers.asp",
+    "title": "JS Numbers",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_number_methods.asp",
+    "title": "JS Number Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_number_properties.asp",
+    "title": "JS Number Properties",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_number_reference.asp",
+    "title": "JS Number Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_bitwise.asp",
+    "title": "JS Bitwise",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_bigint.asp",
+    "title": "JS BigInt",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_functions.asp",
+    "title": "JS Functions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_intro.asp",
+    "title": "Function Intro",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_invocation.asp",
+    "title": "Function Invocation",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_parameters.asp",
+    "title": "Function Parameters",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_return.asp",
+    "title": "Function Returns",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_arguments.asp",
+    "title": "Function Arguments",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_expressions.asp",
+    "title": "Function Expressions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_arrow_function.asp",
+    "title": "Function Arrow",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_quiz.asp",
+    "title": "Function Quiz",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_timers.asp",
+    "title": "JS Timers",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_objects.asp",
+    "title": "JS Objects",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_intro.asp",
+    "title": "Object Intro",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_properties.asp",
+    "title": "Object Properties",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_methods.asp",
+    "title": "Object Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_this.asp",
+    "title": "Object this",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_display.asp",
+    "title": "Object Display",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_constructors.asp",
+    "title": "Object Constructors",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_scope.asp",
+    "title": "JS Scope",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_codeblocks.asp",
+    "title": "JS Code Blocks",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_hoisting.asp",
+    "title": "JS Hoisting",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_varletconst.asp",
+    "title": "JS var/let/const",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_strict.asp",
+    "title": "JS Strict Mode",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_dates.asp",
+    "title": "JS Dates",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_date_formats.asp",
+    "title": "JS Date Formats",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_date_methods.asp",
+    "title": "JS Date Get",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_date_methods_set.asp",
+    "title": "JS Date Set",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_date_reference.asp",
+    "title": "JS Date Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_arrays.asp",
+    "title": "JS Arrays",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_array_constructor.asp",
+    "title": "JS Array Constructor",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_array_methods.asp",
+    "title": "JS Array Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_array_search.asp",
+    "title": "JS Array Search",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_array_sort.asp",
+    "title": "JS Array Sort",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_array_iteration.asp",
+    "title": "JS Array Iterations",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_array_reference.asp",
+    "title": "JS Array Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_array_const.asp",
+    "title": "JS Array const",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_sets.asp",
+    "title": "JS Sets",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_set_methods.asp",
+    "title": "JS Set Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_set_logic.asp",
+    "title": "JS Set Logic",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_sets_weak.asp",
+    "title": "JS Set WeakSet",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_set_reference.asp",
+    "title": "JS Set Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_maps.asp",
+    "title": "JS Maps",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_map_methods.asp",
+    "title": "JS Map Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_maps_weak.asp",
+    "title": "JS Map WeakMap",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_map_reference.asp",
+    "title": "JS Map Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_looping.asp",
+    "title": "JS Iterations",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_iterables.asp",
+    "title": "JS Iterables",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_iterators.asp",
+    "title": "JS Iterators",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_generators.asp",
+    "title": "JS Generators",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_math.asp",
+    "title": "JS Math",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_math_reference.asp",
+    "title": "JS Math Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_random.asp",
+    "title": "JS Math Random",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp.asp",
+    "title": "JS RegExp",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_flags.asp",
+    "title": "JS RegExp Flags",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_characters.asp",
+    "title": "JS RegExp Classes",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_meta_characters.asp",
+    "title": "JS RegExp Metachars",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_assertions.asp",
+    "title": "JS RegExp Assertions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_groups.asp",
+    "title": "JS RegExp Groups",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_quantifiers.asp",
+    "title": "JS RegExp Quantifiers",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_patterns.asp",
+    "title": "JS RegExp Patterns",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_objects.asp",
+    "title": "JS RegExp Objects",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_regexp_methods.asp",
+    "title": "JS RegExp Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_datatypes.asp",
+    "title": "JS Data Types",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_datatypes_primitives.asp",
+    "title": "JS Primitive Data",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_datatypes_objects.asp",
+    "title": "JS Object Types",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_datatypes_symbol.asp",
+    "title": "JS Symbols",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_typeof.asp",
+    "title": "JS typeof",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_undefined.asp",
+    "title": "JS undefined",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_nan.asp",
+    "title": "JS NaN",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_tostring.asp",
+    "title": "JS toString()",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_tolocalestring.asp",
+    "title": "JS toLocaleString()",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_type_coercion.asp",
+    "title": "JS Type Coercion",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_type_conversion.asp",
+    "title": "JS Type Conversion",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_destructuring.asp",
+    "title": "JS Destructuring",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_errors_intro.asp",
+    "title": "JS Errors",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_errors_silent.asp",
+    "title": "JS Errors Silent",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_errors.asp",
+    "title": "JS Error Statements",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_error_object.asp",
+    "title": "JS Error Object",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_debugging.asp",
+    "title": "JS Debugging",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_debugging_console.asp",
+    "title": "Debug Console",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_debugging_breakpoints.asp",
+    "title": "Debug Breakpoints",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_debugging_errors.asp",
+    "title": "Debug Errors",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_debugging_async.asp",
+    "title": "Debug Async",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_debugging_reference.asp",
+    "title": "Debug Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_conventions.asp",
+    "title": "JS Style Guide",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_best_practices.asp",
+    "title": "JS Best Practices",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_mistakes.asp",
+    "title": "JS Mistakes",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_performance.asp",
+    "title": "JS Performance",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_alphabetic_reference.asp",
+    "title": "JS Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_statements_reference.asp",
+    "title": "JS Statements",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_reserved.asp",
+    "title": "JS Keywords",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_operators_reference.asp",
+    "title": "JS Operators",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_precedence.asp",
+    "title": "JS Precedence",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_project_counter.asp",
+    "title": "JS Projects\u00a0\u00a0New",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_project_eventlistener.asp",
+    "title": "JS Event Listener",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_project_todo.asp",
+    "title": "JS To-Do List",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_project_modal_popup.asp",
+    "title": "JS Modal Popup",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_project_form_validation.asp",
+    "title": "JS Form Validation",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2027.asp",
+    "title": "JS Versions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2026.asp",
+    "title": "JS 2026",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2025.asp",
+    "title": "JS 2025",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2024.asp",
+    "title": "JS 2024",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2023.asp",
+    "title": "JS 2023",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2022.asp",
+    "title": "JS 2022",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2021.asp",
+    "title": "JS 2021",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2020.asp",
+    "title": "JS 2020",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2019.asp",
+    "title": "JS 2019",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2018.asp",
+    "title": "JS 2018",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2017.asp",
+    "title": "JS 2017",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_2016.asp",
+    "title": "JS 2016",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_es6.asp",
+    "title": "JS 2015 (ES6)",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_es5.asp",
+    "title": "JS 2009 (ES5)",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_es3.asp",
+    "title": "JS 1999 (ES3)",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_versions.asp",
+    "title": "JS Versions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_history.asp",
+    "title": "JS History",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom.asp",
+    "title": "JS HTML DOM",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_methods.asp",
+    "title": "HTML DOM API",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_elements.asp",
+    "title": "Selecting Elements",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_html.asp",
+    "title": "Changing HTML",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_css.asp",
+    "title": "Changing CSS",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_validation.asp",
+    "title": "Form Validation",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_animate.asp",
+    "title": "DOM Animations",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_document.asp",
+    "title": "Document Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_element_reference.asp",
+    "title": "Element Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_events.asp",
+    "title": "JS HTML Events",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_events_mouse.asp",
+    "title": "Mouse Events",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_events_keyboard.asp",
+    "title": "Keyboard Events",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_events_load.asp",
+    "title": "Load Events",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_events_management.asp",
+    "title": "Manage Events",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_events.asp",
+    "title": "Event Examples",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_eventlistener.asp",
+    "title": "Event Listener",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmlfirst.asp",
+    "title": "JS HTML First",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmlfirst_progressive.asp",
+    "title": "HTML Progressive",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmlfirst_features.asp",
+    "title": "HTML First Features",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmlfirst_css.asp",
+    "title": "HTML First CSS",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_window.asp",
+    "title": "JS Window API",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_window_screen.asp",
+    "title": "JS Screen",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_window_location.asp",
+    "title": "JS Location",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_window_history.asp",
+    "title": "JS History",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_window_navigator.asp",
+    "title": "JS Navigator",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_popup.asp",
+    "title": "JS Popup Alert",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_cookies.asp",
+    "title": "JS Cookies",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_api_fetch.asp",
+    "title": "JS Fetch API",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json.asp",
+    "title": "JS JSON",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_syntax.asp",
+    "title": "JSON Syntax",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_datatypes.asp",
+    "title": "JSON Values",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_parse.asp",
+    "title": "JSON Parse",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_stringify.asp",
+    "title": "JSON Stringify",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_server.asp",
+    "title": "JSON Fetch",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_html.asp",
+    "title": "JSON HTML",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_xml.asp",
+    "title": "JSON vs XML",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_api_intro.asp",
+    "title": "JS Web API",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_api_geolocation.asp",
+    "title": "API Geolocation",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_api_pointer_events.asp",
+    "title": "API Web Pointer",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_api_web_storage.asp",
+    "title": "API Web Storage",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_validation_api.asp",
+    "title": "API Validation",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_api_web_workers.asp",
+    "title": "API Web Worker",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal.asp",
+    "title": "JS Temporal\u00a0 New",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_intro.asp",
+    "title": "Temporal Why",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_vs_date.asp",
+    "title": "Temporal vs Date",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_duration.asp",
+    "title": "Temporal Duration",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_instant.asp",
+    "title": "Temporal Instant",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_plaindatetime.asp",
+    "title": "Temporal PlainDateTime",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_plain.asp",
+    "title": "Temporal PlainDate",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_plainyearmonth.asp",
+    "title": "Temporal PlainYearM",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_plainmonthday.asp",
+    "title": "Temporal PlainMonthD",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_plaintime.asp",
+    "title": "Temporal PlainTime",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_zoneddatetime.asp",
+    "title": "Temporal ZonedDate",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_now.asp",
+    "title": "Temporal Now",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_arithmetic.asp",
+    "title": "Temporal Arithmetic",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_differences.asp",
+    "title": "Temporal Since/Until",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_compare.asp",
+    "title": "Temporal Compare",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_conversion.asp",
+    "title": "Temporal Conversion",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_formats.asp",
+    "title": "Temporal Formats",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_mistakes.asp",
+    "title": "Temporal Mistakes",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_migrate.asp",
+    "title": "Temporal Migrate",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_standards.asp",
+    "title": "Temporal Standards",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_temporal_reference.asp",
+    "title": "Temporal Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_advanced.asp",
+    "title": "JS Functions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_definition.asp",
+    "title": "Function Definitions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_callback.asp",
+    "title": "Function Callbacks",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_this.asp",
+    "title": "Function this",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_call.asp",
+    "title": "Function Call",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_apply.asp",
+    "title": "Function Apply",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_bind.asp",
+    "title": "Function Bind",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_iife.asp",
+    "title": "Function IIFE",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_closures.asp",
+    "title": "Function Closures",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_reference.asp",
+    "title": "Function Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_function_advanced_quiz.asp",
+    "title": "Function Quiz",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_advanced.asp",
+    "title": "JS Objects",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_definition.asp",
+    "title": "Object Definitions",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_this.asp",
+    "title": "Object this",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_iterations.asp",
+    "title": "Object Iterations",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_accessors.asp",
+    "title": "Object Get / Set",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_management.asp",
+    "title": "Object Management",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_protection.asp",
+    "title": "Object Protection",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_prototypes.asp",
+    "title": "Object Prototypes",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_object_reference.asp",
+    "title": "Object Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_classes.asp",
+    "title": "JS Classes",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_class_inheritance.asp",
+    "title": "JS Class Inheritance",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_class_static.asp",
+    "title": "JS Class Static",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_asynchronous.asp",
+    "title": "JS Asynchronous",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async.asp",
+    "title": "Async Programming",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_callbacks.asp",
+    "title": "Async Callbacks",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_promises.asp",
+    "title": "Async Promises",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_await.asp",
+    "title": "Async Await",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_parallel.asp",
+    "title": "Async Parallel",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_event_loop.asp",
+    "title": "Async Event Loop",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_fetch.asp",
+    "title": "Async Fetch API",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_mistakes.asp",
+    "title": "Async Mistakes",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_debug.asp",
+    "title": "Async Debugging",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_abortcontroller.asp",
+    "title": "Async AbortControl",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_async_webworkers.asp",
+    "title": "Async Web Workers",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_promise_reference.asp",
+    "title": "Async Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_modules.asp",
+    "title": "JS Modules",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_modules_export.asp",
+    "title": "Modules Export",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_modules_import.asp",
+    "title": "Modules Import",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_modules_namespace.asp",
+    "title": "Modules Namespace",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_modules_dynamic.asp",
+    "title": "Modules Dynamic",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_meta_programming.asp",
+    "title": "JS Meta & Proxy",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_meta_reflect.asp",
+    "title": "Meta Reflect",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_meta_proxy.asp",
+    "title": "Meta Proxy",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_meta_reference.asp",
+    "title": "Meta Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_typed_arrays.asp",
+    "title": "JS Typed Arrays",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_typed_methods.asp",
+    "title": "Typed Methods",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_typed_reference.asp",
+    "title": "Typed Reference",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_arraybuffers.asp",
+    "title": "Array Buffers",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_dataview.asp",
+    "title": "DataViews",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_atomics.asp",
+    "title": "JS Atomics",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_navigation.asp",
+    "title": "JS DOM Navigation",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_nodes.asp",
+    "title": "DOM Nodes",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_collections.asp",
+    "title": "DOM Collections",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_htmldom_nodelist.asp",
+    "title": "DOM Node Lists",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_graphics.asp",
+    "title": "JS Graphics",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_graphics_canvas.asp",
+    "title": "JS Canvas",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_graphics_plotly.asp",
+    "title": "JS Plotly",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_graphics_chartjs.asp",
+    "title": "JS Chart.js",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_graphics_google_chart.asp",
+    "title": "JS Google Chart",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_graphics_d3js.asp",
+    "title": "JS D3.js",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_intro.asp",
+    "title": "JS AJAX",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_http.asp",
+    "title": "AJAX XMLHttp",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_http_send.asp",
+    "title": "AJAX Request",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_http_response.asp",
+    "title": "AJAX Response",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_xmlfile.asp",
+    "title": "AJAX XML File",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_php.asp",
+    "title": "AJAX PHP",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_asp.asp",
+    "title": "AJAX ASP",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_database.asp",
+    "title": "AJAX Database",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_applications.asp",
+    "title": "AJAX Applications",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ajax_examples.asp",
+    "title": "AJAX Examples",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_jquery_selectors.asp",
+    "title": "JS jQuery",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_jquery_elements.asp",
+    "title": "jQuery HTML",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_jquery_css.asp",
+    "title": "jQuery CSS",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_jquery_dom.asp",
+    "title": "jQuery DOM",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_json_jsonp.asp",
+    "title": "JS JSONP",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_examples.asp",
+    "title": "JS Examples",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_dom_examples.asp",
+    "title": "JS HTML DOM",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_input_examples.asp",
+    "title": "JS HTML Input",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ex_dom.asp",
+    "title": "JS HTML Objects",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_events_examples.asp",
+    "title": "JS HTML Events",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_ex_browser.asp",
+    "title": "JS Browser",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_editor.asp",
+    "title": "JS Editor",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_exercises.asp",
+    "title": "JS Exercises",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_quiz.asp",
+    "title": "JS Quiz",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_website.asp",
+    "title": "JS Website",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_syllabus.asp",
+    "title": "JS Syllabus",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_study_plan.asp",
+    "title": "JS Study Plan",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_interview_prep.asp",
+    "title": "JS Interview Prep",
+    "track": "js"
+  },
+  {
+    "path": "/js/js_exam.asp",
+    "title": "JS Certificate",
+    "track": "js"
   }
 ]

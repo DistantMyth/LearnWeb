@@ -50,7 +50,7 @@ export function createWorkspace({ getState, updateDraft, notify, isPersistent })
   document.querySelector('#download-project').addEventListener('click', () => {
     save();
     download(getState().draft, 'index.html');
-    notify('Downloaded index.html. Open it in your campus-clubhouse folder with VS Code.');
+    notify('Downloaded index.html. Open it in your campus-chat folder with VS Code.');
   });
   dialog.addEventListener('close', () => {
     save();

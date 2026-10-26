@@ -21,14 +21,18 @@ export const foundations = [
       {
         "term": "Client and server",
         "description": "The client is your computer or browser asking for a page. The server is the computer that stores the website files and sends them back."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Campus Clubhouse</title>\n  </head>\n  <body>\n    <h1>Campus Clubhouse</h1>\n    <p>Welcome to our student community space for workshops and projects.</p>\n  </body>\n</html>",
-    "task": "Customize the existing heading and paragraph in your clubhouse index.html. Keep the single <h1> tag already on the page and update its text.",
+    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Campus Chat</title>\n  </head>\n  <body>\n    <h1>Campus Chat</h1>\n    <p>Welcome to our student community space for chat rooms and projects.</p>\n  </body>\n</html>",
+    "task": "Customize the existing heading and paragraph in your chat index.html. Keep the single <h1> tag already on the page and update its text.",
     "steps": [
       "Open your project's index.html file in your code editor.",
-      "Find the existing <h1> tag inside the <body> and change its text to 'Welcome to Campus Clubhouse'.",
-      "Update the <p> tag right below the heading with a short welcome sentence about our student clubhouse.",
+      "Find the existing <h1> tag inside the <body> and change its text to 'Welcome to Campus Chat'.",
+      "Update the <p> tag right below the heading with a short welcome sentence about our student chat.",
       "Save index.html and preview your page in the browser to see your updated text."
     ],
     "check": {
@@ -43,7 +47,8 @@ export const foundations = [
     },
     "sources": [
       "default.asp",
-      "html_intro.asp"
+      "html_intro.asp",
+      "/html/html_exercise_embed.asp?topic=intro"
     ]
   },
   {
@@ -72,29 +77,19 @@ export const foundations = [
       {
         "term": "<head> vs <body>",
         "description": "The <head> stores page settings and title, while the <body> contains all visible content like headings, paragraphs, and pictures."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": `<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Campus Clubhouse</title>
-  </head>
-  <body>
-    <header id="site-header">
-      <h2>Clubhouse Hub</h2>
-    </header>
-    <main>
-      <p>Welcome to our shared club space.</p>
-    </main>
-  </body>
-</html>`,
-    "task": "Check your existing index.html to confirm its structure and add a <header> element inside the body without touching the outer html tags.",
+    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Campus Chat</title>\n</head>\n<body>\n  <h1>Campus Chat</h1>\n  <p>Read our sample conversation.</p>\n</body>\n</html>",
+    "task": "Check the document structure of your existing chat page.",
     "steps": [
-      "Open your index.html file and check that <!DOCTYPE html>, <html lang=\"en\">, <head>, and <body> are in place.",
-      'Inside <body>, add a <header id="site-header"> above your main content, with a matching </header>. This ID gives later links a destination. If a header exists, add the ID to that header instead.',
-      "Place an <h2> heading inside the <header> with the text 'Campus Clubhouse Hub'.",
-      "Save your file and refresh your browser preview to confirm the new header appears."
+      "Keep one doctype, html, head, and body, as in the example.",
+      "Set the title to Campus Chat.",
+      "Keep the existing h1 and welcome paragraph inside body.",
+      "Save and refresh. Semantic containers and IDs come in later lessons."
     ],
     "check": {
       "question": "What is the main difference between the <head> and the <body> tags?",
@@ -108,14 +103,10 @@ export const foundations = [
     },
     "sources": [
       "html_editors.asp",
-      "html_basic.asp"
-    ],
-    "patch": {
-      "target": "body",
-      "html": `<header id="site-header">
-  <h2>Campus Clubhouse Hub</h2>
-</header>`
-    }
+      "html_basic.asp",
+      "/html/html_exercise_embed.asp?topic=basic",
+      "/html/html_challenges_basic.asp"
+    ]
   },
   {
     "id": "html-elements-nesting",
@@ -143,33 +134,42 @@ export const foundations = [
       {
         "term": "Lowercase tags",
         "description": "Writing tags in lowercase letters (like <p> instead of <P>) is the clean, modern standard for all web developers."
+      },
+      {
+        "term": "Nested emphasis and headings",
+        "description": "h1 is the main heading; h2 introduces a subsection. strong marks important words inside a paragraph. This lesson introduces strong before using it below."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<section id=\"about\">\n  <h2>About our club</h2>\n  <p>Campus Clubhouse provides a <strong>welcoming space</strong> for all students.</p>\n  <hr>\n  <p>Stop by during open hours.<br>Student mentors are ready to help.</p>\n</section>",
-    "task": "Add an 'About our club' section to index.html with nested paragraphs, keeping existing content above it intact.",
+    "example": "<h2>Sample conversation</h2>\n<p>Ada: <strong>Welcome!</strong></p>\n<hr>\n<p>Sam: Hello everyone.<br>I am learning HTML.</p>",
+    "task": "Add a sample conversation below the welcome heading.",
     "steps": [
-      "In index.html, find the end of your clubhouse intro section.",
-      "Add a new <section id=\"about\"> container below the existing content.",
-      "Inside the section, add an <h2> heading that says 'About our club'.",
-      "Add a nested <p> paragraph inside the section describing what the club does.",
-      "Check that your paragraph and section are properly closed in order, with the inner tag closing first."
+      "Add an h2 titled Sample conversation.",
+      "Add two p elements containing sample messages.",
+      "Nest strong around an important word and close it before p.",
+      "Try br inside a message and hr between groups."
     ],
     "check": {
       "question": "Which of these shows correct HTML nesting?",
       "options": [
-        "<p>Join our <strong>coding workshop</strong> today.</p>",
-        "<p>Join our <strong>coding workshop</p></strong>",
-        "<p>Join our <strong>coding workshop"
+        "<p>Join our <strong>coding chat room</strong> today.</p>",
+        "<p>Join our <strong>coding chat room</p></strong>",
+        "<p>Join our <strong>coding chat room"
       ],
       "answer": 0,
       "explanation": "The <strong> element was opened inside the <p> element, so it must be closed before the </p> closing tag."
     },
     "sources": [
-      "html_elements.asp"
+      "html_elements.asp",
+      "/html/html_exercise_embed.asp?topic=elements",
+      "/html/html_challenges_elements.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"about\">\n  <h2>About our club</h2>\n  <p>Campus Clubhouse is a student-run space where beginners and pros build fun projects together.</p>\n</section>"
+      "html": "<h2>Sample conversation</h2>\n<p>Ada: <strong>Welcome!</strong></p>\n<hr>\n<p>Sam: Hello everyone.<br>I am learning HTML.</p>"
     }
   },
   {
@@ -198,16 +198,23 @@ export const foundations = [
       {
         "term": "Quoting values",
         "description": "Always wrapping attribute values in double quotes, such as id=\"notice\", to prevent code errors."
+      },
+      {
+        "term": "Grouping with section",
+        "description": "section groups a topic, usually with an h2 heading. Give your welcome group id=\"site-header\" and conversation group id=\"about\"; later links can target them. Classes label groups but do not style anything by themselves."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<div id=\"meeting-card\" class=\"club-card\" title=\"Weekly meeting announcement\">\n  <h3>Weekly meetup</h3>\n  <p>Every Wednesday at 5:00 PM in Room 204.</p>\n</div>",
-    "task": "Add a meeting notice card to index.html with a unique id, a reusable class, and a hover tooltip.",
+    "example": "<div id=\"meeting-card\" class=\"chat-card\" title=\"Weekly meeting announcement\">\n  <h3>Weekly room discussion</h3>\n  <p>Every Wednesday at 5:00 PM in Room 204.</p>\n</div>",
+    "task": "Give your chat sections IDs and a shared class.",
     "steps": [
-      "In index.html, scroll below the 'About our club' section.",
-      "Add a <div> element with id='meeting-card' and class='club-card'.",
-      "Add a title='Weekly meeting announcement' attribute to the opening <div> tag for the tooltip.",
-      "Inside the card, add an <h3> heading with 'Weekly meetup' and a <p> with the time and room location.",
-      "Save and preview the page, hovering your mouse over the card to see the tooltip appear."
+      "Wrap the welcome heading and paragraph in <section id=\"site-header\">.",
+      "Wrap the sample conversation in <section id=\"about\">.",
+      "Add class=\"message\" to each sample-message paragraph.",
+      "Add a title attribute and hover it. Keep every ID unique."
     ],
     "check": {
       "question": "What is the key rule about using an 'id' attribute on a webpage?",
@@ -220,11 +227,13 @@ export const foundations = [
       "explanation": "An id is like a fingerprint: it must be unique to a single element on the page so styles and links can target that exact element."
     },
     "sources": [
-      "html_attributes.asp"
+      "html_attributes.asp",
+      "/html/html_exercise_embed.asp?topic=attributes",
+      "/html/html_challenges_attributes.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<div id=\"meeting-card\" class=\"club-card\" title=\"Weekly meeting announcement\">\n  <h3>Weekly meetup</h3>\n  <p>Join us every Wednesday at 5:00 PM in Room 204 for hands-on web projects.</p>\n</div>"
+      "html": "<section id=\"about\"><h2>Sample conversation</h2><p class=\"message\" title=\"Sample message\">Ada: Hello!</p></section>"
     }
   },
   {
@@ -253,14 +262,18 @@ export const foundations = [
       {
         "term": "Structure over style",
         "description": "Use headings to label meaningful sections, not just to make normal text bigger. Visual styling belongs in CSS."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<section id=\"activity-groups\">\n  <h2>Clubhouse activity groups</h2>\n  <h3>Coding group</h3>\n  <p>Learn web building and app development.</p>\n  <h3>Design group</h3>\n  <p>Explore user interfaces, color, and typography.</p>\n  <h3>Hardware group</h3>\n  <p>Tinker with electronics, sensors, and robotics.</p>\n</section>",
-    "task": "Add <h2> and <h3> subheadings for clubhouse activity groups (Coding, Design, Hardware) while preserving your existing page content.",
+    "example": "<section id=\"activity-groups\">\n  <h2>Chat activity groups</h2>\n  <h3>Coding group</h3>\n  <p>Learn web building and app development.</p>\n  <h3>Design group</h3>\n  <p>Explore user interfaces, color, and typography.</p>\n  <h3>Hardware group</h3>\n  <p>Tinker with electronics, sensors, and robotics.</p>\n</section>",
+    "task": "Add <h2> and <h3> subheadings for chat activity groups (Coding, Design, Hardware) while preserving your existing page content.",
     "steps": [
       "In index.html, find a spot below your meeting card.",
       "Add a new <section id=\"activity-groups\"> container.",
-      "Inside the section, add an <h2> heading titled 'Clubhouse activity groups'.",
+      "Inside the section, add an <h2> heading titled 'Chat activity groups'.",
       "Add three <h3> subheadings beneath it: 'Coding group', 'Design group', and 'Hardware group', each with a brief <p> description.",
       "Verify that your headings follow a step-by-step order from <h2> down to <h3> without skipping levels."
     ],
@@ -275,11 +288,13 @@ export const foundations = [
       "explanation": "Headings create a clear outline of your page. Skipping levels (like h2 straight to h4) breaks that outline and confuses assistive technology like screen readers."
     },
     "sources": [
-      "html_headings.asp"
+      "html_headings.asp",
+      "/html/html_exercise_embed.asp?topic=headings",
+      "/html/html_challenges_headings.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"activity-groups\">\n  <h2>Clubhouse activity groups</h2>\n  <h3>Coding group</h3>\n  <p>Learn web building and app development.</p>\n  <h3>Design group</h3>\n  <p>Explore user interfaces, color, and typography.</p>\n  <h3>Hardware group</h3>\n  <p>Tinker with electronics, sensors, and robotics.</p>\n</section>"
+      "html": "<section id=\"activity-groups\">\n  <h2>Chat activity groups</h2>\n  <h3>Coding group</h3>\n  <p>Learn web building and app development.</p>\n  <h3>Design group</h3>\n  <p>Explore user interfaces, color, and typography.</p>\n  <h3>Hardware group</h3>\n  <p>Tinker with electronics, sensors, and robotics.</p>\n</section>"
     }
   },
   {
@@ -308,16 +323,20 @@ export const foundations = [
       {
         "term": "<pre> for preformatted text",
         "description": "Tells the browser to show text in a monospace font and keep every single space and line break exactly as you typed it."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<section>\n  <h2>Clubhouse schedule</h2>\n  <p>Our clubhouse is open all week. Stop by to write code, ask questions, or hang out!</p>\n\n  <!-- A divider line between topics -->\n  <hr>\n\n  <h3>Weekly timetable</h3>\n  <!-- Preformatted text keeps all spaces and enters -->\n  <pre>\nDay        Event                  Time\n---------------------------------------------\nMonday     Web design workshop    6:00 PM\nWednesday  Study hall and tea     5:00 PM\nSaturday   Hackathon build day    10:00 AM\n  </pre>\n</section>",
-    "task": "Add a clubhouse schedule section with paragraphs, a divider line (<hr>), and a preformatted timetable (<pre>) to your existing index.html page.",
+    "example": "<section>\n  <h2>Chat schedule</h2>\n  <p>Our chat is open all week. Stop by to write code, ask questions, or hang out!</p>\n\n  <!-- A divider line between topics -->\n  <hr>\n\n  <h3>Weekly room directory</h3>\n  <!-- Preformatted text keeps all spaces and enters -->\n  <pre>\nDay        Event                  Time\n---------------------------------------------\nMonday     Web design chat room    6:00 PM\nWednesday  Study hall and tea     5:00 PM\nSaturday   Hackathon build day    10:00 AM\n  </pre>\n</section>",
+    "task": "Add a chat schedule section with paragraphs, a divider line (<hr>), and a preformatted room directory (<pre>) to your existing index.html page.",
     "steps": [
       "Open your existing index.html and find where your welcome section ends.",
       "Add an <hr> tag below the welcome section to create a divider line separating your intro from the new schedule.",
-      "Below the line, create a <section id=\"schedule\"> container with an <h2> heading that says 'Clubhouse schedule'.",
+      "Below the line, create a <section id=\"schedule\"> container with an <h2> heading that says 'Chat schedule'.",
       "Add a <p> paragraph welcoming students to join daily study sessions.",
-      "Add a <pre> block displaying a simple timetable with days, events, and times lined up using spaces."
+      "Add a <pre> block displaying a simple room directory with days, conversations, and times lined up using spaces."
     ],
     "check": {
       "question": "What happens if you type four enter keys and ten spaces inside a normal <p> tag in your HTML file?",
@@ -330,11 +349,13 @@ export const foundations = [
       "explanation": "Web browsers collapse extra spaces and line breaks in your HTML code into a single space. If you want to keep exact spacing and line breaks, use the <pre> tag."
     },
     "sources": [
-      "html_paragraphs.asp"
+      "html_paragraphs.asp",
+      "/html/html_exercise_embed.asp?topic=paragraphs",
+      "/html/html_challenges_paragraphs.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<hr>\n<section id=\"schedule\">\n  <h2>Clubhouse schedule</h2>\n  <p>Drop in during our open lab hours to work on projects and meet other learners.</p>\n  <pre>\nMon - Fri: 4:00 PM - 8:00 PM\nSaturday:  10:00 AM - 4:00 PM\nSunday:    Closed\n  </pre>\n</section>"
+      "html": "<hr>\n<section id=\"schedule\">\n  <h2>Chat schedule</h2>\n  <p>Drop in during our open lab hours to work on projects and meet other learners.</p>\n  <pre>\nMon - Fri: 4:00 PM - 8:00 PM\nSaturday:  10:00 AM - 4:00 PM\nSunday:    Closed\n  </pre>\n</section>"
     }
   },
   {
@@ -371,13 +392,17 @@ export const foundations = [
       {
         "term": "<sub> and <sup> for subscripts and superscripts",
         "description": "Lowers text for chemical formulas like H₂O, or raises text above the line for numbers like 1st."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<p>\n  <strong>Important safety note:</strong> Wear goggles in the hardware lab.\n  <b>Look here:</b> check the sign posted by the door.\n</p>\n<p>\n  We <em>really</em> want you to join our hackathon! In programming, an\n  <i>algorithm</i> is a list of step-by-step instructions.\n</p>\n<p>\n  Meeting room moved from <del>Room 101</del> to <ins>Room 204</ins>!\n  Register by <mark>Friday noon</mark>.\n  <small>Club members only.</small>\n</p>\n<p>\n  Join our 1<sup>st</sup> web challenge. Water formula is H<sub>2</sub>O.\n</p>",
+    "example": "<p>\n  <strong>Important safety note:</strong> Wear goggles in the hardware lab.\n  <b>Look here:</b> check the sign posted by the door.\n</p>\n<p>\n  We <em>really</em> want you to join our hackathon! In programming, an\n  <i>algorithm</i> is a list of step-by-step instructions.\n</p>\n<p>\n  Meeting room moved from <del>Room 101</del> to <ins>Room 204</ins>!\n  Register by <mark>Friday noon</mark>.\n  <small>Chat members only.</small>\n</p>\n<p>\n  Join our 1<sup>st</sup> web challenge. Water formula is H<sub>2</sub>O.\n</p>",
     "task": "Format an announcement box in index.html comparing <strong> vs <b>, <em> vs <i>, and highlighting deadlines with <mark>.",
     "steps": [
       "Open index.html and locate the area right beneath your activity groups.",
-      "Add a <div class=\"announcement\"> container to hold club notices.",
+      "Add a <div class=\"announcement\"> container to hold chat notices.",
       "Add a paragraph using <strong> for an important safety alert and <b> to draw attention to a tip.",
       "Add a second paragraph using <del> and <ins> for a room update, and <mark> around the RSVP deadline.",
       "Save index.html and preview the formatted text styles in your browser."
@@ -393,7 +418,9 @@ export const foundations = [
       "explanation": "<strong> gives semantic meaning to important text, so assistive tools like screen readers know to emphasize it for users who cannot see the screen."
     },
     "sources": [
-      "html_formatting.asp"
+      "html_formatting.asp",
+      "/html/html_exercise_embed.asp?topic=formatting",
+      "/html/html_challenges_formatting.asp"
     ],
     "patch": {
       "target": "body",
@@ -430,16 +457,20 @@ export const foundations = [
       {
         "term": "<bdo> for text direction",
         "description": "Stands for bi-directional override; lets you switch text from left-to-right to right-to-left."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<section>\n  <h2>What members say</h2>\n  <p>\n    Our advisor says, <q>Curiosity is the best tool in tech.</q>\n    We read about this in the book <cite>Beginner Web Journeys</cite>.\n  </p>\n\n  <blockquote cite=\"https://campusclubhouse.org/story\">\n    \"Joining the clubhouse gave me the confidence to build my first website.\n    The community here helps you whenever you get stuck.\"\n  </blockquote>\n\n  <p>Questions? Reach out to our <abbr title=\"Peer Learning Coordinator\">PLC</abbr>.</p>\n\n  <address>\n    Campus Clubhouse, Student Center<br>\n    Room 204, Second Floor<br>\n    Email: hello@campusclubhouse.org\n  </address>\n</section>",
-    "task": "Add a member testimonial quote and the clubhouse room contact address with an abbreviation tooltip to index.html without removing previous sections.",
+    "example": "<section>\n  <h2>What members say</h2>\n  <p>\n    Our advisor says, <q>Curiosity is the best tool in tech.</q>\n    We read about this in the book <cite>Beginner Web Journeys</cite>.\n  </p>\n\n  <blockquote cite=\"https://campuschat.org/story\">\n    \"Joining the chat gave me the confidence to build my first website.\n    The community here helps you whenever you get stuck.\"\n  </blockquote>\n\n  <p>Questions? Reach out to our <abbr title=\"Peer Learning Coordinator\">PLC</abbr>.</p>\n\n  <address>\n    Campus Chat, Student Center<br>\n    Room 204, Second Floor<br>\n    Email: hello@campuschat.org\n  </address>\n</section>",
+    "task": "Add a member testimonial quote and the chat room contact address with an abbreviation tooltip to index.html without removing previous sections.",
     "steps": [
-      "In index.html, add a <blockquote> element containing a short encouraging quote from a clubhouse member.",
+      "In index.html, add a <blockquote> element containing a short encouraging quote from a chat member.",
       "Add a cite attribute to the <blockquote> pointing to the story source URL.",
-      "Below the quote, create an <address> tag to hold clubhouse contact information.",
+      "Below the quote, create an <address> tag to hold chat contact information.",
       "Inside the address, add room and email details separated by <br> line break tags.",
-      "Include an <abbr title=\"Campus Clubhouse President\">CCP</abbr> abbreviation tag next to the student leader's name."
+      "Include an <abbr title=\"Campus Chat President\">CCP</abbr> abbreviation tag next to the student leader's name."
     ],
     "check": {
       "question": "Which tag should you use to mention the title of a book or article in your HTML text?",
@@ -452,11 +483,13 @@ export const foundations = [
       "explanation": "The <cite> tag is specially made to hold the title of a creative work, such as a book, article, movie, or web tutorial."
     },
     "sources": [
-      "html_quotation_elements.asp"
+      "html_quotation_elements.asp",
+      "/html/html_exercise_embed.asp?topic=quotation_elements",
+      "/html/html_challenges_quotations.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<blockquote cite=\"https://campusclubhouse.org/stories\">\n  \"The weekend code sessions helped me pass my first web design class with confidence!\"\n</blockquote>\n<address>\n  Campus Clubhouse HQ<br>\n  Student Center, Room 204<br>\n  Contact: <abbr title=\"Campus Clubhouse President\">CCP</abbr> Maya Lin\n</address>"
+      "html": "<blockquote cite=\"https://campuschat.org/stories\">\n  \"The weekend code sessions helped me pass my first web design class with confidence!\"\n</blockquote>\n<address>\n  Campus Chat HQ<br>\n  Student Center, Room 204<br>\n  Contact: <abbr title=\"Campus Chat President\">CCP</abbr> Maya Lin\n</address>"
     }
   },
   {
@@ -485,9 +518,13 @@ export const foundations = [
       {
         "term": "Public visibility warning",
         "description": "Anyone can read your HTML comments using 'View Source', so never include secrets or passwords."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Campus Clubhouse</title>\n</head>\n<body>\n  <!-- =============================== -->\n  <!-- HEADER SECTION                  -->\n  <!-- =============================== -->\n  <header>\n    <h1>Campus Clubhouse</h1>\n  </header>\n\n  <!-- MAIN BODY CONTENT -->\n  <main>\n    <!-- Member stats box -->\n    <div class=\"stats\">\n      <p>Members: 120 | Projects: 15</p>\n    </div>\n\n    <!-- Temporary note: workshop signup opens next week\n    <p>Sign up now for our next coding sprint!</p>\n    -->\n    <p>Welcome to our tech club! Drop by anytime.</p>\n  </main>\n</body>\n</html>",
+    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Campus Chat</title>\n</head>\n<body>\n  <!-- =============================== -->\n  <!-- HEADER SECTION                  -->\n  <!-- =============================== -->\n  <header>\n    <h1>Campus Chat</h1>\n  </header>\n\n  <!-- MAIN BODY CONTENT -->\n  <main>\n    <!-- Member stats box -->\n    <div class=\"stats\">\n      <p>Members: 120 | Projects: 15</p>\n    </div>\n\n    <!-- Temporary note: chat room profile submission opens next week\n    <p>Sign up now for our next coding sprint!</p>\n    -->\n    <p>Welcome to our tech chat! Drop by anytime.</p>\n  </main>\n</body>\n</html>",
     "task": "Add section comments in index.html to label your header, about section, and schedule, and add a quick member stats note without altering earlier code.",
     "steps": [
       "Open index.html and locate where your header, welcome, and schedule sections sit.",
@@ -507,7 +544,9 @@ export const foundations = [
       "explanation": "HTML files are sent directly to the visitor's computer. Anyone can open 'View Page Source' or inspect the page to read every comment you wrote."
     },
     "sources": [
-      "html_comments.asp"
+      "html_comments.asp",
+      "/html/html_exercise_embed.asp?topic=comments",
+      "/html/html_challenges_comments.asp"
     ],
     "patch": {
       "target": "body",
@@ -517,9 +556,9 @@ export const foundations = [
   {
     "id": "html-project-bio",
     "module": "foundations",
-    "title": "Project: Member bios",
+    "title": "Project: Chat profiles",
     "minutes": 20,
-    "intro": "Time to put all your new skills together! In this project, you will build a friendly Club leadership section for your clubhouse website. Real websites group people cards inside <article> containers, using headings for names, styled text for roles, <cite> to name creative projects or publications, and <code> for software tools. This clean structure looks great and helps all visitors read profile cards easily.",
+    "intro": "Time to put all your new skills together! In this project, you will build a friendly Chat profiles section for your chat website. Real websites group people cards inside <article> containers, using headings for names, styled text for roles, <cite> to name creative projects or publications, and <code> for software tools. This clean structure looks great and helps all visitors read profile cards easily.",
     "concepts": [
       {
         "term": "<article> for profile cards",
@@ -540,16 +579,20 @@ export const foundations = [
       {
         "term": "Accessibility for everyone",
         "description": "Using semantic tags like <article>, <h3>, and <cite> gives assistive devices clear clues about who each person is and what they built."
+      },
+      {
+        "term": "Profile containers",
+        "description": "section groups the profile directory; article holds one independent profile. h3 is a heading below h2. code marks a literal code token. These tags describe content; they add no layout or behavior."
       }
     ],
-    "example": "<section id=\"leadership\">\n  <h2>Club leadership</h2>\n\n  <!-- Bio card for Jordan -->\n  <article class=\"bio-card\">\n    <h3>Jordan Lee</h3>\n    <p><em>Role:</em> <strong>Workshop Lead</strong></p>\n    <p>Junior studying design and code. Jordan loves helping beginners build their first web pages.</p>\n    <p>Featured project: <cite>Campus Event Finder</cite></p>\n    <p>Favorite tools: <code>HTML</code>, <code>CSS</code>, and <code>Figma</code>.</p>\n  </article>\n\n  <!-- Bio card for Samira -->\n  <article class=\"bio-card\">\n    <h3>Samira Patel</h3>\n    <p><em>Role:</em> <strong>Community Manager</strong></p>\n    <p>Sophomore organizing hackathons and weekly study sessions for all students.</p>\n    <p>Published guide: <cite>The First-Year Hacker Handbook</cite></p>\n    <p>Favorite tools: <code>Markdown</code> and <code>VS Code</code>.</p>\n  </article>\n</section>",
-    "task": "Build a Club leadership section in index.html with bio cards, citing a creative project with <cite> and listing tools with <code>.",
+    "example": "<section id=\"profiles\">\n  <h2>Chat profiles</h2>\n\n  <!-- Bio card for Jordan -->\n  <article class=\"bio-card\">\n    <h3>Jordan Lee</h3>\n    <p><em>Role:</em> <strong>Chat room Lead</strong></p>\n    <p>Junior studying design and code. Jordan loves helping beginners build their first web pages.</p>\n    <p>Featured project: <cite>Campus Event Finder</cite></p>\n    <p>Favorite tools: <code>HTML</code>, <code>CSS</code>, and <code>Figma</code>.</p>\n  </article>\n\n  <!-- Bio card for Samira -->\n  <article class=\"bio-card\">\n    <h3>Samira Patel</h3>\n    <p><em>Role:</em> <strong>Community Manager</strong></p>\n    <p>Sophomore organizing hackathons and weekly study sessions for all students.</p>\n    <p>Published guide: <cite>The First-Year Hacker Handbook</cite></p>\n    <p>Favorite tools: <code>Markdown</code> and <code>VS Code</code>.</p>\n  </article>\n</section>",
+    "task": "Build a Chat profiles section in index.html with bio cards, citing a creative project with <cite> and listing tools with <code>.",
     "steps": [
       "Open index.html and navigate below your announcement section.",
-      "Add a <section id=\"leadership\"> with an <h2> title reading \"Club leadership\".",
-      "Insert an <article class=\"bio-card\"> container for the first club officer.",
+      "Add a <section id=\"profiles\"> with an <h2> title reading \"Chat profiles\".",
+      "Insert an <article class=\"bio-card\"> container for the first chat moderator.",
       "Add an <h3> with Jordan Lee, a role paragraph using <em> and <strong>, a featured project with <cite>Campus Event Finder</cite>, and tools with <code>.",
-      "Save index.html and view your new student leadership profile card in the browser."
+      "Save index.html and view your new student profiles profile card in the browser."
     ],
     "check": {
       "question": "Why is <article> a great tag to wrap each person's bio card in?",
@@ -566,7 +609,7 @@ export const foundations = [
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"leadership\">\n  <h2>Club leadership</h2>\n  <article class=\"bio-card\">\n    <h3>Jordan Lee</h3>\n    <p><em>Role:</em> <strong>Workshop Lead</strong></p>\n    <p>Junior studying design and code. Jordan loves helping beginners build their first web pages.</p>\n    <p>Featured project: <cite>Campus Event Finder</cite></p>\n    <p>Favorite tools: <code>HTML</code>, <code>CSS</code>, and <code>Figma</code>.</p>\n  </article>\n</section>"
+      "html": "<section id=\"profiles\">\n  <h2>Chat profiles</h2>\n  <article class=\"bio-card\">\n    <h3>Jordan Lee</h3>\n    <p><em>Role:</em> <strong>Chat room Lead</strong></p>\n    <p>Junior studying design and code. Jordan loves helping beginners build their first web pages.</p>\n    <p>Featured project: <cite>Campus Event Finder</cite></p>\n    <p>Favorite tools: <code>HTML</code>, <code>CSS</code>, and <code>Figma</code>.</p>\n  </article>\n</section>"
     }
   },
   {
@@ -599,13 +642,17 @@ export const foundations = [
       {
         "term": "SVG data URI",
         "description": "A way to put vector icon code directly inside the href attribute so your favicon displays immediately without downloading an image file."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Campus Clubhouse - Student Tech Hub</title>\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230055aa'/><text x='50' y='65' font-size='45' font-weight='bold' fill='white' text-anchor='middle'>C</text></svg>\">\n</head>\n<body>\n  <h1>Welcome to Campus Clubhouse</h1>\n  <p>Notice the custom tab title and icon in your browser tab!</p>\n</body>\n</html>",
+    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Campus Chat - Student Tech Hub</title>\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230055aa'/><text x='50' y='65' font-size='45' font-weight='bold' fill='white' text-anchor='middle'>C</text></svg>\">\n</head>\n<body>\n  <h1>Welcome to Campus Chat</h1>\n  <p>Notice the custom tab title and icon in your browser tab!</p>\n</body>\n</html>",
     "task": "Update the existing <title> in your index.html <head> and add an SVG favicon directly beneath it. Keep your existing <!DOCTYPE html>, <html>, and <body> structure intact.",
     "steps": [
       "Open your existing index.html file and locate the <head> section near the top.",
-      "Update the text inside the existing <title> tag to 'Campus Clubhouse - Student Tech Hub'.",
+      "Update the text inside the existing <title> tag to 'Campus Chat - Student Tech Hub'.",
       "Add a <link rel=\"icon\" type=\"image/svg+xml\"> tag directly below the title tag in the <head>.",
       "Set the href attribute to the provided SVG icon data URI depicting a blue circle with the letter 'C'.",
       "Save index.html and look at your browser tab to see your new title and icon."
@@ -622,11 +669,13 @@ export const foundations = [
     },
     "sources": [
       "html_page_title.asp",
-      "html_favicon.asp"
+      "html_favicon.asp",
+      "/html/html_exercise_embed.asp?topic=favicon",
+      "/html/html_exercise_embed.asp?topic=page_title"
     ],
     "patch": {
       "target": "head",
-      "html": "<title>Campus Clubhouse - Student Tech Hub</title>\n<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230055aa'/><text x='50' y='65' font-size='45' font-weight='bold' fill='white' text-anchor='middle'>C</text></svg>\">"
+      "html": "<title>Campus Chat - Student Tech Hub</title>\n<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230055aa'/><text x='50' y='65' font-size='45' font-weight='bold' fill='white' text-anchor='middle'>C</text></svg>\">"
     }
   },
   {
@@ -659,15 +708,23 @@ export const foundations = [
       {
         "term": "When to use inline styles",
         "description": "Great for quick tests and single styled callouts, but best kept light so your HTML stays neat and easy to manage."
+      },
+      {
+        "term": "Declarations in this banner",
+        "description": "background-color paints the background; color sets text color; padding adds inside space; margin adds outside space; text-align aligns inline text; border-radius rounds corners. Values such as 20px are CSS lengths. A div is a generic block container."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<div style=\"background-color: #003366; color: white; padding: 20px; text-align: center; border-radius: 8px;\">\n  <h2 style=\"font-family: sans-serif; margin: 0 0 10px;\">Welcome to Innovation Labs</h2>\n  <p style=\"font-size: 18px; margin: 0;\">Open workshops every weekday at 4 PM.</p>\n</div>",
-    "task": "Add a styled welcome banner box inside the existing <body> of your clubhouse index.html, directly under your header. Preserve your existing page structure.",
+    "example": "<div style=\"background-color: #003366; color: white; padding: 20px; text-align: center; border-radius: 8px;\">\n  <h2 style=\"font-family: sans-serif; margin: 0 0 10px;\">Welcome to Innovation Labs</h2>\n  <p style=\"font-size: 18px; margin: 0;\">Open chat rooms every weekday at 4 PM.</p>\n</div>",
+    "task": "Add a styled welcome banner box inside the existing <body> of your chat index.html, directly under your header. Preserve your existing page structure.",
     "steps": [
       "Open index.html and locate the area right below your existing <header> inside the <body>.",
       "Add a <div> element with a style attribute setting background-color: #003366; color: white; padding: 20px; text-align: center; border-radius: 8px;.",
       "Inside this styled div, add an <h2> heading with the text 'Build the Future Together'.",
-      "Below the heading, add a <p> tag with the text 'Join our open club collaboration sessions every Friday evening.'.",
+      "Below the heading, add a <p> tag with the text 'Join our open chat collaboration sessions every Friday evening.'.",
       "Save index.html and refresh your browser preview to see your new dark blue banner box."
     ],
     "check": {
@@ -681,11 +738,13 @@ export const foundations = [
       "explanation": "Inline styles always use the style attribute with property-value pairs inside quotes, written as style=\"property: value;\"."
     },
     "sources": [
-      "html_styles.asp"
+      "html_styles.asp",
+      "/html/html_exercise_embed.asp?topic=styles",
+      "/html/html_challenges_styles.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<div style=\"background-color: #003366; color: white; padding: 20px; text-align: center; border-radius: 8px;\">\n  <h2 style=\"margin: 0 0 10px;\">Build the Future Together</h2>\n  <p style=\"margin: 0;\">Join our open club collaboration sessions every Friday evening.</p>\n</div>"
+      "html": "<div style=\"background-color: #003366; color: white; padding: 20px; text-align: center; border-radius: 8px;\">\n  <h2 style=\"margin: 0 0 10px;\">Build the Future Together</h2>\n  <p style=\"margin: 0;\">Join our open chat collaboration sessions every Friday evening.</p>\n</div>"
     }
   },
   {
@@ -693,7 +752,7 @@ export const foundations = [
     "module": "appearance",
     "title": "Web colors: names, RGB, HEX, and HSL",
     "minutes": 14,
-    "intro": "Colors make a website look lively and show off your club brand. In HTML and CSS, you can pick colors in four friendly ways: standard color names, RGB numbers, HEX codes, or HSL wheel degrees. You can also make colors semi-transparent using alpha transparency with rgba() or hsla(). Always keep readability in mind by ensuring high contrast between your text and background colors.",
+    "intro": "Colors make a website look lively and show off your chat community brand. In HTML and CSS, you can pick colors in four friendly ways: standard color names, RGB numbers, HEX codes, or HSL wheel degrees. You can also make colors semi-transparent using alpha transparency with rgba() or hsla(). Always keep readability in mind by ensuring high contrast between your text and background colors.",
     "concepts": [
       {
         "term": "Color names",
@@ -718,14 +777,18 @@ export const foundations = [
       {
         "term": "RGBA transparency and contrast",
         "description": "rgba(r, g, b, alpha) creates translucent overlays. Always make sure body text has high contrast against its background so it is easy to read."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
     "example": "<style>\n  .name-box  { background-color: Navy; color: white; padding: 8px; }\n  .rgb-box   { background-color: rgb(0, 102, 204); color: white; padding: 8px; }\n  .hex-box   { background-color: #0066cc; color: white; padding: 8px; } /* 00 to ff */\n  .short-hex { background-color: #08f; color: white; padding: 8px; }    /* #08f = #0088ff */\n  .hsl-box   { background-color: hsl(210, 100%, 40%); color: white; padding: 8px; }\n  .rgba-box  { background-color: rgba(0, 51, 102, 0.75); color: white; padding: 8px; }\n  .hsla-box  { background-color: hsla(210, 100%, 40%, 0.75); color: white; padding: 8px; }\n</style>\n\n<div class=\"name-box\">Named: Navy</div>\n<div class=\"rgb-box\">RGB: rgb(0, 102, 204)</div>\n<div class=\"hex-box\">HEX: #0066cc (channels 00 to ff)</div>\n<div class=\"short-hex\">Shorthand HEX: #08f (expands to #0088ff)</div>\n<div class=\"hsl-box\">HSL: hsl(210, 100%, 40%)</div>\n<div class=\"rgba-box\">Semi-transparent RGBA: rgba(0, 51, 102, 0.75)</div>\n<div class=\"hsla-box\">Semi-transparent HSLA: hsla(210, 100%, 40%, 0.75)</div>",
-    "task": "Add a club color palette section into the existing <body> of index.html, placed right below your welcome banner. Keep all earlier content in place.",
+    "task": "Add a chat color palette section into the existing <body> of index.html, placed right below your welcome banner. Keep all earlier content in place.",
     "steps": [
       "Open index.html and find the spot below your welcome banner inside the <body>.",
-      "Add a new <section id=\"club-colors\"> element containing an <h2> heading that says 'Club Color Palette'.",
-      "Inside the section, add a <div> container with style=\"display: flex; gap: 10px; flex-wrap: wrap;\" to hold your color swatches.",
+      "Add a new <section id=\"chat-colors\"> element containing an <h2> heading that says 'Chat Color Palette'.",
+      "Add a paragraph for each color sample; use only color and background-color in its style attribute.",
       "Add four badge <div> boxes inside the container displaying HEX (#004488), RGB (rgb(240, 160, 40)), HSL (hsl(140, 60%, 40%)), and a see-through RGBA (rgba(0, 0, 0, 0.65)) badge.",
       "Save index.html and refresh your browser preview to verify that all four color swatches display clearly."
     ],
@@ -743,11 +806,13 @@ export const foundations = [
       "html_colors.asp",
       "html_colors_rgb.asp",
       "html_colors_hex.asp",
-      "html_colors_hsl.asp"
+      "html_colors_hsl.asp",
+      "/html/html_exercise_embed.asp?topic=colors",
+      "/html/html_challenges_colors.asp"
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"club-colors\">\n  <h2>Club Color Palette</h2>\n  <div style=\"display: flex; gap: 10px; flex-wrap: wrap;\">\n    <div style=\"background-color: #004488; color: white; padding: 10px; border-radius: 4px;\">Navy: #004488</div>\n    <div style=\"background-color: #08f; color: white; padding: 10px; border-radius: 4px;\">Shorthand: #08f</div>\n    <div style=\"background-color: rgb(240, 160, 40); color: black; padding: 10px; border-radius: 4px;\">Gold: rgb(240, 160, 40)</div>\n    <div style=\"background-color: hsl(140, 60%, 40%); color: white; padding: 10px; border-radius: 4px;\">Green: hsl(140, 60%, 40%)</div>\n    <div style=\"background-color: rgba(0, 0, 0, 0.65); color: white; padding: 10px; border-radius: 4px;\">Overlay: rgba(0, 0, 0, 0.65)</div>\n    <div style=\"background-color: hsla(210, 80%, 30%, 0.75); color: white; padding: 10px; border-radius: 4px;\">Alpha: hsla(210, 80%, 30%, 0.75)</div>\n  </div>\n</section>"
+      "html": "<section id=\"chat-colors\">\n  <h2>Chat Color Palette</h2>\n  <div style=\"\">\n    <div style=\"background-color: #004488; color: white; \">Navy: #004488</div>\n    <div style=\"background-color: #08f; color: white; \">Shorthand: #08f</div>\n    <div style=\"background-color: rgb(240, 160, 40); color: black; \">Gold: rgb(240, 160, 40)</div>\n    <div style=\"background-color: hsl(140, 60%, 40%); color: white; \">Green: hsl(140, 60%, 40%)</div>\n    <div style=\"background-color: rgba(0, 0, 0, 0.65); color: white; \">Overlay: rgba(0, 0, 0, 0.65)</div>\n    <div style=\"background-color: hsla(210, 80%, 30%, 0.75); color: white; \">Alpha: hsla(210, 80%, 30%, 0.75)</div>\n  </div>\n</section>"
     }
   },
   {
@@ -780,9 +845,17 @@ export const foundations = [
       {
         "term": "CSS inheritance",
         "description": "Certain styles like font-family and text color set on a parent element (like <body>) naturally trickle down to all child elements inside it."
+      },
+      {
+        "term": "Selectors before styling",
+        "description": "A tag selector such as p matches all paragraphs; .message matches class=\"message\"; #about matches id=\"about\". Braces contain property: value; declarations. Commas combine selectors. A space selects descendants. CSS affects presentation only."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>CSS Cascade Demo</title>\n  <style>\n    /* 1. Element selector: sets the base font for the whole page */\n    body { font-family: sans-serif; line-height: 1.6; color: #222; }\n    \n    /* 2. Class selector: reusable card box */\n    .card { border: 1px solid #ddd; padding: 16px; border-radius: 8px; margin-bottom: 12px; }\n    \n    /* 3. Class selector: reusable button */\n    .btn { display: inline-block; padding: 8px 16px; background-color: #0055aa; color: white; text-decoration: none; border-radius: 4px; }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <h2>Upcoming Workshop</h2>\n    <p>Learn web building basics with fellow students.</p>\n    <a href=\"#\" class=\"btn\">Sign Up</a>\n  </div>\n</body>\n</html>",
+    "example": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>CSS Cascade Demo</title>\n  <style>\n    /* 1. Element selector: sets the base font for the whole page */\n    body { font-family: sans-serif; line-height: 1.6; color: #222; }\n    \n    /* 2. Class selector: reusable card box */\n    .card { border: 1px solid #ddd; padding: 16px; border-radius: 8px; margin-bottom: 12px; }\n    \n    /* 3. Class selector: reusable button */\n    .btn { display: inline-block; padding: 8px 16px; background-color: #0055aa; color: white; text-decoration: none; border-radius: 4px; }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <h2>Upcoming Chat room</h2>\n    <p>Learn web building basics with fellow students.</p>\n    <a href=\"#\" class=\"btn\">Sign Up</a>\n  </div>\n</body>\n</html>",
     "task": "Add an internal <style> block inside the <head> of index.html to set page typography, card boxes, and a button class. Preserve your existing <title>, favicon link, and <body> content.",
     "steps": [
       "Open index.html, find the <head> section, and add an opening <style> and closing </style> tag right below your favicon link.",
@@ -802,7 +875,9 @@ export const foundations = [
       "explanation": "In the CSS cascade, inline styles on the tag itself are the most specific and win over class, ID, or element selectors."
     },
     "sources": [
-      "html_css.asp"
+      "html_css.asp",
+      "/html/html_exercise_embed.asp?topic=css",
+      "/html/html_challenges_css.asp"
     ],
     "patch": {
       "target": "head",
@@ -835,15 +910,23 @@ export const foundations = [
       {
         "term": "Email and phone links",
         "description": "Using href=\"mailto:team@example.com\" opens the visitor's default email app, and href=\"tel:+18005550199\" lets mobile phones dial a number immediately."
+      },
+      {
+        "term": "Navigation markup",
+        "description": "nav groups major navigation links. aria-label gives the group a name for assistive technology. A fragment href=\"#about\" targets the existing element with id=\"about\"."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<nav aria-label=\"Club navigation\">\n  <!-- Link to a page in your project -->\n  <a href=\"index.html\">Home</a> |\n  <a href=\"about.html\">About</a> |\n  \n  <!-- Link to an outside website in a new tab -->\n  <a href=\"https://www.w3schools.com\" target=\"_blank\" rel=\"noopener noreferrer\">W3Schools</a> |\n  \n  <!-- Link that opens an email app -->\n  <a href=\"mailto:clubhouse@example.edu\">Email Us</a> |\n  \n  <!-- Link that opens a phone dialer -->\n  <a href=\"tel:+18005550199\">Call Us</a>\n</nav>",
-    "task": "Add a navigation bar near the top of index.html inside the body with links to club sections and an email link, preserving all existing headings and content.",
+    "example": "<nav aria-label=\"Chat navigation\">\n  <!-- Link to a page in your project -->\n  <a href=\"index.html\">Home</a> |\n  <a href=\"about.html\">About</a> |\n  \n  <!-- Link to an outside website in a new tab -->\n  <a href=\"https://www.w3schools.com\" target=\"_blank\" rel=\"noopener noreferrer\">W3Schools</a> |\n  \n  <!-- Link that opens an email app -->\n  <a href=\"mailto:chat@example.edu\">Email Us</a> |\n  \n  <!-- Link that opens a phone dialer -->\n  <a href=\"tel:+18005550199\">Call Us</a>\n</nav>",
+    "task": "Add a navigation bar near the top of index.html inside the body with links to chat sections and an email link, preserving all existing headings and content.",
     "steps": [
       "Open your existing index.html file in your code editor.",
       "Near the top of the <body> element, just below your main heading, add a <nav> container.",
-      'Inside <nav>, add links to your existing sections: <a href="#about">About</a> and <a href="#activity-groups">Activities</a>. After the gallery lesson, add <a href="#gallery">Gallery</a>.',
-      "Add an email link using <a href=\"mailto:club@example.edu\">Email Us</a> so visitors can send questions to your club.",
+      "Inside <nav>, add links to your existing sections: <a href=\"#about\">About</a> and <a href=\"#activity-groups\">Activities</a>. After the gallery lesson, add <a href=\"#gallery\">Gallery</a>.",
+      "Add an email link using <a href=\"mailto:chat@example.edu\">Email Us</a> so visitors can send questions to your chat community.",
       "Save index.html and preview your page in the browser to make sure each link appears clearly."
     ],
     "check": {
@@ -857,15 +940,13 @@ export const foundations = [
       "explanation": "The target=\"_blank\" attribute opens the destination in a new tab or window. Always pair it with rel=\"noopener noreferrer\" to protect your website's security."
     },
     "sources": [
-      "html_links.asp"
+      "html_links.asp",
+      "/html/html_exercise_embed.asp?topic=links",
+      "/html/html_challenges_links.asp"
     ],
     "patch": {
       "target": "body",
-      "html": `<nav id="main-nav">
-  <a href="#about">About</a> |
-  <a href="#activity-groups">Activities</a> |
-  <a href="mailto:club@example.edu">Email us</a>
-</nav>`
+      "html": "<nav id=\"main-nav\">\n  <a href=\"#about\">About</a> |\n  <a href=\"#activity-groups\">Activities</a> |\n  <a href=\"mailto:chat@example.edu\">Email us</a>\n</nav>"
     }
   },
   {
@@ -885,27 +966,20 @@ export const foundations = [
       },
       {
         "term": "Page jumps with bookmarks",
-        "description": "You can jump to any section on the same page by giving an element an id (like <section id=\"events\">) and setting a link's href to #events."
+        "description": "You can jump to any section on the same page by giving an element an id (like <section id=\"conversations\">) and setting a link's href to #conversations."
       },
       {
         "term": "Back to top links",
         "description": "A bottom-of-page link can return to your existing header with href=\"#site-header\". Match the actual ID rather than inventing a new target."
       }
     ],
-    "example": `<style>
-  a:link { color: #0055aa; text-decoration: underline; }
-  a:visited { color: #551a8b; }
-  a:hover, a:focus-visible { color: #a53b00; }
-  a:active { color: #c62828; }
-</style>
-<!-- The earlier header already has id="site-header". -->
-<p><a href="#site-header">Back to top</a></p>`,
+    "example": "<style>\n  a:link { color: #0055aa; text-decoration: underline; }\n  a:visited { color: #551a8b; }\n  a:hover, a:focus-visible { color: #a53b00; }\n  a:active { color: #c62828; }\n</style>\n<!-- The earlier header already has id=\"site-header\". -->\n<p><a href=\"#site-header\">Back to top</a></p>",
     "task": "Add link hover and keyboard-focus colors to your existing style tag, then link back to the existing site-header ID from the bottom of the page.",
     "steps": [
       "Open index.html and locate your existing <style> block inside <head>.",
-      "Add link rules following the LVHA order: style a:link, a:visited, a:hover, and a:active with colors that match your club theme.",
-      'Confirm your existing top header has id="site-header". Keep this ID because your other links already use it.',
-      'At the bottom of <body>, add <p><a href="#site-header">Back to top</a></p>.',
+      "Add link rules following the LVHA order: style a:link, a:visited, a:hover, and a:active with colors that match your chat community theme.",
+      "Confirm your existing top header has id=\"site-header\". Keep this ID because your other links already use it.",
+      "At the bottom of <body>, add <p><a href=\"#site-header\">Back to top</a></p>.",
       "Save index.html and test your page by hovering over links and clicking the Back to top shortcut."
     ],
     "check": {
@@ -940,7 +1014,7 @@ export const foundations = [
       },
       {
         "term": "The alt attribute for accessibility",
-        "description": "A text description of the image for screen readers and broken links. For graphics with text, describe the illustration accurately, like \"Club Workshop banner illustration\"."
+        "description": "A text description of the image for screen readers and broken links. For graphics with text, describe the illustration accurately, like \"Chat Attachment banner illustration\"."
       },
       {
         "term": "Width and height dimensions",
@@ -957,13 +1031,21 @@ export const foundations = [
       {
         "term": "CSS background images",
         "description": "Using background-image in CSS places a decorative photo or pattern behind text. Properties like background-repeat and background-size: cover control how it fits."
+      },
+      {
+        "term": "CSS used by this image example",
+        "description": "float: right lets text wrap beside an image; margin: 0 0 10px 15px sets top, right, bottom, left outer space; border-radius rounds corners. background-image: url(...) paints a decorative image and background-repeat controls tiling. Meaningful attachments still need img and alt."
+      },
+      {
+        "term": "Practice and challenge",
+        "description": "First complete this lesson’s chat build task without copying the example. Then change one detail, explain each tag or attribute aloud, and compare the result with the lesson. Use the linked W3Schools exercises and challenge for another check."
       }
     ],
-    "example": "<style>\n  .workshop-photo {\n    float: right;\n    margin: 0 0 10px 15px;\n    border-radius: 4px;\n  }\n</style>\n\n<section>\n  <h2>Clubhouse Gallery</h2>\n  <!-- Linked image that floats next to text -->\n  <a href=\"#site-header\" title=\"Jump to top of page\">\n    <img \n      class=\"workshop-photo\"\n      src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27160%27%20height%3D%27100%27%3E%3Crect%20width%3D%27160%27%20height%3D%27100%27%20fill%3D%27%23004488%27%2F%3E%3Ctext%20x%3D%2780%27%20y%3D%2755%27%20font-size%3D%2716%27%20fill%3D%27white%27%20text-anchor%3D%27middle%27%3EWorkshop%3C%2Ftext%3E%3C%2Fsvg%3E\" \n      alt=\"Blue banner illustration with text: Workshop\" \n      width=\"160\" \n      height=\"100\">\n  </a>\n  <p>Our workshop room is open every afternoon. Click the badge to jump back to the top of the page. Notice how this text wraps smoothly around the floating image.</p>\n</section>",
-    "task": "Add a photo gallery section to index.html with an image, descriptive alt text, and explicit width and height dimensions, keeping all existing club sections in place.",
+    "example": "<style>\n  .chat-room-photo {\n    float: right;\n    margin: 0 0 10px 15px;\n    border-radius: 4px;\n  }\n</style>\n\n<section>\n  <h2>Chat Gallery</h2>\n  <!-- Linked image that floats next to text -->\n  <a href=\"#site-header\" title=\"Jump to top of page\">\n    <img \n      class=\"chat-room-photo\"\n      src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27160%27%20height%3D%27100%27%3E%3Crect%20width%3D%27160%27%20height%3D%27100%27%20fill%3D%27%23004488%27%2F%3E%3Ctext%20x%3D%2780%27%20y%3D%2755%27%20font-size%3D%2716%27%20fill%3D%27white%27%20text-anchor%3D%27middle%27%3EChat room%3C%2Ftext%3E%3C%2Fsvg%3E\" \n      alt=\"Blue banner illustration with text: Chat room\" \n      width=\"160\" \n      height=\"100\">\n  </a>\n  <p>Our chat room room is open every afternoon. Click the badge to jump back to the top of the page. Notice how this text wraps smoothly around the floating image.</p>\n</section>",
+    "task": "Add a photo gallery section to index.html with an image, descriptive alt text, and explicit width and height dimensions, keeping all existing chat sections in place.",
     "steps": [
       "Open index.html and scroll toward the bottom of your <body> content.",
-      "Add a new <section id=\"gallery\"> element with an <h2> heading titled 'Clubhouse Life'.",
+      "Add a new <section id=\"gallery\"> element with an <h2> heading titled 'Chat Life'.",
       "Inside the section, insert an <img> tag with width=\"300\" and height=\"180\" to reserve space for the image.",
       "Fill in the src attribute with an image link or data URI, and write clear descriptive text inside the alt attribute explaining the scene.",
       "Save index.html and view your page in the browser to confirm the picture displays neatly without pushing surrounding content around."
@@ -980,16 +1062,13 @@ export const foundations = [
     },
     "sources": [
       "html_images.asp",
-      "html_images_background.asp"
+      "html_images_background.asp",
+      "/html/html_exercise_embed.asp?topic=images",
+      "/html/html_challenges_images.asp"
     ],
     "patch": {
       "target": "body",
-      "html": `<section id="gallery">
-  <h2>Clubhouse life</h2>
-  <a href="#site-header" title="Jump to the header">
-    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='300'%20height='180'%3E%3Crect%20width='300'%20height='180'%20fill='%23e0ecf8'/%3E%3Ctext%20x='150'%20y='95'%20text-anchor='middle'%20fill='%23004488'%3EClub%20Workshop%3C/text%3E%3C/svg%3E" alt="Blue banner illustration with text: Club Workshop" width="300" height="180">
-  </a>
-</section>`
+      "html": "<section id=\"gallery\">\n  <h2>Chat life</h2>\n  <a href=\"#site-header\" title=\"Jump to the header\">\n    <img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='300'%20height='180'%3E%3Crect%20width='300'%20height='180'%20fill='%23e0ecf8'/%3E%3Ctext%20x='150'%20y='95'%20text-anchor='middle'%20fill='%23004488'%3EChat%20Attachment%3C/text%3E%3C/svg%3E\" alt=\"Blue banner illustration with text: Chat Attachment\" width=\"300\" height=\"180\">\n  </a>\n</section>"
     }
   },
   {
@@ -1024,21 +1103,21 @@ export const foundations = [
         "description": "Add usemap=\"#map-name\" to an <img> tag to connect it to the corresponding <map> that holds its clickable zones."
       }
     ],
-    "example": "<!-- Responsive picture: wide banner on desktop, compact on mobile -->\n<picture>\n  <source media=\"(min-width: 600px)\" srcset=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27600%27%20height%3D%27120%27%3E%3Crect%20width%3D%27600%27%20height%3D%27120%27%20fill%3D%27%23cfe2ff%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%2768%27%20font-size%3D%2720%27%20fill%3D%27%23084298%27%20text-anchor%3D%27middle%27%3EDesktop%20Clubhouse%20View%3C%2Ftext%3E%3C%2Fsvg%3E\">\n  <img src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27300%27%20height%3D%27120%27%3E%3Crect%20width%3D%27300%27%20height%3D%27120%27%20fill%3D%27%23d1e7dd%27%2F%3E%3Ctext%20x%3D%27150%27%20y%3D%2768%27%20font-size%3D%2716%27%20fill%3D%27%230f5132%27%20text-anchor%3D%27middle%27%3EMobile%20View%3C%2Ftext%3E%3C%2Fsvg%3E\" alt=\"Clubhouse responsive view\" width=\"300\" height=\"120\">\n</picture>\n\n<!-- Interactive floorplan image map with rect, circle, and poly shapes -->\n<img src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27300%27%20height%3D%27150%27%3E%3Crect%20width%3D%27100%27%20height%3D%27150%27%20fill%3D%27%23cfe2ff%27%2F%3E%3Ccircle%20cx%3D%27150%27%20cy%3D%2775%27%20r%3D%2735%27%20fill%3D%27%23d1e7dd%27%2F%3E%3Cpolygon%20points%3D%27200%2C150%20250%2C20%20300%2C150%27%20fill%3D%27%23fff3cd%27%2F%3E%3Ctext%20x%3D%2750%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3ELab%3C%2Ftext%3E%3Ctext%20x%3D%27150%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EHub%3C%2Ftext%3E%3Ctext%20x%3D%27250%27%20y%3D%27100%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EStudio%3C%2Ftext%3E%3C%2Fsvg%3E\" usemap=\"#club-map\" alt=\"Clubhouse interactive floorplan\" width=\"300\" height=\"150\">\n\n<map name=\"club-map\">\n  <!-- rect: x1, y1, x2, y2 -->\n  <area shape=\"rect\" coords=\"0,0,100,150\" href=\"#gallery\" alt=\"Coding Lab\">\n  <!-- circle: center-x, center-y, radius -->\n  <area shape=\"circle\" coords=\"150,75,35\" href=\"#site-header\" alt=\"Central Hub\">\n  <!-- poly: x1,y1, x2,y2, x3,y3... -->\n  <area shape=\"poly\" coords=\"200,150,250,20,300,150\" href=\"#about\" alt=\"Design Studio\">\n</map>",
-    "task": "Add an interactive clubhouse floorplan section to index.html with an image map and clickable areas linking to existing sections.",
+    "example": "<!-- Responsive picture: wide banner on desktop, compact on mobile -->\n<picture>\n  <source media=\"(min-width: 600px)\" srcset=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27600%27%20height%3D%27120%27%3E%3Crect%20width%3D%27600%27%20height%3D%27120%27%20fill%3D%27%23cfe2ff%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%2768%27%20font-size%3D%2720%27%20fill%3D%27%23084298%27%20text-anchor%3D%27middle%27%3EDesktop%20Chat%20View%3C%2Ftext%3E%3C%2Fsvg%3E\">\n  <img src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27300%27%20height%3D%27120%27%3E%3Crect%20width%3D%27300%27%20height%3D%27120%27%20fill%3D%27%23d1e7dd%27%2F%3E%3Ctext%20x%3D%27150%27%20y%3D%2768%27%20font-size%3D%2716%27%20fill%3D%27%230f5132%27%20text-anchor%3D%27middle%27%3EMobile%20View%3C%2Ftext%3E%3C%2Fsvg%3E\" alt=\"Chat responsive view\" width=\"300\" height=\"120\">\n</picture>\n\n<!-- Interactive floorplan image map with rect, circle, and poly shapes -->\n<img src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27300%27%20height%3D%27150%27%3E%3Crect%20width%3D%27100%27%20height%3D%27150%27%20fill%3D%27%23cfe2ff%27%2F%3E%3Ccircle%20cx%3D%27150%27%20cy%3D%2775%27%20r%3D%2735%27%20fill%3D%27%23d1e7dd%27%2F%3E%3Cpolygon%20points%3D%27200%2C150%20250%2C20%20300%2C150%27%20fill%3D%27%23fff3cd%27%2F%3E%3Ctext%20x%3D%2750%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3ELab%3C%2Ftext%3E%3Ctext%20x%3D%27150%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EHub%3C%2Ftext%3E%3Ctext%20x%3D%27250%27%20y%3D%27100%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EStudio%3C%2Ftext%3E%3C%2Fsvg%3E\" usemap=\"#chat-map\" alt=\"Chat interactive floorplan\" width=\"300\" height=\"150\">\n\n<map name=\"chat-map\">\n  <!-- rect: x1, y1, x2, y2 -->\n  <area shape=\"rect\" coords=\"0,0,100,150\" href=\"#gallery\" alt=\"Coding Lab\">\n  <!-- circle: center-x, center-y, radius -->\n  <area shape=\"circle\" coords=\"150,75,35\" href=\"#site-header\" alt=\"Central Hub\">\n  <!-- poly: x1,y1, x2,y2, x3,y3... -->\n  <area shape=\"poly\" coords=\"200,150,250,20,300,150\" href=\"#about\" alt=\"Design Studio\">\n</map>",
+    "task": "Add an interactive chat floorplan section to index.html with an image map and clickable areas linking to existing sections.",
     "steps": [
       "Open index.html and navigate to the bottom of your main content area.",
-      "Add a <section id=\"floorplan\"> containing an <h2> title reading \"Interactive Clubhouse Map\".",
-      "Add an <img> tag with width=\"300\", height=\"150\", alt=\"Clubhouse interactive floorplan\", and usemap=\"#clubhouse-map\".",
-      "Directly below the image, add a <map name=\"clubhouse-map\"> container.",
+      "Add a <section id=\"floorplan\"> containing an <h2> title reading \"Interactive Chat Map\".",
+      "Add an <img> tag with width=\"300\", height=\"150\", alt=\"Chat interactive floorplan\", and usemap=\"#chat-map\".",
+      "Directly below the image, add a <map name=\"chat-map\"> container.",
       "Add <area> tags for rect, circle, and poly shapes pointing to existing sections like #gallery and #site-header, then save and test clicks in your browser."
     ],
     "check": {
-      "question": "How do you connect an <img> tag to an HTML <map name=\"clubhouse-map\"> element?",
+      "question": "How do you connect an <img> tag to an HTML <map name=\"chat-map\"> element?",
       "options": [
-        "Set usemap=\"#clubhouse-map\" on the <img> tag.",
+        "Set usemap=\"#chat-map\" on the <img> tag.",
         "Place the <img> tag directly inside the <map> tag.",
-        "Give the <img> tag an attribute named map=\"clubhouse-map\"."
+        "Give the <img> tag an attribute named map=\"chat-map\"."
       ],
       "answer": 0,
       "explanation": "The <img> tag links to the map using the usemap attribute. Its value must begin with a hash (#) followed by the map's name attribute."
@@ -1049,7 +1128,7 @@ export const foundations = [
     ],
     "patch": {
       "target": "body",
-      "html": "<section id=\"floorplan\">\n  <h2>Interactive Clubhouse Map</h2>\n  <img src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27300%27%20height%3D%27150%27%3E%3Crect%20width%3D%27100%27%20height%3D%27150%27%20fill%3D%27%23cfe2ff%27%2F%3E%3Ccircle%20cx%3D%27150%27%20cy%3D%2775%27%20r%3D%2735%27%20fill%3D%27%23d1e7dd%27%2F%3E%3Cpolygon%20points%3D%27200%2C150%20250%2C20%20300%2C150%27%20fill%3D%27%23fff3cd%27%2F%3E%3Ctext%20x%3D%2750%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3ELab%3C%2Ftext%3E%3Ctext%20x%3D%27150%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EHub%3C%2Ftext%3E%3Ctext%20x%3D%27250%27%20y%3D%27100%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EStudio%3C%2Ftext%3E%3C%2Fsvg%3E\" usemap=\"#clubhouse-map\" alt=\"Clubhouse interactive floorplan\" width=\"300\" height=\"150\">\n  <map name=\"clubhouse-map\">\n    <area shape=\"rect\" coords=\"0,0,100,150\" href=\"#gallery\" alt=\"Coding Lab\">\n    <area shape=\"circle\" coords=\"150,75,35\" href=\"#site-header\" alt=\"Central Hub\">\n    <area shape=\"poly\" coords=\"200,150,250,20,300,150\" href=\"#about\" alt=\"Design Studio\">\n  </map>\n</section>"
+      "html": "<section id=\"floorplan\">\n  <h2>Interactive Chat Map</h2>\n  <img src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27300%27%20height%3D%27150%27%3E%3Crect%20width%3D%27100%27%20height%3D%27150%27%20fill%3D%27%23cfe2ff%27%2F%3E%3Ccircle%20cx%3D%27150%27%20cy%3D%2775%27%20r%3D%2735%27%20fill%3D%27%23d1e7dd%27%2F%3E%3Cpolygon%20points%3D%27200%2C150%20250%2C20%20300%2C150%27%20fill%3D%27%23fff3cd%27%2F%3E%3Ctext%20x%3D%2750%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3ELab%3C%2Ftext%3E%3Ctext%20x%3D%27150%27%20y%3D%2780%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EHub%3C%2Ftext%3E%3Ctext%20x%3D%27250%27%20y%3D%27100%27%20font-size%3D%2712%27%20text-anchor%3D%27middle%27%3EStudio%3C%2Ftext%3E%3C%2Fsvg%3E\" usemap=\"#chat-map\" alt=\"Chat interactive floorplan\" width=\"300\" height=\"150\">\n  <map name=\"chat-map\">\n    <area shape=\"rect\" coords=\"0,0,100,150\" href=\"#gallery\" alt=\"Coding Lab\">\n    <area shape=\"circle\" coords=\"150,75,35\" href=\"#site-header\" alt=\"Central Hub\">\n    <area shape=\"poly\" coords=\"200,150,250,20,300,150\" href=\"#about\" alt=\"Design Studio\">\n  </map>\n</section>"
     }
   }
 ];

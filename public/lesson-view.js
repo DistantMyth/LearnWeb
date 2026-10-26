@@ -10,7 +10,7 @@ function exampleBlock(lesson, open = false) {
 
 function sourcesBlock(lesson) {
   if (!lesson.sources.length) return '';
-  return `<details class="lesson-sources"><summary>Topic references · optional, online</summary>${lesson.sources.map(path => `<a href="${escapeHtml(sourceUrl(path))}" target="_blank" rel="noopener noreferrer">W3Schools / ${escapeHtml(path)} ↗</a>`).join('')}</details>`;
+  return `<details class="lesson-sources"><summary>Topic references · optional, online</summary>${lesson.sources.map(path => `<a href="${escapeHtml(sourceUrl(path))}" target="_blank" rel="noopener noreferrer">${new URL(sourceUrl(path)).hostname === 'www.w3schools.com' ? 'W3Schools' : 'Documentation'} / ${escapeHtml(path)} ↗</a>`).join('')}</details>`;
 }
 
 export function learnPanel(lesson, state) {
@@ -32,5 +32,5 @@ export function navigationHtml(modules, lessons, state, expanded) {
     const current = children.some(lesson => lesson.id === state.currentLesson);
     const open = expanded.has(module.id);
     return `<div class="module ${current ? 'active' : ''}"><button class="module-button" data-module="${module.id}" aria-expanded="${open}" aria-controls="module-${module.id}"><span class="module-icon ${module.color}" aria-hidden="true">${module.icon}</span><span class="module-text"><strong>${String(index + 1).padStart(2, '0')} &nbsp; ${escapeHtml(module.title)}</strong><small>${children.length} lessons · ${escapeHtml(module.subtitle)}</small></span><span class="module-arrow" aria-hidden="true">${open ? '⌄' : '›'}</span></button><ol class="lesson-list" id="module-${module.id}" ${open ? '' : 'hidden'}>${children.map(lesson => `<li><button class="lesson-link ${state.completed.includes(lesson.id) ? 'is-complete' : ''}" data-lesson="${lesson.id}" ${lesson.id === state.currentLesson ? 'aria-current="step"' : ''}><span class="lesson-dot" aria-hidden="true">${state.completed.includes(lesson.id) ? '✓' : ''}</span>${escapeHtml(lesson.title)}${state.completed.includes(lesson.id) ? '<span class="sr-only"> — Completed</span>' : ''}</button></li>`).join('')}</ol></div>`;
-  }).join('') + '<div class="api-nav"><button data-action="apis"><span aria-hidden="true">⌁</span><span>Web APIs<small>A new adventure after JavaScript</small></span><span class="api-lock" aria-hidden="true">↗</span></button></div>';
+  }).join('') + '<div class="api-nav"><button data-action="apis"><span aria-hidden="true">⌁</span><span>Web APIs<small>Follow the chat build stages</small></span><span class="api-lock" aria-hidden="true">↗</span></button></div>';
 }

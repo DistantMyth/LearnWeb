@@ -1,0 +1,58 @@
+:root { font-family: system-ui, sans-serif; color: #162d28; background: #dce5e0; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+a { color: inherit; }
+button, .navigation-rail a { cursor: pointer; border: 0; border-radius: .75rem; padding: .8rem; background: #d9e8e1; color: #173b30; text-decoration: none; }
+button:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 3px solid #006f54; outline-offset: 3px; }
+[hidden] { display: none !important; }
+.app-shell { display: flex; height: 100vh; max-width: 100rem; margin: auto; background: white; }
+.navigation-rail { width: 4.5rem; flex-shrink: 0; background: #edf2ef; border-right: 1px solid #d7e1db; padding: 1rem .6rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.brand-mark { display: block; color: #08785a; font-size: 1.8rem; }
+.rail-spacer { flex: 1; }
+.avatar { width: 2.5rem; height: 2.5rem; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #cce7da; color: #126347; font-size: .75rem; font-weight: 700; }
+.conversation-sidebar { width: 21rem; flex-shrink: 0; padding: 1.3rem 1rem; border-right: 1px solid #d7e1db; overflow: auto; }
+.sidebar-header { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+h1 { font-size: 1.3rem; margin: 0 0 1rem; }
+.local-tag { font-size: .65rem; background: #ddf4e8; color: #126347; border-radius: 1rem; padding: .3rem .5rem; }
+.search-label, .composer label { display: block; font-size: .75rem; color: #48645b; margin-bottom: .3rem; }
+input { width: 100%; min-width: 0; border: 1px solid #c9d8cf; background: #f5f8f6; color: #162d28; border-radius: .65rem; padding: .8rem; }
+.list-heading { font-size: .75rem; margin-top: 1.5rem; color: #48645b; }
+.conversation-list { list-style: none; padding: 0; }
+.conversation { display: flex; align-items: center; gap: .6rem; padding: 1rem .6rem; border-radius: .75rem; text-decoration: none; }
+.conversation.active { background: #e5f3eb; }
+.conversation small { display: block; font-size: .72rem; margin-top: .3rem; color: #48645b; }
+.live-dot { width: .5rem; height: .5rem; border-radius: 50%; background: #08785a; margin-left: auto; }
+.sidebar-note { font-size: .78rem; color: #48645b; margin-top: 3rem; line-height: 1.6; }
+.chat-pane { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.chat-header { display: flex; align-items: center; gap: .8rem; padding: 1rem 1.4rem; border-bottom: 1px solid #d7e1db; }
+.chat-header h2 { font-size: 1rem; margin: 0; }
+#status { margin: .3rem 0 0; font-size: .75rem; color: #48645b; }
+.room-info { font-size: .75rem; margin-left: auto; }
+.thread { display: flex; flex-direction: column; flex: 1; min-height: 0; background: #e7e4db; padding: 1rem 1.5rem; }
+.thread-notice { align-self: center; background: #fff7d4; border-radius: .6rem; padding: .6rem 1rem; font-size: .72rem; text-align: center; }
+#messages { list-style: none; padding: .5rem 0; margin: 0; overflow: auto; flex: 1; }
+#messages li { width: fit-content; max-width: 85%; margin: .6rem 0; padding: .8rem 1rem; border-radius: .8rem; background: white; box-shadow: 0 1px 2px #0001; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; }
+#messages li.own-message { margin-left: auto; background: #d7f5c7; }
+.composer { display: flex; align-items: flex-end; gap: .7rem; padding: 1rem 1.3rem; background: #f5f8f6; }
+.name-field { width: 8rem; }
+.message-field { flex: 1; min-width: 0; }
+#send { background: #08785a; color: white; padding: .85rem 1rem; }
+@media (max-width: 55rem) { .conversation-sidebar { width: 16rem; } .thread { padding: 1rem; } }
+@media (max-width: 40rem) {
+  .navigation-rail { width: 3.5rem; padding: 1rem .3rem; }
+  .conversation-sidebar { width: 40%; padding: 1rem .5rem; }
+  h1 { font-size: 1rem; }
+  .local-tag, .conversation .avatar, .room-info { display: none; }
+  .chat-header { padding: .8rem; }
+  .composer { flex-wrap: wrap; padding: .75rem; }
+  .name-field { width: 100%; }
+  .thread { padding: .5rem; }
+  #messages li { max-width: 95%; }
+}
+.sidebar-wrapper { display: flex; flex-shrink: 0; }
+.composer-area { background: #f5f8f6; }
+.delivery-notice { min-height: 1.3rem; margin: 0; padding: 0 1rem .4rem; font-size: .75rem; color: #48645b; }
+.message-time { display: block; margin-top: .3rem; font-size: .65rem; color: #48645b; }
+@media (max-width: 40rem) { .sidebar-wrapper { width: 40%; } .sidebar-wrapper .conversation-sidebar { width: 100%; } }
